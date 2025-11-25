@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Thai culture, traditions, etiquette, and essential phrases for your Thailand journey.">
+    <meta name="keywords" content="Thai culture, Thai language, Thai etiquette, Thai traditions, Buddhism Thailand">
+    
+    <title>Thai Culture - Thailand Travel Guide</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-body bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-temple text-white text-sm"></i>
+                    </div>
+                    <span class="font-display font-bold text-xl text-gray-800">Thailand Guide</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 font-medium">Home</a>
+                    <a href="destinations.html" class="nav-link text-gray-700 font-medium">Destinations</a>
+                    <a href="culture.html" class="nav-link text-yellow-600 font-medium">Culture</a>
+                    <a href="guide.html" class="nav-link text-gray-700 font-medium">Travel Guide</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button class="mobile-menu-button text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
+                <a href="destinations.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Destinations</a>
+                <a href="culture.html" class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Culture</a>
+                <a href="guide.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Travel Guide</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section small relative bg-gradient-to-br from-purple-600 to-pink-500">
+        <div class="relative z-10 flex items-center justify-center min-h-[60vh]">
+            <div class="text-center text-white px-4 max-w-4xl mx-auto">
+                <div class="floating-element mb-8">
+                    <div class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <i class="fas fa-om text-4xl text-yellow-300"></i>
+                    </div>
+                </div>
+
+                <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Thai
+                    <span class="block text-yellow-300">Culture</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                    Discover the rich traditions, customs, and way of life that make Thailand truly special
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thai Phrase Book Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Thai Phrase Book
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Learn essential Thai phrases to connect with locals
+                </p>
+            </div>
+
+            <div class="phrase-card bg-gradient-to-br from-teal-500 to-blue-600 rounded-3xl p-12 text-white shadow-2xl section-reveal">
+                <div class="text-center mb-8">
+                    <div id="thai-text" class="text-6xl font-bold mb-4 transition-opacity duration-300">สวัสดี</div>
+                    <div id="roman-text" class="text-3xl mb-2 text-yellow-300 transition-opacity duration-300">Sawasdee</div>
+                    <div id="english-text" class="text-xl text-gray-200 transition-opacity duration-300">Hello</div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <button id="prev-phrase" class="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="play-audio" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-8 py-3 rounded-full font-semibold transition">
+                        <i class="fas fa-volume-up mr-2"></i>Play Audio
+                    </button>
+                    <button id="next-phrase" class="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Tips Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Cultural Etiquette
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Important customs and manners to respect Thai culture
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Temple Etiquette -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg section-reveal">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-temple text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Temple Etiquette</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Dress modestly (cover shoulders and knees)</li>
+                        <li>✓ Remove shoes before entering</li>
+                        <li>✓ Don't point feet at Buddha images</li>
+                        <li>✓ Speak quietly and respectfully</li>
+                    </ul>
+                </div>
+
+                <!-- Greeting -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg section-reveal">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-hands-praying text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Wai Greeting</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Press palms together at chest level</li>
+                        <li>✓ Bow head slightly</li>
+                        <li>✓ Say "Sawasdee" (hello)</li>
+                        <li>✓ Higher hands = more respect</li>
+                    </ul>
+                </div>
+
+                <!-- Royal Family -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg section-reveal">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Royal Respect</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Stand for royal anthem</li>
+                        <li>✓ Never disrespect royal images</li>
+                        <li>✓ Show utmost respect</li>
+                        <li>✓ Follow local customs</li>
+                    </ul>
+                </div>
+
+                <!-- Social Customs -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg section-reveal">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Social Customs</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Smile often ("Land of Smiles")</li>
+                        <li>✓ Keep calm, avoid confrontation</li>
+                        <li>✓ Don't touch people's heads</li>
+                        <li>✓ Use right hand for giving/receiving</li>
+                    </ul>
+                </div>
+
+                <!-- Dining Etiquette -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg section-reveal">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-3xl text-red-600"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Dining Etiquette</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Use spoon and fork (not chopsticks)</li>
+                        <li>✓ Share dishes family-style</li>
+                        <li>✓ Don't waste food</li>
+                        <li>✓ Compliment the food</li>
+                    </ul>
+                </div>
+
+                <!-- Dress Code -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg section-reveal">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tshirt text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Dress Code</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Modest clothing at temples</li>
+                        <li>✓ Casual attire generally acceptable</li>
+                        <li>✓ Remove shoes indoors</li>
+                        <li>✓ Swimwear only at beaches</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-6">
+                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-temple text-white text-sm"></i>
+                    </div>
+                    <span class="font-display font-bold text-2xl">Thailand Guide</span>
+                </div>
+
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Your comprehensive guide to exploring the Land of Smiles.
+                </p>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-500 text-sm">
+                        © 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/ui-utils.js"></script>
+    <script src="js/destinations.js"></script>
+    <script src="js/culture.js"></script>
+    <script src="js/guide.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "bangkok",
+    "nameTh": "กรุงเทพมหานคร",
+    "nameEn": "Bangkok",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.7563,
+      "lng": 100.5018
+    },
+    "slogan": "City of Angels",
+    "bestSeason": "November-February",
+    "description": "Thailand's vibrant capital blending ancient temples with modern skyscrapers, world-class shopping, and legendary street food",
+    "image": "bangkok.jpg",
+    "population": 5588000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "chiang-mai",
+    "nameTh": "เชียงใหม่",
+    "nameEn": "Chiang Mai",
+    "region": "north",
+    "coordinates": {
+      "lat": 18.7883,
+      "lng": 98.9853
+    },
+    "slogan": "Rose of the North",
+    "bestSeason": "November-February",
+    "description": "Cultural heart of Northern Thailand, famous for ancient temples, mountains, and traditional crafts",
+    "image": "chiang-mai.jpg",
+    "population": 131000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "chiang-rai",
+    "nameTh": "เชียงราย",
+    "nameEn": "Chiang Rai",
+    "region": "north",
+    "coordinates": {
+      "lat": 19.9105,
+      "lng": 99.8406
+    },
+    "slogan": "Gateway to the Golden Triangle",
+    "bestSeason": "November-February",
+    "description": "Home to the stunning White Temple and gateway to hill tribe villages",
+    "image": "chiang-rai.jpg",
+    "population": 75000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phuket",
+    "nameTh": "ภูเก็ต",
+    "nameEn": "Phuket",
+    "region": "south",
+    "coordinates": {
+      "lat": 7.8804,
+      "lng": 98.3923
+    },
+    "slogan": "Pearl of the Andaman",
+    "bestSeason": "November-April",
+    "description": "Thailand's largest island with world-famous beaches, vibrant nightlife, and luxury resorts",
+    "image": "phuket.jpg",
+    "population": 416000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "krabi",
+    "nameTh": "กระบี่",
+    "nameEn": "Krabi",
+    "region": "south",
+    "coordinates": {
+      "lat": 8.0863,
+      "lng": 98.9063
+    },
+    "slogan": "Land of Limestone Cliffs",
+    "bestSeason": "November-April",
+    "description": "Stunning limestone karsts, pristine beaches, and island hopping paradise",
+    "image": "krabi.jpg",
+    "population": 37000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "pattaya",
+    "nameTh": "พัทยา",
+    "nameEn": "Pattaya",
+    "region": "east",
+    "coordinates": {
+      "lat": 12.9236,
+      "lng": 100.8825
+    },
+    "slogan": "Beach Resort City",
+    "bestSeason": "November-February",
+    "description": "Popular beach destination with entertainment, water sports, and vibrant nightlife",
+    "image": "pattaya.jpg",
+    "population": 120000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "ayutthaya",
+    "nameTh": "พระนครศรีอยุธยา",
+    "nameEn": "Ayutthaya",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.3532,
+      "lng": 100.5776
+    },
+    "slogan": "Ancient Capital",
+    "bestSeason": "November-February",
+    "description": "UNESCO World Heritage site with magnificent temple ruins from the ancient Siamese kingdom",
+    "image": "ayutthaya.jpg",
+    "population": 53000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "koh-samui",
+    "nameTh": "เกาะสมุย",
+    "nameEn": "Koh Samui",
+    "region": "south",
+    "coordinates": {
+      "lat": 9.5142,
+      "lng": 100.0142
+    },
+    "slogan": "Tropical Paradise",
+    "bestSeason": "December-February",
+    "description": "Palm-fringed beaches, luxury resorts, and laid-back island atmosphere",
+    "image": "koh-samui.jpg",
+    "population": 63000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "hua-hin",
+    "nameTh": "หัวหิน",
+    "nameEn": "Hua Hin",
+    "region": "central",
+    "coordinates": {
+      "lat": 12.5683,
+      "lng": 99.9576
+    },
+    "slogan": "Royal Beach Resort",
+    "bestSeason": "November-February",
+    "description": "Elegant beach town favored by Thai royalty, known for seafood and golf courses",
+    "image": "hua-hin.jpg",
+    "population": 61000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "kanchanaburi",
+    "nameTh": "กาญจนบุรี",
+    "nameEn": "Kanchanaburi",
+    "region": "west",
+    "coordinates": {
+      "lat": 14.0022,
+      "lng": 99.545
+    },
+    "slogan": "River Kwai Province",
+    "bestSeason": "November-February",
+    "description": "Historic bridge over River Kwai, waterfalls, and natural beauty",
+    "image": "kanchanaburi.jpg",
+    "population": 31000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "sukhothai",
+    "nameTh": "สุโขทัย",
+    "nameEn": "Sukhothai",
+    "region": "north",
+    "coordinates": {
+      "lat": 17.0061,
+      "lng": 99.823
+    },
+    "slogan": "Dawn of Happiness",
+    "bestSeason": "November-February",
+    "description": "Birthplace of Thai civilization with impressive historical park",
+    "image": "sukhothai.jpg",
+    "population": 37000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nakhon-ratchasima",
+    "nameTh": "นครราชสีมา",
+    "nameEn": "Nakhon Ratchasima",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 14.9799,
+      "lng": 102.0977
+    },
+    "slogan": "Gateway to Isan",
+    "bestSeason": "November-February",
+    "description": "Gateway to Northeast Thailand with Khmer ruins and Khao Yai National Park",
+    "image": "nakhon-ratchasima.jpg",
+    "population": 143000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "udon-thani",
+    "nameTh": "อุดรธานี",
+    "nameEn": "Udon Thani",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 17.4138,
+      "lng": 102.7875
+    },
+    "slogan": "Isan's Cultural Hub",
+    "bestSeason": "November-February",
+    "description": "Known for Ban Chiang archaeological site and Red Lotus Sea",
+    "image": "udon-thani.jpg",
+    "population": 142000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nakhon-si-thammarat",
+    "nameTh": "นครศรีธรรมราช",
+    "nameEn": "Nakhon Si Thammarat",
+    "region": "south",
+    "coordinates": {
+      "lat": 8.4304,
+      "lng": 99.9631
+    },
+    "slogan": "Ancient Southern Capital",
+    "bestSeason": "February-April",
+    "description": "Ancient city with significant Buddhist temples and traditional shadow puppetry",
+    "image": "nakhon-si-thammarat.jpg",
+    "population": 106000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "chonburi",
+    "nameTh": "ชลบุรี",
+    "nameEn": "Chonburi",
+    "region": "east",
+    "coordinates": {
+      "lat": 13.3611,
+      "lng": 100.9847
+    },
+    "slogan": "Eastern Seaboard",
+    "bestSeason": "November-March",
+    "description": "Industrial and tourist hub with easy access to Pattaya and Bang Saen beach",
+    "image": "chonburi.jpg",
+    "population": 341000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "lampang",
+    "nameTh": "ลำปาง",
+    "nameEn": "Lampang",
+    "region": "north",
+    "coordinates": {
+      "lat": 18.2888,
+      "lng": 99.4919
+    },
+    "slogan": "Horse Carriage City",
+    "bestSeason": "November-February",
+    "description": "Charming northern city known for horse carriages and ceramic industry",
+    "image": "lampang.jpg",
+    "population": 58000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nakhon-pathom",
+    "nameTh": "นครปฐม",
+    "nameEn": "Nakhon Pathom",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.8199,
+      "lng": 100.0378
+    },
+    "slogan": "First City",
+    "bestSeason": "November-February",
+    "description": "Home to the world's tallest Buddhist monument, Phra Pathom Chedi",
+    "image": "nakhon-pathom.jpg",
+    "population": 119000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "ubon-ratchathani",
+    "nameTh": "อุบลราชธานี",
+    "nameEn": "Ubon Ratchathani",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 15.2286,
+      "lng": 104.856
+    },
+    "slogan": "Land of Candle Festival",
+    "bestSeason": "November-February",
+    "description": "Famous for Candle Festival and stunning rock formations along Mekong River",
+    "image": "ubon-ratchathani.jpg",
+    "population": 106000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "surat-thani",
+    "nameTh": "สุราษฎร์ธานี",
+    "nameEn": "Surat Thani",
+    "region": "south",
+    "coordinates": {
+      "lat": 9.1382,
+      "lng": 99.3331
+    },
+    "slogan": "City of Good People",
+    "bestSeason": "March-September",
+    "description": "Gateway to Koh Samui, Koh Phangan, and Koh Tao",
+    "image": "surat-thani.jpg",
+    "population": 131000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "khon-kaen",
+    "nameTh": "ขอนแก่น",
+    "nameEn": "Khon Kaen",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 16.4419,
+      "lng": 102.8359
+    },
+    "slogan": "Isan's Education Hub",
+    "bestSeason": "November-February",
+    "description": "Modern northeastern city with vibrant university culture",
+    "image": "khon-kaen.jpg",
+    "population": 147000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phitsanulok",
+    "nameTh": "พิษณุโลก",
+    "nameEn": "Phitsanulok",
+    "region": "north",
+    "coordinates": {
+      "lat": 16.8211,
+      "lng": 100.2659
+    },
+    "slogan": "Gateway to the North",
+    "bestSeason": "November-February",
+    "description": "Historic city housing the revered Phra Buddha Chinnarat",
+    "image": "phitsanulok.jpg",
+    "population": 85000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "rayong",
+    "nameTh": "ระยอง",
+    "nameEn": "Rayong",
+    "region": "east",
+    "coordinates": {
+      "lat": 12.6819,
+      "lng": 101.2816
+    },
+    "slogan": "Fruit Capital",
+    "bestSeason": "November-March",
+    "description": "Famous for tropical fruits and gateway to Koh Samet island",
+    "image": "rayong.jpg",
+    "population": 64000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nonthaburi",
+    "nameTh": "นนทบุรี",
+    "nameEn": "Nonthaburi",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.8621,
+      "lng": 100.5144
+    },
+    "slogan": "Garden Province",
+    "bestSeason": "November-February",
+    "description": "Suburban province north of Bangkok known for durian and pottery",
+    "image": "nonthaburi.jpg",
+    "population": 270000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "trang",
+    "nameTh": "ตรัง",
+    "nameEn": "Trang",
+    "region": "south",
+    "coordinates": {
+      "lat": 7.5563,
+      "lng": 99.6114
+    },
+    "slogan": "Andaman Coast Gem",
+    "bestSeason": "November-April",
+    "description": "Pristine islands, underwater caves, and authentic southern Thai culture",
+    "image": "trang.jpg",
+    "population": 61000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "prachuap-khiri-khan",
+    "nameTh": "ประจวบคีรีขันธ์",
+    "nameEn": "Prachuap Khiri Khan",
+    "region": "central",
+    "coordinates": {
+      "lat": 11.8122,
+      "lng": 99.7973
+    },
+    "slogan": "Peaceful Beach Province",
+    "bestSeason": "November-March",
+    "description": "Quiet beaches, seafood, and Khao Sam Roi Yot National Park",
+    "image": "prachuap-khiri-khan.jpg",
+    "population": 31000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "kamphaeng-phet",
+    "nameTh": "กำแพงเพชร",
+    "nameEn": "Kamphaeng Phet",
+    "region": "north",
+    "coordinates": {
+      "lat": 16.4827,
+      "lng": 99.5226
+    },
+    "slogan": "Diamond Wall",
+    "bestSeason": "November-February",
+    "description": "Historical park with ancient ruins and regional museum",
+    "image": "kamphaeng-phet.jpg",
+    "population": 30000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "sakon-nakhon",
+    "nameTh": "สกลนคร",
+    "nameEn": "Sakon Nakhon",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 17.1664,
+      "lng": 104.1486
+    },
+    "slogan": "Land of Phra That Choeng Chum",
+    "bestSeason": "November-February",
+    "description": "Important Buddhist pilgrimage site and Ajahn Man meditation tradition",
+    "image": "sakon-nakhon.jpg",
+    "population": 76000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phetchabun",
+    "nameTh": "เพชรบูรณ์",
+    "nameEn": "Phetchabun",
+    "region": "north",
+    "coordinates": {
+      "lat": 16.4189,
+      "lng": 101.1609
+    },
+    "slogan": "City of Gems",
+    "bestSeason": "November-February",
+    "description": "Cool climate, mountains, and Khao Kho viewpoints",
+    "image": "phetchabun.jpg",
+    "population": 26000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "songkhla",
+    "nameTh": "สงขลา",
+    "nameEn": "Songkhla",
+    "region": "south",
+    "coordinates": {
+      "lat": 7.1894,
+      "lng": 100.5954
+    },
+    "slogan": "Twin City",
+    "bestSeason": "December-March",
+    "description": "Beautiful beaches, Songkhla Lake, and multicultural heritage",
+    "image": "songkhla.jpg",
+    "population": 158000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nakhon-sawan",
+    "nameTh": "นครสวรรค์",
+    "nameEn": "Nakhon Sawan",
+    "region": "central",
+    "coordinates": {
+      "lat": 15.7047,
+      "lng": 100.1251
+    },
+    "slogan": "Heaven City",
+    "bestSeason": "November-February",
+    "description": "Confluence of rivers and bird watching at Bung Boraphet",
+    "image": "nakhon-sawan.jpg",
+    "population": 77000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phrae",
+    "nameTh": "แพร่",
+    "nameEn": "Phrae",
+    "region": "north",
+    "coordinates": {
+      "lat": 18.1446,
+      "lng": 100.14
+    },
+    "slogan": "Teak Wood Province",
+    "bestSeason": "November-February",
+    "description": "Traditional teak houses and serene northern Thai atmosphere",
+    "image": "phrae.jpg",
+    "population": 18000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "mae-hong-son",
+    "nameTh": "แม่ฮ่องสอน",
+    "nameEn": "Mae Hong Son",
+    "region": "north",
+    "coordinates": {
+      "lat": 19.3014,
+      "lng": 97.9653
+    },
+    "slogan": "City of Three Mists",
+    "bestSeason": "November-February",
+    "description": "Remote mountainous province with Burmese influence and stunning scenery",
+    "image": "mae-hong-son.jpg",
+    "population": 8000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "saraburi",
+    "nameTh": "สระบุรี",
+    "nameEn": "Saraburi",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.5289,
+      "lng": 100.9103
+    },
+    "slogan": "Sunflower Fields",
+    "bestSeason": "November-January",
+    "description": "Sunflower fields, Buddhist pilgrimage sites, and Khao Yai foothills",
+    "image": "saraburi.jpg",
+    "population": 63000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "loei",
+    "nameTh": "เลย",
+    "nameEn": "Loei",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 17.486,
+      "lng": 101.7223
+    },
+    "slogan": "Sea of Mountains",
+    "bestSeason": "October-February",
+    "description": "Cool climate, Phu Kradueng National Park, and winter festivals",
+    "image": "loei.jpg",
+    "population": 48000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "ratchaburi",
+    "nameTh": "ราชบุรี",
+    "nameEn": "Ratchaburi",
+    "region": "west",
+    "coordinates": {
+      "lat": 13.5282,
+      "lng": 99.8134
+    },
+    "slogan": "Dragon Jar Province",
+    "bestSeason": "November-February",
+    "description": "Floating markets, pottery, and Damnoen Saduak",
+    "image": "ratchaburi.jpg",
+    "population": 99000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "satun",
+    "nameTh": "สตูล",
+    "nameEn": "Satun",
+    "region": "south",
+    "coordinates": {
+      "lat": 6.6238,
+      "lng": 100.0673
+    },
+    "slogan": "Hidden Gem of Andaman",
+    "bestSeason": "November-April",
+    "description": "Tarutao National Marine Park and Koh Lipe paradise",
+    "image": "satun.jpg",
+    "population": 33000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "chumphon",
+    "nameTh": "ชุมพร",
+    "nameEn": "Chumphon",
+    "region": "south",
+    "coordinates": {
+      "lat": 10.493,
+      "lng": 99.18
+    },
+    "slogan": "Gateway to the South",
+    "bestSeason": "December-March",
+    "description": "Diving sites, pristine beaches, and fresh seafood",
+    "image": "chumphon.jpg",
+    "population": 44000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "buri-ram",
+    "nameTh": "บุรีรัมย์",
+    "nameEn": "Buriram",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 15,
+      "lng": 103.1
+    },
+    "slogan": "City of Happiness",
+    "bestSeason": "November-February",
+    "description": "Ancient Khmer temples and modern sports facilities",
+    "image": "buriram.jpg",
+    "population": 42000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "ranong",
+    "nameTh": "ระนอง",
+    "nameEn": "Ranong",
+    "region": "south",
+    "coordinates": {
+      "lat": 9.9657,
+      "lng": 98.6387
+    },
+    "slogan": "Rainiest Province",
+    "bestSeason": "February-April",
+    "description": "Hot springs, mangrove forests, and gateway to Myanmar",
+    "image": "ranong.jpg",
+    "population": 24000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "surin",
+    "nameTh": "สุรินทร์",
+    "nameEn": "Surin",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 14.8818,
+      "lng": 103.4936
+    },
+    "slogan": "Elephant Province",
+    "bestSeason": "November-February",
+    "description": "Famous Elephant Round-up festival and traditional silk weaving",
+    "image": "surin.jpg",
+    "population": 42000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phangnga",
+    "nameTh": "พังงา",
+    "nameEn": "Phang Nga",
+    "region": "south",
+    "coordinates": {
+      "lat": 8.4509,
+      "lng": 98.5255
+    },
+    "slogan": "James Bond Island",
+    "bestSeason": "November-April",
+    "description": "Spectacular limestone karsts in Phang Nga Bay",
+    "image": "phangnga.jpg",
+    "population": 26000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nakhon-nayok",
+    "nameTh": "นครนายก",
+    "nameEn": "Nakhon Nayok",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.2069,
+      "lng": 101.213
+    },
+    "slogan": "Natural Paradise Near Bangkok",
+    "bestSeason": "Year-round",
+    "description": "Waterfalls, rafting, and riverside resorts close to Bangkok",
+    "image": "nakhon-nayok.jpg",
+    "population": 26000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phetchaburi",
+    "nameTh": "เพชรบุรี",
+    "nameEn": "Phetchaburi",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.1119,
+      "lng": 99.945
+    },
+    "slogan": "Historical Seaside Town",
+    "bestSeason": "November-February",
+    "description": "Royal palaces, caves, and Cha-am beach",
+    "image": "phetchaburi.jpg",
+    "population": 46000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "si-sa-ket",
+    "nameTh": "ศรีสะเกษ",
+    "nameEn": "Si Sa Ket",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 15.1186,
+      "lng": 104.322
+    },
+    "slogan": "Khmer Heritage",
+    "bestSeason": "November-February",
+    "description": "Impressive Khmer temple ruins including Prasat Preah Vihear",
+    "image": "si-sa-ket.jpg",
+    "population": 50000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nan",
+    "nameTh": "น่าน",
+    "nameEn": "Nan",
+    "region": "north",
+    "coordinates": {
+      "lat": 18.7838,
+      "lng": 100.7792
+    },
+    "slogan": "Hidden Northern Gem",
+    "bestSeason": "November-February",
+    "description": "Remote valleys, Wat Phumin murals, and authentic Lanna culture",
+    "image": "nan.jpg",
+    "population": 23000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "uttaradit",
+    "nameTh": "อุตรดิตถ์",
+    "nameEn": "Uttaradit",
+    "region": "north",
+    "coordinates": {
+      "lat": 17.62,
+      "lng": 100.0992
+    },
+    "slogan": "Langsat Capital",
+    "bestSeason": "November-February",
+    "description": "Famous for langsat fruit and Laplae lacquerware",
+    "image": "uttaradit.jpg",
+    "population": 29000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "phayao",
+    "nameTh": "พะเยา",
+    "nameEn": "Phayao",
+    "region": "north",
+    "coordinates": {
+      "lat": 19.1921,
+      "lng": 99.8988
+    },
+    "slogan": "Lake City",
+    "bestSeason": "November-February",
+    "description": "Scenic Kwan Phayao lake and peaceful northern atmosphere",
+    "image": "phayao.jpg",
+    "population": 21000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "yasothon",
+    "nameTh": "ยโสธร",
+    "nameEn": "Yasothon",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 15.7922,
+      "lng": 104.1453
+    },
+    "slogan": "Rocket Festival City",
+    "bestSeason": "November-February",
+    "description": "Famous Bun Bang Fai rocket festival celebrating rain season",
+    "image": "yasothon.jpg",
+    "population": 21000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "prachin-buri",
+    "nameTh": "ปราจีนบุรี",
+    "nameEn": "Prachin Buri",
+    "region": "east",
+    "coordinates": {
+      "lat": 14.0583,
+      "lng": 101.3714
+    },
+    "slogan": "Eastern Gateway",
+    "bestSeason": "November-February",
+    "description": "Gateway to Cambodia and Khao Yai National Park",
+    "image": "prachin-buri.jpg",
+    "population": 46000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "ang-thong",
+    "nameTh": "อ่างทอง",
+    "nameEn": "Ang Thong",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.5896,
+      "lng": 100.455
+    },
+    "slogan": "Golden Basin",
+    "bestSeason": "November-February",
+    "description": "Wat Muang's giant Buddha statue and traditional crafts",
+    "image": "ang-thong.jpg",
+    "population": 38000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "yala",
+    "nameTh": "ยะลา",
+    "nameEn": "Yala",
+    "region": "south",
+    "coordinates": {
+      "lat": 6.5408,
+      "lng": 101.2809
+    },
+    "slogan": "Southernmost City",
+    "bestSeason": "Year-round",
+    "description": "Multicultural southern city with caves and natural wonders",
+    "image": "yala.jpg",
+    "population": 137000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "roi-et",
+    "nameTh": "ร้อยเอ็ด",
+    "nameEn": "Roi Et",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 16.0538,
+      "lng": 103.6531
+    },
+    "slogan": "City of 101",
+    "bestSeason": "November-February",
+    "description": "Giant standing Buddha and authentic Isan culture",
+    "image": "roi-et.jpg",
+    "population": 45000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "maha-sarakham",
+    "nameTh": "มหาสารคาม",
+    "nameEn": "Maha Sarakham",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 16.1828,
+      "lng": 103.3008
+    },
+    "slogan": "Education City",
+    "bestSeason": "November-February",
+    "description": "University town with museums and local silk production",
+    "image": "maha-sarakham.jpg",
+    "population": 52000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "uttaradit",
+    "nameTh": "อุตรดิตถ์",
+    "nameEn": "Uttaradit",
+    "region": "north",
+    "coordinates": {
+      "lat": 17.62,
+      "lng": 100.0992
+    },
+    "slogan": "Northern Fruit Hub",
+    "bestSeason": "November-February",
+    "description": "Famous for tropical fruits especially langsat",
+    "image": "uttaradit.jpg",
+    "population": 29000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "kalasin",
+    "nameTh": "กาฬสินธุ์",
+    "nameEn": "Kalasin",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 16.4322,
+      "lng": 103.5063
+    },
+    "slogan": "Dinosaur Province",
+    "bestSeason": "November-February",
+    "description": "Phu Kum Khao Dinosaur Museum and silk weaving traditions",
+    "image": "kalasin.jpg",
+    "population": 38000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "mukdahan",
+    "nameTh": "มุกดาหาร",
+    "nameEn": "Mukdahan",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 16.5426,
+      "lng": 104.7233
+    },
+    "slogan": "Mekong Riverside",
+    "bestSeason": "November-February",
+    "description": "Mekong riverside with views of Laos and Indochinese market",
+    "image": "mukdahan.jpg",
+    "population": 44000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nong-khai",
+    "nameTh": "หนองคาย",
+    "nameEn": "Nong Khai",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 17.8782,
+      "lng": 102.7412
+    },
+    "slogan": "Mekong Gateway",
+    "bestSeason": "November-February",
+    "description": "Friendship Bridge to Laos and Sala Kaew Ku sculpture park",
+    "image": "nong-khai.jpg",
+    "population": 51000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nong-bua-lam-phu",
+    "nameTh": "หนองบัวลำภู",
+    "nameEn": "Nong Bua Lam Phu",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 17.2044,
+      "lng": 102.426
+    },
+    "slogan": "Quiet Isan Province",
+    "bestSeason": "November-February",
+    "description": "Wat Tham Klong Phen temple and peaceful rural atmosphere",
+    "image": "nong-bua-lam-phu.jpg",
+    "population": 25000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "tak",
+    "nameTh": "ตาก",
+    "nameEn": "Tak",
+    "region": "north",
+    "coordinates": {
+      "lat": 16.866,
+      "lng": 99.1265
+    },
+    "slogan": "Border Province",
+    "bestSeason": "November-February",
+    "description": "Bhumibol Dam, hot springs, and Myanmar border trade",
+    "image": "tak.jpg",
+    "population": 25000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "amnat-charoen",
+    "nameTh": "อำนาจเจริญ",
+    "nameEn": "Amnat Charoen",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 15.8657,
+      "lng": 104.6259
+    },
+    "slogan": "New Isan Province",
+    "bestSeason": "November-February",
+    "description": "Young province with traditional Isan lifestyle",
+    "image": "amnat-charoen.jpg",
+    "population": 37000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "pathum-thani",
+    "nameTh": "ปทุมธานี",
+    "nameEn": "Pathum Thani",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.0208,
+      "lng": 100.525
+    },
+    "slogan": "Lotus Province",
+    "bestSeason": "November-February",
+    "description": "Industrial zone with Dream World theme park and Klong Lat Mayom floating market",
+    "image": "pathum-thani.jpg",
+    "population": 376000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "samut-prakan",
+    "nameTh": "สมุทรปราการ",
+    "nameEn": "Samut Prakan",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.599,
+      "lng": 100.5998
+    },
+    "slogan": "Ancient City",
+    "bestSeason": "November-February",
+    "description": "Ancient City open-air museum and crocodile farm",
+    "image": "samut-prakan.jpg",
+    "population": 524000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "samut-sakhon",
+    "nameTh": "สมุทรสาคร",
+    "nameEn": "Samut Sakhon",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.5475,
+      "lng": 100.2744
+    },
+    "slogan": "Seafood Province",
+    "bestSeason": "November-February",
+    "description": "Major seafood processing center and Don Hoi Lot",
+    "image": "samut-sakhon.jpg",
+    "population": 214000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "samut-songkhram",
+    "nameTh": "สมุทรสงคราม",
+    "nameEn": "Samut Songkhram",
+    "region": "central",
+    "coordinates": {
+      "lat": 13.4099,
+      "lng": 100.002
+    },
+    "slogan": "Smallest Province",
+    "bestSeason": "November-February",
+    "description": "Famous Maeklong Railway Market and Amphawa floating market",
+    "image": "samut-songkhram.jpg",
+    "population": 36000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "sing-buri",
+    "nameTh": "สิงห์บุรี",
+    "nameEn": "Sing Buri",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.8936,
+      "lng": 100.3967
+    },
+    "slogan": "Lion City",
+    "bestSeason": "November-February",
+    "description": "Small quiet province with ancient temples along Chao Phraya",
+    "image": "sing-buri.jpg",
+    "population": 20000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "chainat",
+    "nameTh": "ชัยนาท",
+    "nameEn": "Chai Nat",
+    "region": "central",
+    "coordinates": {
+      "lat": 15.1851,
+      "lng": 100.125
+    },
+    "slogan": "Bird Sanctuary",
+    "bestSeason": "November-February",
+    "description": "Chaimat Dam bird sanctuary and rice farming region",
+    "image": "chainat.jpg",
+    "population": 27000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "lop-buri",
+    "nameTh": "ลพบุรี",
+    "nameEn": "Lopburi",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.7995,
+      "lng": 100.6534
+    },
+    "slogan": "Monkey Town",
+    "bestSeason": "November-February",
+    "description": "Ancient Khmer ruins and famous monkey temple",
+    "image": "lopburi.jpg",
+    "population": 58000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "suphan-buri",
+    "nameTh": "สุพรรณบุรี",
+    "nameEn": "Suphan Buri",
+    "region": "central",
+    "coordinates": {
+      "lat": 14.4745,
+      "lng": 100.1177
+    },
+    "slogan": "Golden Province",
+    "bestSeason": "November-February",
+    "description": "Don Chedi Monument and traditional Thai culture",
+    "image": "suphanburi.jpg",
+    "population": 54000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "narathiwat",
+    "nameTh": "นราธิวาส",
+    "nameEn": "Narathiwat",
+    "region": "south",
+    "coordinates": {
+      "lat": 6.4254,
+      "lng": 101.8253
+    },
+    "slogan": "Southern Border",
+    "bestSeason": "February-April",
+    "description": "Beautiful beaches, unique Malay-Thai culture, and historic mosques",
+    "image": "narathiwat.jpg",
+    "population": 51000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "pattani",
+    "nameTh": "ปัตตานี",
+    "nameEn": "Pattani",
+    "region": "south",
+    "coordinates": {
+      "lat": 6.7686,
+      "lng": 101.3254
+    },
+    "slogan": "Malay Heritage",
+    "bestSeason": "February-April",
+    "description": "Rich Malay Islamic heritage and Krue Se Mosque",
+    "image": "pattani.jpg",
+    "population": 85000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "chaiyaphum",
+    "nameTh": "ชัยภูมิ",
+    "nameEn": "Chaiyaphum",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 15.806,
+      "lng": 102.0313
+    },
+    "slogan": "Siam Tulip Province",
+    "bestSeason": "November-February",
+    "description": "Pink Siam Tulip fields at Phu Hin Rong Kla flowers",
+    "image": "chaiyaphum.jpg",
+    "population": 58000,
+    "updatedAt": "2025-11-25"
+  },
+  {
+    "id": "nakhon-phanom",
+    "nameTh": "นครพนม",
+    "nameEn": "Nakhon Phanom",
+    "region": "northeast",
+    "coordinates": {
+      "lat": 17.3917,
+      "lng": 104.7695
+    },
+    "slogan": "Naga Province",
+    "bestSeason": "November-February",
+    "description": "Mekong riverside with Naga fireball phenomenon and That Phanom stupa",
+    "image": "nakhon-phanom.jpg",
+    "population": 51000,
+    "updatedAt": "2025-11-25"
+  }
+]

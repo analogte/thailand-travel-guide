@@ -1,0 +1,3016 @@
+[
+  {
+    "id": "grand-palace",
+    "provinceId": "bangkok",
+    "nameTh": "พระบรมมหาราชวัง",
+    "nameEn": "Grand Palace",
+    "category": [
+      "temple",
+      "historical",
+      "cultural"
+    ],
+    "coordinates": {
+      "lat": 13.75,
+      "lng": 100.4914
+    },
+    "description": "The magnificent Grand Palace has been the official residence of Thai Kings since 1782. Home to the sacred Emerald Buddha (Phra Kaew Morakot), this sprawling complex showcases the pinnacle of Thai architecture and craftsmanship.",
+    "openingHours": "08:30-15:30",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 500
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "grand-palace-1.jpg",
+      "grand-palace-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "wheelchair",
+      "guide",
+      "audio-guide"
+    ],
+    "contact": {
+      "phone": "02-623-5500",
+      "website": "https://www.royalgrandpalace.th",
+      "facebook": "https://facebook.com/grandpalacebkk",
+      "googleMapsUrl": "https://goo.gl/maps/GrandPalaceBKK"
+    },
+    "highlights": [
+      "Emerald Buddha",
+      "Golden Stupas",
+      "Chakri Maha Prasat",
+      "Royal Architecture"
+    ],
+    "bestTimeToVisit": "Early morning (08:30-10:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.8,
+    "dataSource": "TAT,Google Places",
+    "notes": "Strict dress code: no shorts, sleeveless tops, or revealing clothing. Rent appropriate attire at entrance if needed."
+  },
+  {
+    "id": "wat-pho",
+    "provinceId": "bangkok",
+    "nameTh": "วัดโพธิ์",
+    "nameEn": "Wat Pho (Temple of Reclining Buddha)",
+    "category": [
+      "temple",
+      "cultural",
+      "wellness"
+    ],
+    "coordinates": {
+      "lat": 13.7465,
+      "lng": 100.4927
+    },
+    "description": "Home to the famous 46-meter-long Reclining Buddha covered in gold leaf. Wat Pho is also Thailand's first university and the birthplace of traditional Thai massage.",
+    "openingHours": "08:00-18:30",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 200
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "wat-pho-1.jpg",
+      "wat-pho-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "massage-school",
+      "guide",
+      "wheelchair"
+    ],
+    "contact": {
+      "phone": "02-226-0335",
+      "website": "https://www.watpho.com",
+      "facebook": "https://facebook.com/watphobangkok",
+      "googleMapsUrl": "https://goo.gl/maps/WatPho"
+    },
+    "highlights": [
+      "Reclining Buddha",
+      "Chedis",
+      "Thai Massage School",
+      "Traditional Medicine Museum"
+    ],
+    "bestTimeToVisit": "Morning or late afternoon",
+    "averageDuration": "1.5-2 hours",
+    "rating": 4.7,
+    "dataSource": "TAT,TripAdvisor",
+    "notes": "Thai massage school on-site offers authentic traditional massage services"
+  },
+  {
+    "id": "wat-arun",
+    "provinceId": "bangkok",
+    "nameTh": "วัดอรุณราชวรารามราชวรมหาวิหาร",
+    "nameEn": "Wat Arun (Temple of Dawn)",
+    "category": [
+      "temple",
+      "historical",
+      "landmark"
+    ],
+    "coordinates": {
+      "lat": 13.7437,
+      "lng": 100.4887
+    },
+    "description": "Iconic riverside temple known for its stunning Khmer-style central prang (tower) decorated with colorful porcelain. Particularly beautiful at sunset when viewed from across the Chao Phraya River.",
+    "openingHours": "08:00-18:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 100
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "wat-arun-1.jpg",
+      "wat-arun-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "guide",
+      "photo-spots"
+    ],
+    "contact": {
+      "phone": "02-891-2185",
+      "website": "https://www.watarun.net",
+      "facebook": "https://facebook.com/watarunofficial",
+      "googleMapsUrl": "https://goo.gl/maps/WatArun"
+    },
+    "highlights": [
+      "Central Prang",
+      "River Views",
+      "Porcelain Decorations",
+      "Sunset Views"
+    ],
+    "bestTimeToVisit": "Sunset time (17:00-18:00)",
+    "averageDuration": "1 hour",
+    "rating": 4.8,
+    "dataSource": "TAT,Google Places",
+    "notes": "Climb the steep stairs for panoramic river views. Cross-river ferry from Wat Pho pier"
+  },
+  {
+    "id": "chatuchak-market",
+    "provinceId": "bangkok",
+    "nameTh": "ตลาดนัดจตุจักร",
+    "nameEn": "Chatuchak Weekend Market",
+    "category": [
+      "market",
+      "shopping",
+      "food"
+    ],
+    "coordinates": {
+      "lat": 13.7991,
+      "lng": 100.549
+    },
+    "description": "One of the world's largest weekend markets with over 15,000 stalls selling everything from clothing and antiques to plants and pets. A true Bangkok shopping experience.",
+    "openingHours": "09:00-18:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "chatuchak-1.jpg",
+      "chatuchak-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "food-court",
+      "atm",
+      "parking",
+      "information"
+    ],
+    "contact": {
+      "phone": "02-272-4813",
+      "website": "https://www.chatuchakmarket.org",
+      "facebook": "https://facebook.com/chatuchakmarket",
+      "googleMapsUrl": "https://goo.gl/maps/Chatuchak"
+    },
+    "highlights": [
+      "Antiques",
+      "Clothing",
+      "Food",
+      "Art",
+      "Plants",
+      "Handicrafts"
+    ],
+    "bestTimeToVisit": "Early morning (09:00-11:00) to avoid crowds",
+    "averageDuration": "3-4 hours",
+    "rating": 4.6,
+    "dataSource": "Wongnai,Google Places",
+    "notes": "Open Saturday-Sunday only. Bring cash, wear comfortable shoes, stay hydrated"
+  },
+  {
+    "id": "jim-thompson-house",
+    "provinceId": "bangkok",
+    "nameTh": "บ้านจิม ทอมป์สัน",
+    "nameEn": "Jim Thompson House Museum",
+    "category": [
+      "museum",
+      "cultural",
+      "historical"
+    ],
+    "coordinates": {
+      "lat": 13.7466,
+      "lng": 100.5343
+    },
+    "description": "Beautiful traditional Thai teak house museum showcasing Southeast Asian art collection. Former home of American businessman Jim Thompson who helped revive Thai silk industry.",
+    "openingHours": "09:00-18:00",
+    "entranceFee": {
+      "thai": 100,
+      "foreigner": 200
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "jim-thompson-1.jpg",
+      "jim-thompson-2.jpg"
+    ],
+    "facilities": [
+      "guide",
+      "cafe",
+      "gift-shop",
+      "garden"
+    ],
+    "contact": {
+      "phone": "02-216-7368",
+      "website": "https://www.jimthompsonhouse.com",
+      "facebook": "https://facebook.com/jimthompsonhouse",
+      "googleMapsUrl": "https://goo.gl/maps/JimThompson"
+    },
+    "highlights": [
+      "Traditional Thai Architecture",
+      "Art Collection",
+      "Thai Silk",
+      "Tropical Gardens"
+    ],
+    "bestTimeToVisit": "Morning (10:00-12:00)",
+    "averageDuration": "1 hour",
+    "rating": 4.6,
+    "dataSource": "TripAdvisor,TAT",
+    "notes": "Mandatory guided tour included in admission. Air-conditioned cafe on-site"
+  },
+  {
+    "id": "asiatique",
+    "provinceId": "bangkok",
+    "nameTh": "เอเชียทีค เดอะ ริเวอร์ฟร้อนท์",
+    "nameEn": "Asiatique The Riverfront",
+    "category": [
+      "shopping",
+      "nightlife",
+      "entertainment",
+      "food"
+    ],
+    "coordinates": {
+      "lat": 13.7063,
+      "lng": 100.5062
+    },
+    "description": "Riverside night market and entertainment complex with over 1,500 boutiques and 40 restaurants. Features a large Ferris wheel offering panoramic city views.",
+    "openingHours": "16:00-00:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "asiatique-1.jpg",
+      "asiatique-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "restaurants",
+      "parking",
+      "atm",
+      "ferris-wheel"
+    ],
+    "contact": {
+      "phone": "02-108-4488",
+      "website": "https://www.asiatiquethailand.com",
+      "facebook": "https://facebook.com/AsiatiqueBKK",
+      "googleMapsUrl": "https://goo.gl/maps/Asiatique"
+    },
+    "highlights": [
+      "Ferris Wheel",
+      "Riverside Dining",
+      "Shopping",
+      "Night Market",
+      "Cabaret Show"
+    ],
+    "bestTimeToVisit": "Evening (18:00-21:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.5,
+    "dataSource": "Google Places,Wongnai",
+    "notes": "Free shuttle boat from Saphan Taksin BTS station"
+  },
+  {
+    "id": "khao-san-road",
+    "provinceId": "bangkok",
+    "nameTh": "ถนนข้าวสาร",
+    "nameEn": "Khao San Road",
+    "category": [
+      "nightlife",
+      "food",
+      "shopping",
+      "backpacker"
+    ],
+    "coordinates": {
+      "lat": 13.7587,
+      "lng": 100.4976
+    },
+    "description": "Famous backpacker street lined with budget accommodations, bars, street food stalls, and shops. The heart of Bangkok's backpacker scene since the 1980s.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "khaosan-1.jpg",
+      "khaosan-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "bars",
+      "restaurants",
+      "atm",
+      "shops"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": "https://facebook.com/khaosanroad,",
+      "googleMapsUrl": "https://goo.gl/maps/KhaoSan"
+    },
+    "highlights": [
+      "Street Food",
+      "Nightlife",
+      "Budget Shopping",
+      "Bars",
+      "Tattoo Shops"
+    ],
+    "bestTimeToVisit": "Evening-night (18:00-02:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.3,
+    "dataSource": "Google Places,Lonely Planet",
+    "notes": "Very crowded at night, watch belongings. Wide range of street food available"
+  },
+  {
+    "id": "lumpini-park",
+    "provinceId": "bangkok",
+    "nameTh": "สวนลุมพินี",
+    "nameEn": "Lumpini Park",
+    "category": [
+      "park",
+      "nature",
+      "recreation"
+    ],
+    "coordinates": {
+      "lat": 13.7307,
+      "lng": 100.5418
+    },
+    "description": "Bangkok's largest public park offering a green oasis in the heart of the city. Popular for jogging, tai chi, paddle boating, and monitor lizard spotting.",
+    "openingHours": "04:30-21:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "lumpini-1.jpg",
+      "lumpini-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "playground",
+      "exercise-equipment",
+      "paddle-boats"
+    ],
+    "contact": {
+      "phone": "02-252-7006",
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/LumpiniPark"
+    },
+    "highlights": [
+      "Monitor Lizards",
+      "Lake",
+      "Gardens",
+      "Outdoor Gym",
+      "Jogging Track"
+    ],
+    "bestTimeToVisit": "Early morning (05:00-07:00) or evening (17:00-19:00)",
+    "averageDuration": "1-2 hours",
+    "rating": 4.5,
+    "dataSource": "Google Places,TAT",
+    "notes": "Free outdoor aerobics classes at 18:00. Watch for monitor lizards near the lake"
+  },
+  {
+    "id": "icon-siam",
+    "provinceId": "bangkok",
+    "nameTh": "ไอคอนสยาม",
+    "nameEn": "ICONSIAM",
+    "category": [
+      "shopping",
+      "food",
+      "entertainment",
+      "luxury"
+    ],
+    "coordinates": {
+      "lat": 13.7268,
+      "lng": 100.5105
+    },
+    "description": "Mega luxury shopping complex on the Chao Phraya River featuring high-end brands, SookSiam indoor floating market, and stunning river views.",
+    "openingHours": "10:00-22:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "iconsiam-1.jpg",
+      "iconsiam-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "restaurants",
+      "cinema",
+      "river-views",
+      "wheelchair"
+    ],
+    "contact": {
+      "phone": "02-495-7000",
+      "website": "https://www.iconsiam.com",
+      "facebook": "https://facebook.com/ICONSIAM",
+      "googleMapsUrl": "https://goo.gl/maps/ICONSIAM"
+    },
+    "highlights": [
+      "Luxury Shopping",
+      "Indoor Floating Market",
+      "River Views",
+      "Apple Store",
+      "Takashimaya"
+    ],
+    "bestTimeToVisit": "Weekday afternoons to avoid crowds",
+    "averageDuration": "2-4 hours",
+    "rating": 4.7,
+    "dataSource": "Google Places",
+    "notes": "Free shuttle boat from Saphan Taksin BTS. SookSiam showcases Thai regional culture"
+  },
+  {
+    "id": "bangkok-art-culture-centre",
+    "provinceId": "bangkok",
+    "nameTh": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
+    "nameEn": "Bangkok Art and Culture Centre (BACC)",
+    "category": [
+      "museum",
+      "art",
+      "cultural"
+    ],
+    "coordinates": {
+      "lat": 13.7466,
+      "lng": 100.5299
+    },
+    "description": "Contemporary art museum featuring rotating exhibitions of Thai and international artists. Free admission with multiple floors of galleries.",
+    "openingHours": "10:00-21:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "bacc-1.jpg",
+      "bacc-2.jpg"
+    ],
+    "facilities": [
+      "cafe",
+      "gift-shop",
+      "restroom",
+      "library",
+      "wheelchair"
+    ],
+    "contact": {
+      "phone": "02-214-6630",
+      "website": "https://www.bacc.or.th",
+      "facebook": "https://facebook.com/baccpage",
+      "googleMapsUrl": "https://goo.gl/maps/BACC"
+    },
+    "highlights": [
+      "Contemporary Art",
+      "Exhibitions",
+      "Cafe",
+      "Art Library",
+      "Gift Shop"
+    ],
+    "bestTimeToVisit": "Weekday afternoons",
+    "averageDuration": "1.5-2 hours",
+    "rating": 4.4,
+    "dataSource": "Google Places,TAT",
+    "notes": "Free admission. Located at National Stadium BTS. Cafe on top floor"
+  },
+  {
+    "id": "erawan-shrine",
+    "provinceId": "bangkok",
+    "nameTh": "ศาลพระพรหม",
+    "nameEn": "Erawan Shrine",
+    "category": [
+      "shrine",
+      "cultural",
+      "landmark"
+    ],
+    "coordinates": {
+      "lat": 13.7443,
+      "lng": 100.5404
+    },
+    "description": "Famous Hindu shrine featuring a four-faced Brahma statue. Busy worship site attracting locals and tourists seeking blessings and good fortune.",
+    "openingHours": "06:00-23:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "erawan-1.jpg",
+      "erawan-2.jpg"
+    ],
+    "facilities": [
+      "traditional-dancers",
+      "offerings"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/ErawanShrine"
+    },
+    "highlights": [
+      "Brahma Statue",
+      "Traditional Dancers",
+      "Offerings",
+      "People Watching"
+    ],
+    "bestTimeToVisit": "Morning (07:00-09:00) or evening",
+    "averageDuration": "30 minutes",
+    "rating": 4.5,
+    "dataSource": "Google Places",
+    "notes": "Traditional Thai dancers perform when devotees fulfill vows. Located at busy Ratchaprasong intersection"
+  },
+  {
+    "id": "yaowarat-chinatown",
+    "provinceId": "bangkok",
+    "nameTh": "เยาวราช",
+    "nameEn": "Yaowarat (Chinatown)",
+    "category": [
+      "food",
+      "shopping",
+      "cultural",
+      "historical"
+    ],
+    "coordinates": {
+      "lat": 13.7386,
+      "lng": 100.5085
+    },
+    "description": "Bangkok's vibrant Chinatown famous for incredible street food, gold shops, temples, and traditional Chinese medicine stores. Comes alive at night with food stalls.",
+    "openingHours": "All day (best evening)",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "yaowarat-1.jpg",
+      "yaowarat-2.jpg"
+    ],
+    "facilities": [
+      "street-food",
+      "restroom",
+      "shops",
+      "temples"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": "https://facebook.com/yaowarat,",
+      "googleMapsUrl": "https://goo.gl/maps/Yaowarat"
+    },
+    "highlights": [
+      "Street Food",
+      "Gold Shops",
+      "Wat Traimit",
+      "Chinese Temples",
+      "Night Market"
+    ],
+    "bestTimeToVisit": "Evening-night (18:00-23:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.6,
+    "dataSource": "Wongnai,Michelin Guide",
+    "notes": "Best street food in Bangkok. Try at T&K Seafood, Nai Mong Hoi Tod. Very crowded weekends"
+  },
+  {
+    "id": "jodd-fairs-rama9",
+    "provinceId": "bangkok",
+    "nameTh": "จ๊อดแฟร์ส พระราม9",
+    "nameEn": "JODD FAIRS",
+    "category": [
+      "market",
+      "food",
+      "nightlife",
+      "shopping"
+    ],
+    "coordinates": {
+      "lat": 13.7472,
+      "lng": 100.5646
+    },
+    "description": "Modern night market featuring diverse street food, shopping, and entertainment. Instagram-worthy atmosphere with colorful lights and photo spots.",
+    "openingHours": "16:00-00:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "joddfairs-1.jpg",
+      "joddfairs-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "atm",
+      "photo-spots",
+      "live-music"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": "https://facebook.com/joddfairs,",
+      "googleMapsUrl": "https://goo.gl/maps/JoddFairs"
+    },
+    "highlights": [
+      "Street Food",
+      "Shopping",
+      "Instagram Spots",
+      "Live Music",
+      "Night Market"
+    ],
+    "bestTimeToVisit": "Evening (18:00-22:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.5,
+    "dataSource": "Google Places,Wongnai",
+    "notes": "Multiple locations. Also at DanNeramit. Modern alternative to traditional night markets"
+  },
+  {
+    "id": "sea-life-bangkok",
+    "provinceId": "bangkok",
+    "nameTh": "ซีไลฟ์ แบงค็อก โอเชี่ยนเวิลด์",
+    "nameEn": "SEA LIFE Bangkok Ocean World",
+    "category": [
+      "aquarium",
+      "family",
+      "entertainment"
+    ],
+    "coordinates": {
+      "lat": 13.7464,
+      "lng": 100.5393
+    },
+    "description": "Southeast Asia's largest aquarium located beneath Siam Paragon. Features ocean tunnel, shark feeding shows, and diverse marine life.",
+    "openingHours": "10:00-20:00",
+    "entranceFee": {
+      "thai": 990,
+      "foreigner": 990
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "sealife-1.jpg",
+      "sealife-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "cafe",
+      "gift-shop",
+      "wheelchair",
+      "photo-ops"
+    ],
+    "contact": {
+      "phone": "02-687-2000",
+      "website": "https://www.sealifebangkok.com",
+      "facebook": "https://facebook.com/SeaLifeBangkok",
+      "googleMapsUrl": "https://goo.gl/maps/SeaLife"
+    },
+    "highlights": [
+      "Ocean Tunnel",
+      "Shark Feeding",
+      "Penguins",
+      "Interactive Exhibits",
+      "Glass Bottom Boat"
+    ],
+    "bestTimeToVisit": "Weekday mornings to avoid crowds",
+    "averageDuration": "2-3 hours",
+    "rating": 4.4,
+    "dataSource": "TripAdvisor,Google Places",
+    "notes": "Book online for discounts. Combined tickets with Madame Tussauds available"
+  },
+  {
+    "id": "terminal21",
+    "provinceId": "bangkok",
+    "nameTh": "เทอร์มินอล 21",
+    "nameEn": "Terminal 21",
+    "category": [
+      "shopping",
+      "food",
+      "entertainment"
+    ],
+    "coordinates": {
+      "lat": 13.7379,
+      "lng": 100.5594
+    },
+    "description": "Themed shopping mall with each floor representing a different city (Tokyo, London, Istanbul, etc.). Popular for mid-range shopping and diverse food court.",
+    "openingHours": "10:00-22:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "terminal21-1.jpg",
+      "terminal21-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "food-court",
+      "parking",
+      "cinema",
+      "atm"
+    ],
+    "contact": {
+      "phone": "02-108-0888",
+      "website": "https://www.terminal21.co.th",
+      "facebook": "https://facebook.com/Terminal21",
+      "googleMapsUrl": "https://goo.gl/maps/Terminal21"
+    },
+    "highlights": [
+      "City Themes",
+      "Food Court",
+      "Shopping",
+      "Cinema",
+      "Photo Spots"
+    ],
+    "bestTimeToVisit": "Weekday afternoons",
+    "averageDuration": "2-3 hours",
+    "rating": 4.5,
+    "dataSource": "Google Places",
+    "notes": "Famous Pier 21 food court on 5th floor with excellent budget Thai food. Connected to Asok BTS"
+  },
+  {
+    "id": "mahanakhon-skywalk",
+    "provinceId": "bangkok",
+    "nameTh": "มหานคร สกายวอล์ค",
+    "nameEn": "Mahanakhon SkyWalk",
+    "category": [
+      "observation-deck",
+      "landmark",
+      "viewpoint"
+    ],
+    "coordinates": {
+      "lat": 13.7243,
+      "lng": 100.5268
+    },
+    "description": "Thailand's highest observation deck at 314 meters on top of King Power Mahanakhon building. Features thrilling glass floor and 360-degree city views.",
+    "openingHours": "10:00-00:00",
+    "entranceFee": {
+      "thai": 880,
+      "foreigner": 880
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "mahanakhon-1.jpg",
+      "mahanakhon-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "cafe",
+      "bar",
+      "gift-shop",
+      "glass-floor"
+    ],
+    "contact": {
+      "phone": "02-677-8721",
+      "website": "https://www.kingpowermahanakhon.co.th",
+      "facebook": "https://facebook.com/Mahanakhon",
+      "googleMapsUrl": "https://goo.gl/maps/Mahanakhon"
+    },
+    "highlights": [
+      "Glass Floor",
+      "360 Views",
+      "Rooftop Bar",
+      "Sunset Views",
+      "City Skyline"
+    ],
+    "bestTimeToVisit": "Sunset time (17:30-19:00)",
+    "averageDuration": "1-1.5 hours",
+    "rating": 4.7,
+    "dataSource": "TripAdvisor,Google Places",
+    "notes": "Book sunset slots early. Mahanakhon SkyBar on 78th floor. BTS Chong Nonsi"
+  },
+  {
+    "id": "rot-fai-market",
+    "provinceId": "bangkok",
+    "nameTh": "ตลาดนัดรถไฟ ศรีนครินทร์",
+    "nameEn": "Rod Fai Night Market Srinakarin",
+    "category": [
+      "market",
+      "food",
+      "vintage",
+      "shopping"
+    ],
+    "coordinates": {
+      "lat": 13.6872,
+      "lng": 100.6429
+    },
+    "description": "Vintage-themed night market featuring retro items, antiques, clothing, and excellent street food. Known for nostalgic Thai railway theme and collectibles.",
+    "openingHours": "17:00-01:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "rotfai-1.jpg",
+      "rotfai-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "food-stalls",
+      "vintage-shops"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": "https://facebook.com/rotfaimarket,",
+      "googleMapsUrl": "https://goo.gl/maps/RotFai"
+    },
+    "highlights": [
+      "Vintage Items",
+      "Antiques",
+      "Street Food",
+      "Retro Theme",
+      "Photo Spots"
+    ],
+    "bestTimeToVisit": "Evening (19:00-23:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.4,
+    "dataSource": "Wongnai,Google Places",
+    "notes": "Open Thursday-Sunday. Free parking. Great for vintage fashion and collectibles"
+  },
+  {
+    "id": "siam-niramit",
+    "provinceId": "bangkok",
+    "nameTh": "สยามนิรมิต",
+    "nameEn": "Siam Niramit",
+    "category": [
+      "show",
+      "cultural",
+      "entertainment"
+    ],
+    "coordinates": {
+      "lat": 13.7028,
+      "lng": 100.6103
+    },
+    "description": "Spectacular cultural show featuring Thai history, traditions, and festivals. Includes traditional village, dinner buffet, and world-class stage production.",
+    "openingHours": "18:00-21:30",
+    "entranceFee": {
+      "thai": 1500,
+      "foreigner": 1500
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "siamniramit-1.jpg",
+      "siamniramit-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restaurant",
+      "traditional-village",
+      "gift-shop",
+      "wheelchair"
+    ],
+    "contact": {
+      "phone": "02-649-9222",
+      "website": "https://www.siamniramit.com",
+      "facebook": "https://facebook.com/siamniramit",
+      "googleMapsUrl": "https://goo.gl/maps/SiamNiramit"
+    },
+    "highlights": [
+      "Cultural Show",
+      "Traditional Village",
+      "Thai Buffet",
+      "Stage Production",
+      "Costumes"
+    ],
+    "bestTimeToVisit": "Show starts 20:00",
+    "averageDuration": "3 hours (with dinner)",
+    "rating": 4.6,
+    "dataSource": "TripAdvisor,TAT",
+    "notes": "Book in advance. Optional Thai buffet dinner from 18:00. Show at 20:00. Free round-trip transfer from hotels"
+  },
+  {
+    "id": "bang-krachao",
+    "provinceId": "bangkok",
+    "nameTh": "บางกระเจ้า",
+    "nameEn": "Bang Krachao (Bangkok's Green Lung)",
+    "category": [
+      "nature",
+      "cycling",
+      "park",
+      "eco-tourism"
+    ],
+    "coordinates": {
+      "lat": 13.6833,
+      "lng": 100.5833
+    },
+    "description": "A large green area in the bend of Chao Phraya River offering cycling paths, floating markets, and Sri Nakhon Khuean Khan Park. Escape from city pollution.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "bangkrachao-1.jpg",
+      "bangkrachao-2.jpg"
+    ],
+    "facilities": [
+      "bicycle-rental",
+      "floating-market",
+      "park",
+      "nature-trails"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/BangKrachao"
+    },
+    "highlights": [
+      "Cycling",
+      "Nature",
+      "Floating Market",
+      "Green Park",
+      "Bird Watching"
+    ],
+    "bestTimeToVisit": "Morning (07:00-10:00) or late afternoon",
+    "averageDuration": "3-4 hours",
+    "rating": 4.5,
+    "dataSource": "TAT,Google Places",
+    "notes": "Access via cross-river ferry from Klong Toei or Wat Klong Toei Nok. Rent bikes at pier. Visit weekend floating market"
+  },
+  {
+    "id": "id",
+    "provinceId": "province_id",
+    "nameTh": "name_th",
+    "nameEn": "name_en",
+    "category": [
+      "category"
+    ],
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "description": "description",
+    "openingHours": "opening_hours",
+    "entranceFee": {
+      "thai": null,
+      "foreigner": null
+    },
+    "isOpen": false,
+    "status": "status",
+    "lastVerified": "last_verified",
+    "images": [
+      "images"
+    ],
+    "facilities": [
+      "facilities"
+    ],
+    "contact": {
+      "phone": "phone",
+      "website": "website",
+      "facebook": "facebook",
+      "googleMapsUrl": "google_maps_url"
+    },
+    "highlights": [
+      "highlights"
+    ],
+    "bestTimeToVisit": "best_time_to_visit",
+    "averageDuration": "average_duration",
+    "rating": null,
+    "dataSource": "data_source",
+    "notes": "notes"
+  },
+  {
+    "id": "doi-suthep",
+    "provinceId": "chiang-mai",
+    "nameTh": "วัดพระธาตุดอยสุเทพ",
+    "nameEn": "Wat Phra That Doi Suthep",
+    "category": [
+      "temple",
+      "viewpoint",
+      "cultural"
+    ],
+    "coordinates": {
+      "lat": 18.8047,
+      "lng": 98.9217
+    },
+    "description": "Chiang Mai's most iconic temple perched atop Doi Suthep mountain, offering breathtaking panoramic city views and housing a sacred Buddha relic. Visitors can climb 309 steps or take a cable car.",
+    "openingHours": "06:00-18:00",
+    "entranceFee": {
+      "thai": 30,
+      "foreigner": 50
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "doi-suthep-1.jpg",
+      "doi-suthep-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "cable-car",
+      "viewpoint",
+      "guide"
+    ],
+    "contact": {
+      "phone": "053-295-002",
+      "website": "https://www.doisuthep.com",
+      "facebook": "https://facebook.com/doisutheptemple",
+      "googleMapsUrl": "https://goo.gl/maps/DoiSuthep"
+    },
+    "highlights": [
+      "Sacred Relic",
+      "309 Steps",
+      "Panoramic Views",
+      "Golden Chedi"
+    ],
+    "bestTimeToVisit": "Early morning (06:00-09:00) or late afternoon",
+    "averageDuration": "2-3 hours",
+    "rating": 4.8,
+    "dataSource": "TAT,Google Places",
+    "notes": "Dress code: shoulders and knees covered. Cable car available for 50 THB."
+  },
+  {
+    "id": "doi-inthanon",
+    "provinceId": "chiang-mai",
+    "nameTh": "อุทยานแห่งชาติดอยอินทนนท์",
+    "nameEn": "Doi Inthanon National Park",
+    "category": [
+      "nature",
+      "mountain",
+      "waterfall"
+    ],
+    "coordinates": {
+      "lat": 18.5892,
+      "lng": 98.4873
+    },
+    "description": "Thailand's highest peak (2,565m) featuring the Royal Twin Pagodas, stunning waterfalls including Wachirathan, hiking trails like Kew Mae Pan, and cool climate year-round.",
+    "openingHours": "06:00-18:30",
+    "entranceFee": {
+      "thai": 300,
+      "foreigner": 300
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "doi-inthanon-1.jpg",
+      "doi-inthanon-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "hiking-trails",
+      "viewpoint",
+      "cafe"
+    ],
+    "contact": {
+      "phone": "053-286-729",
+      "website": "https://www.dnp.go.th/parkreserve/asp/style1/default.asp?npid=36",
+      "facebook": "https://facebook.com/doiinthanonnationalpark",
+      "googleMapsUrl": "https://goo.gl/maps/DoiInthanon"
+    },
+    "highlights": [
+      "Highest Peak",
+      "Twin Pagodas",
+      "Waterfalls",
+      "Kew Mae Pan Trail",
+      "Cool Climate"
+    ],
+    "bestTimeToVisit": "November-February (cool season)",
+    "averageDuration": "Full day (6-8 hours)",
+    "rating": 4.7,
+    "dataSource": "TAT,National Park",
+    "notes": "Entrance fee 300 THB for foreigners. Bring warm clothing as it can be cold at the peak."
+  },
+  {
+    "id": "elephant-nature-park",
+    "provinceId": "chiang-mai",
+    "nameTh": "อุทยานธรรมชาติช้าง",
+    "nameEn": "Elephant Nature Park",
+    "category": [
+      "sanctuary",
+      "nature",
+      "ethical-tourism"
+    ],
+    "coordinates": {
+      "lat": 19.0617,
+      "lng": 98.8642
+    },
+    "description": "Ethical elephant sanctuary focused on rescue and rehabilitation. Visitors can observe elephants in their natural environment, feed them, and learn about conservation without riding or tricks.",
+    "openingHours": "09:00-16:00",
+    "entranceFee": {
+      "thai": 2500,
+      "foreigner": 2500
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "elephant-park-1.jpg",
+      "elephant-park-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "cafe",
+      "guide",
+      "vegetarian-lunch"
+    ],
+    "contact": {
+      "phone": "053-272-855",
+      "website": "https://www.elephantnaturepark.org",
+      "facebook": "https://facebook.com/ElephantNaturePark",
+      "googleMapsUrl": "https://goo.gl/maps/ENP"
+    },
+    "highlights": [
+      "Elephant Encounters",
+      "No Riding",
+      "Rescue Stories",
+      "Mud Bath",
+      "River Time"
+    ],
+    "bestTimeToVisit": "Year-round | Book in advance",
+    "averageDuration": "Full day",
+    "rating": 4.9,
+    "dataSource": "TripAdvisor,Ethical Tourism",
+    "notes": "Booking required in advance. Price includes transportation from Chiang Mai, lunch, guide."
+  },
+  {
+    "id": "wat-chedi-luang",
+    "provinceId": "chiang-mai",
+    "nameTh": "วัดเจดีย์หลวง",
+    "nameEn": "Wat Chedi Luang",
+    "category": [
+      "temple",
+      "historical",
+      "cultural"
+    ],
+    "coordinates": {
+      "lat": 18.787,
+      "lng": 98.9876
+    },
+    "description": "14th-century temple in the Old City featuring an impressive partially-ruined chedi (stupa) and excellent example of Lanna architecture. Once housed the Emerald Buddha.",
+    "openingHours": "06:00-18:00",
+    "entranceFee": {
+      "thai": 40,
+      "foreigner": 40
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "chedi-luang-1.jpg",
+      "chedi-luang-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "guide",
+      "monk-chat"
+    ],
+    "contact": {
+      "phone": "053-814-689",
+      "website": "https://www.watphrasingh.org",
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/WatChediLuang"
+    },
+    "highlights": [
+      "Lanna Architecture",
+      "Ruined Chedi",
+      "Monk Chat",
+      "City Pillar"
+    ],
+    "bestTimeToVisit": "Morning (07:00-10:00)",
+    "averageDuration": "1 hour",
+    "rating": 4.6,
+    "dataSource": "TAT,Google Places",
+    "notes": "Monk Chat available daily 09:00-18:00 to learn about Buddhism and Thai culture."
+  },
+  {
+    "id": "sunday-market",
+    "provinceId": "chiang-mai",
+    "nameTh": "ตลาดถนนคนเดินวันอาทิตย์",
+    "nameEn": "Sunday Night Market (Walking Street)",
+    "category": [
+      "market",
+      "shopping",
+      "food",
+      "culture"
+    ],
+    "coordinates": {
+      "lat": 18.788,
+      "lng": 98.986
+    },
+    "description": "Famous weekly market stretching along Rachadamnoen Road in the Old City. Paradise for shoppers and food lovers with handmade crafts, textiles, souvenirs, and amazing street food.",
+    "openingHours": "16:00-23:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "sunday-market-1.jpg",
+      "sunday-market-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "atm",
+      "food-stalls",
+      "shopping"
+    ],
+    "contact": {
+      "phone": "053-248-604",
+      "website": null,
+      "facebook": "https://facebook.com/chiangmaisundaymarket",
+      "googleMapsUrl": "https://goo.gl/maps/SundayMarket"
+    },
+    "highlights": [
+      "Handicrafts",
+      "Street Food",
+      "Live Music",
+      "Local Art",
+      "Souvenirs"
+    ],
+    "bestTimeToVisit": "Sunday evenings (17:00-21:00)",
+    "averageDuration": "3-4 hours",
+    "rating": 4.7,
+    "dataSource": "TAT,Lonely Planet",
+    "notes": "Open Sunday only. Bring cash, wear comfortable shoes. Very crowded but amazing atmosphere."
+  },
+  {
+    "id": "night-bazaar",
+    "provinceId": "chiang-mai",
+    "nameTh": "ไนท์บาซาร์เชียงใหม่",
+    "nameEn": "Chiang Mai Night Bazaar",
+    "category": [
+      "market",
+      "shopping",
+      "food",
+      "nightlife"
+    ],
+    "coordinates": {
+      "lat": 18.7871,
+      "lng": 99.0001
+    },
+    "description": "Iconic nightly market along Chang Klan Road featuring hundreds of stalls selling crafts, clothing, jewelry, and delicious local dishes like Khao Soi. Entertainment and massage parlors nearby.",
+    "openingHours": "18:00-23:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "night-bazaar-1.jpg",
+      "night-bazaar-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "atm",
+      "food-court",
+      "massage"
+    ],
+    "contact": {
+      "phone": "053-281-464",
+      "website": "https://www.chiangmainightbazaar.com",
+      "facebook": "https://facebook.com/chiangmainightbazaar",
+      "googleMapsUrl": "https://goo.gl/maps/NightBazaar"
+    },
+    "highlights": [
+      "Shopping",
+      "Street Food",
+      "Handicrafts",
+      "Souvenirs",
+      "Massage"
+    ],
+    "bestTimeToVisit": "Every evening (19:00-22:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.4,
+    "dataSource": "TAT,Google Places",
+    "notes": "Open daily. Great for souvenirs and local food. Bargaining expected."
+  },
+  {
+    "id": "grand-canyon",
+    "provinceId": "chiang-mai",
+    "nameTh": "แกรนด์แคนยอนเชียงใหม่",
+    "nameEn": "Grand Canyon Chiang Mai",
+    "category": [
+      "waterpark",
+      "adventure",
+      "swimming"
+    ],
+    "coordinates": {
+      "lat": 18.7344,
+      "lng": 98.9144
+    },
+    "description": "Former limestone quarry transformed into adventure water park. Offers swimming, cliff jumping (5-10m), zip-lining, kayaking, and inflatable obstacle course.",
+    "openingHours": "10:00-19:00",
+    "entranceFee": {
+      "thai": 50,
+      "foreigner": 50
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "canyon-1.jpg",
+      "canyon-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "cafe",
+      "life-jackets",
+      "lockers"
+    ],
+    "contact": {
+      "phone": "080-671-1198",
+      "website": "https://www.canyonchiangmai.com",
+      "facebook": "https://facebook.com/grandcanyonwaterparkchiangmai",
+      "googleMapsUrl": "https://goo.gl/maps/GrandCanyon"
+    },
+    "highlights": [
+      "Cliff Jumping",
+      "Swimming",
+      "Zip-line",
+      "Kayaking",
+      "Inflatables"
+    ],
+    "bestTimeToVisit": "Afternoon (14:00-17:00)",
+    "averageDuration": "3-4 hours",
+    "rating": 4.5,
+    "dataSource": "TripAdvisor,Google Places",
+    "notes": "Life jackets mandatory and included. Food and drinks available. Popular with young travelers."
+  },
+  {
+    "id": "cooking-class",
+    "provinceId": "chiang-mai",
+    "nameTh": "โรงเรียนสอนทำอาหาร",
+    "nameEn": "Thai Farm Cooking School",
+    "category": [
+      "cooking",
+      "cultural",
+      "food",
+      "experience"
+    ],
+    "coordinates": {
+      "lat": 18.82,
+      "lng": 98.95
+    },
+    "description": "Highly-rated cooking school offering hands-on classes to learn authentic Thai cuisine. Includes market visit, farm tour, and cooking 5-7 dishes to take home the recipes.",
+    "openingHours": "08:30-14:30",
+    "entranceFee": {
+      "thai": 1000,
+      "foreigner": 1000
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "cooking-class-1.jpg",
+      "cooking-class-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "cooking-stations",
+      "ingredients",
+      "recipe-book"
+    ],
+    "contact": {
+      "phone": "081-388-3939",
+      "website": "https://www.thaifarmcooking.net",
+      "facebook": "https://facebook.com/thaifarmcooking",
+      "googleMapsUrl": "https://goo.gl/maps/ThaiCooking"
+    },
+    "highlights": [
+      "Market Visit",
+      "Organic Farm",
+      "Hands-on Cooking",
+      "Recipe Book",
+      "Lunch Included"
+    ],
+    "bestTimeToVisit": "Morning or afternoon classes",
+    "averageDuration": "Half day (5-6 hours)",
+    "rating": 4.9,
+    "dataSource": "TripAdvisor,Google Reviews",
+    "notes": "Booking required. Price includes transport, ingredients, recipes. Vegetarian options available."
+  },
+  {
+    "id": "wat-phra-singh",
+    "provinceId": "chiang-mai",
+    "nameTh": "วัดพระสิงห์",
+    "nameEn": "Wat Phra Singh",
+    "category": [
+      "temple",
+      "cultural",
+      "historical"
+    ],
+    "coordinates": {
+      "lat": 18.7878,
+      "lng": 98.9836
+    },
+    "description": "One of Chiang Mai's most venerated temples featuring classic Lanna architecture and housing the revered Phra Singh Buddha statue. Beautiful murals and intricate wood carvings.",
+    "openingHours": "06:00-18:00",
+    "entranceFee": {
+      "thai": 40,
+      "foreigner": 40
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "phra-singh-1.jpg",
+      "phra-singh-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "guide",
+      "monk-chat"
+    ],
+    "contact": {
+      "phone": "053-814-689",
+      "website": "https://www.watphrasingh.org",
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/WatPhraSingh"
+    },
+    "highlights": [
+      "Phra Singh Buddha",
+      "Lanna Architecture",
+      "Murals",
+      "Golden Chedi"
+    ],
+    "bestTimeToVisit": "Morning (07:00-10:00)",
+    "averageDuration": "1 hour",
+    "rating": 4.6,
+    "dataSource": "TAT,Google Places",
+    "notes": "Active Buddhist temple. Respectful dress required."
+  },
+  {
+    "id": "nimman",
+    "provinceId": "chiang-mai",
+    "nameTh": "นิมมานเหมินท์",
+    "nameEn": "Nimman Neighborhood (Nimmanhaemin Road)",
+    "category": [
+      "shopping",
+      "cafe",
+      "nightlife",
+      "trendy"
+    ],
+    "coordinates": {
+      "lat": 18.7965,
+      "lng": 98.9684
+    },
+    "description": "Hip and trendy area popular with digital nomads, students, and tourists. Features cool cafes, boutique shops, art galleries, coworking spaces, and vibrant nightlife.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "nimman-1.jpg",
+      "nimman-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "cafes",
+      "restaurants",
+      "shops",
+      "coworking"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "https://www.maya-chiangmai.com",
+      "facebook": "https://facebook.com/nimmanarea",
+      "googleMapsUrl": "https://goo.gl/maps/Nimman"
+    },
+    "highlights": [
+      "Trendy Cafes",
+      "Shopping",
+      "Digital Nomad Hub",
+      "Art Galleries",
+      "Nightlife"
+    ],
+    "bestTimeToVisit": "Afternoon-evening (15:00-22:00)",
+    "averageDuration": "3-4 hours",
+    "rating": 4.5,
+    "dataSource": "Lonely Planet,Google Places",
+    "notes": "Popular area for Instagram-worthy cafes. MAYA Lifestyle Shopping Center is the main mall."
+  },
+  {
+    "id": "monks-trail",
+    "provinceId": "chiang-mai",
+    "nameTh": "เส้นทางพระ",
+    "nameEn": "Monk's Trail to Wat Pha Lat",
+    "category": [
+      "hiking",
+      "temple",
+      "nature",
+      "viewpoint"
+    ],
+    "coordinates": {
+      "lat": 18.801,
+      "lng": 98.918
+    },
+    "description": "Serene jungle hiking trail (2-3km) leading to the hidden temple of Wat Pha Lat. Continues up to Doi Suthep. Beautiful forest setting with streams and statues along the way.",
+    "openingHours": "Dawn-dusk",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "monks-trail-1.jpg",
+      "monks-trail-2.jpg"
+    ],
+    "facilities": [
+      "trail",
+      "temple",
+      "viewpoint",
+      "nature"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": "https://facebook.com/watphalat",
+      "googleMapsUrl": "https://goo.gl/maps/MonksTrail"
+    },
+    "highlights": [
+      "Jungle Hike",
+      "Hidden Temple",
+      "Peaceful",
+      "Photo Spots",
+      "Continue to Doi Suthep"
+    ],
+    "bestTimeToVisit": "Early morning (06:00-09:00) cooler",
+    "averageDuration": "2-3 hours",
+    "rating": 4.7,
+    "dataSource": "TripAdvisor,Hiking Forums",
+    "notes": "Free entry. Wear proper hiking shoes. From Wat Pha  Lat, can continue 2.5km up to Doi Suthep."
+  },
+  {
+    "id": "warorot-market",
+    "provinceId": "chiang-mai",
+    "nameTh": "ตลาดวโรรส",
+    "nameEn": "Warorot Market (Kad Luang)",
+    "category": [
+      "market",
+      "food",
+      "local",
+      "shopping"
+    ],
+    "coordinates": {
+      "lat": 18.79,
+      "lng": 99.0011
+    },
+    "description": "Authentic local market providing a true taste of Northern Thai life. Wide variety of fresh produce, flowers, Northern Thai snacks, and handicrafts. Less touristy than night markets.",
+    "openingHours": "06:00-18:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "warorot-1.jpg",
+      "warorot-2.jpg"
+    ],
+    "facilities": [
+      "restroom",
+      "parking",
+      "food-stalls",
+      "atm"
+    ],
+    "contact": {
+      "phone": "053-234-156",
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/Warorot"
+    },
+    "highlights": [
+      "Local Life",
+      "Fresh Produce",
+      "Northern Snacks",
+      "Flowers",
+      "Cheap Eats"
+    ],
+    "bestTimeToVisit": "Morning (07:00-11:00) freshest produce",
+    "averageDuration": "2-3 hours",
+    "rating": 4.4,
+    "dataSource": "Lonely Planet,Local Guides",
+    "notes": "Open daily. Great for authentic local food and shopping. Much cheaper than tourist markets."
+  },
+  {
+    "id": "ploen-ruedee",
+    "provinceId": "chiang-mai",
+    "nameTh": "ตลาดนัดเปลื้องเรือดี",
+    "nameEn": "Ploen Ruedee Night Market",
+    "category": [
+      "market",
+      "food",
+      "entertainment",
+      "nightlife"
+    ],
+    "coordinates": {
+      "lat": 18.815,
+      "lng": 98.995
+    },
+    "description": "Lively night market with great atmosphere, diverse street food, shopping, and entertainment including live dance shows. Popular with locals and tourists.",
+    "openingHours": "17:00-00:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "ploen-1.jpg",
+      "ploen-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "food-stalls",
+      "live-music",
+      "seating"
+    ],
+    "contact": {
+      "phone": "081-234-5678",
+      "website": null,
+      "facebook": "https://facebook.com/ploenruedee",
+      "googleMapsUrl": "https://goo.gl/maps/PloenRuedee"
+    },
+    "highlights": [
+      "Street Food",
+      "Shopping",
+      "Live Shows",
+      "Atmosphere",
+      "Beer Garden"
+    ],
+    "bestTimeToVisit": "Evening (18:00-22:00)",
+    "averageDuration": "2-3 hours",
+    "rating": 4.5,
+    "dataSource": "Google Places,Foodies",
+    "notes": "Open Tuesday-Sunday. Great food variety. Live entertainment on weekends."
+  },
+  {
+    "id": "wat-chiang-man",
+    "provinceId": "chiang-mai",
+    "nameTh": "วัดเชียงมั่น",
+    "nameEn": "Wat Chiang Man",
+    "category": [
+      "temple",
+      "historical",
+      "cultural"
+    ],
+    "coordinates": {
+      "lat": 18.791,
+      "lng": 98.9875
+    },
+    "description": "Chiang Mai's oldest temple founded in 1297. Houses important Buddha images including Phra Sila and crystal Buddha Sae Tang Khamani. Beautiful elephant-supported chedi.",
+    "openingHours": "06:00-17:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 20
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "chiang-man-1.jpg",
+      "chiang-man-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "guide"
+    ],
+    "contact": {
+      "phone": "053-210-417",
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/WatChiangMan"
+    },
+    "highlights": [
+      "Oldest Temple",
+      "Crystal Buddha",
+      "Elephant Chedi",
+      "Ancient Architecture"
+    ],
+    "bestTimeToVisit": "Morning (08:00-11:00)",
+    "averageDuration": "45 mins-1 hour",
+    "rating": 4.5,
+    "dataSource": "TAT,Historical Sites",
+    "notes": "Free for Thais, 20 THB for foreigners. Quieter than other major temples."
+  },
+  {
+    "id": "zipline-adventure",
+    "provinceId": "chiang-mai",
+    "nameTh": "ล่องฟ้า",
+    "nameEn": "Flight of the Gibbon Zipline",
+    "category": [
+      "adventure",
+      "nature",
+      "zipline",
+      "thrill"
+    ],
+    "coordinates": {
+      "lat": 19.08,
+      "lng": 99.05
+    },
+    "description": "Thrilling zipline adventure through lush rainforest canopy. Over 30 platforms, longest zipline 800m. Professional guides, safety equipment, and hotel transfers included.",
+    "openingHours": "Depends on tour",
+    "entranceFee": {
+      "thai": 3299,
+      "foreigner": 3299
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "zipline-1.jpg",
+      "zipline-2.jpg"
+    ],
+    "facilities": [
+      "transport",
+      "guide",
+      "safety-equipment",
+      "lunch",
+      "insurance"
+    ],
+    "contact": {
+      "phone": "053-010-660",
+      "website": "https://www.treetopasia.com",
+      "facebook": "https://facebook.com/gibbon chiangmai",
+      "googleMapsUrl": "https://goo.gl/maps/Gibbon"
+    },
+    "highlights": [
+      "800m Zipline",
+      "30+ Platforms",
+      "Rainforest",
+      "Safety First",
+      "Lunch Included"
+    ],
+    "bestTimeToVisit": "Morning (08:00 start)",
+    "averageDuration": "Half day (4-5 hours)",
+    "rating": 4.8,
+    "dataSource": "TripAdvisor,Adventure Tours",
+    "notes": "Booking required. Min age 4, max weight 125kg. Hotel pickup included. Very professional operation."
+  },
+  {
+    "id": "mae-kha-canal",
+    "provinceId": "chiang-mai",
+    "nameTh": "คลองแม่ข่า",
+    "nameEn": "Mae Kha Canal",
+    "category": [
+      "walking",
+      "cultural",
+      "local-life",
+      "photography"
+    ],
+    "coordinates": {
+      "lat": 18.785,
+      "lng": 99.005
+    },
+    "description": "Recently revitalized historic canal running through Old City. Picturesque walking path with renovated areas, local cafes, temples, and glimpses of authentic Chiang Mai life.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "mae-kha-1.jpg",
+      "mae-kha-2.jpg"
+    ],
+    "facilities": [
+      "walking-path",
+      "cafes",
+      "photo-spots"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null,
+      "facebook": "https://facebook.com/maekhacanal",
+      "googleMapsUrl": "https://goo.gl/maps/MaeKha"
+    },
+    "highlights": [
+      "Canal Walk",
+      "Local Life",
+      "Cafes",
+      "Photo Spots",
+      "Peaceful"
+    ],
+    "bestTimeToVisit": "Late afternoon (16:00-18:00)",
+    "averageDuration": "1-2 hours",
+    "rating": 4.3,
+    "dataSource": "Local Guides,Google Places",
+    "notes": "Free. Nice for leisurely walks. Several hip cafes along the canal. Great for photography."
+  },
+  {
+    "id": "id",
+    "provinceId": "province_id",
+    "nameTh": "name_th",
+    "nameEn": "name_en",
+    "category": [
+      "category"
+    ],
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "description": "description",
+    "openingHours": "opening_hours",
+    "entranceFee": {
+      "thai": null,
+      "foreigner": null
+    },
+    "isOpen": false,
+    "status": "status",
+    "lastVerified": "last_verified",
+    "images": [
+      "images"
+    ],
+    "facilities": [
+      "facilities"
+    ],
+    "contact": {
+      "phone": "phone",
+      "website": "website",
+      "facebook": "facebook",
+      "googleMapsUrl": "google_maps_url"
+    },
+    "highlights": [
+      "highlights"
+    ],
+    "bestTimeToVisit": "best_time_to_visit",
+    "averageDuration": "average_duration",
+    "rating": null,
+    "dataSource": "data_source",
+    "notes": "notes"
+  },
+  {
+    "id": "patong-beach",
+    "provinceId": "phuket",
+    "nameTh": "หาดป่าตอง",
+    "nameEn": "Patong Beach",
+    "category": [
+      "beach",
+      "nightlife",
+      "entertainment",
+      "water-sports"
+    ],
+    "coordinates": {
+      "lat": 7.8966,
+      "lng": 98.2966
+    },
+    "description": "Phuket's most famous beach and entertainment hub. White sand beach with water sports by day, transforms into vibrant nightlife center with beach clubs, bars, and legendary Bangla Road at night.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "patong-1.jpg",
+      "patong-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "restaurants",
+      "bars",
+      "water-sports",
+      "beach-chairs"
+    ],
+    "contact": {
+      "phone": "076-340-246",
+      "website": null,
+      "facebook": "https://facebook.com/patongbeachphuket",
+      "googleMapsUrl": "https://goo.gl/maps/PatongBeach"
+    },
+    "highlights": [
+      "Beach",
+      "Water Sports",
+      "Nightlife",
+      "Bangla Road",
+      "Shopping"
+    ],
+    "bestTimeToVisit": "November-April (dry season)",
+    "averageDuration": "Full day",
+    "rating": 4.4,
+    "dataSource": "TAT,Google Places",
+    "notes": "Very crowded. Watch belongings. Great for nightlife. Beach chairs 100-200 THB/day."
+  },
+  {
+    "id": "kata-beach",
+    "provinceId": "phuket",
+    "nameTh": "หาดกะตะ",
+    "nameEn": "Kata Beach",
+    "category": [
+      "beach",
+      "family",
+      "surfing",
+      "swimming"
+    ],
+    "coordinates": {
+      "lat": 7.8148,
+      "lng": 98.2983
+    },
+    "description": "Popular family-friendly beach with calm waters, golden sand, and scenic views. Excellent for swimming, snorkeling, and surfing during monsoon season. Less crowded than Patong.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "kata-1.jpg",
+      "kata-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "restaurants",
+      "surf-rental",
+      "lifeguard"
+    ],
+    "contact": {
+      "phone": "076-330-803",
+      "website": null,
+      "facebook": "https://facebook.com/katabeach",
+      "googleMapsUrl": "https://goo.gl/maps/KataBeach"
+    },
+    "highlights": [
+      "Family Friendly",
+      "Surfing",
+      "Swimming",
+      "Snorkeling",
+      "Viewpoint"
+    ],
+    "bestTimeToVisit": "November-April | May-Oct for surfing",
+    "averageDuration": "Full day",
+    "rating": 4.6,
+    "dataSource": "TAT,Surf Guides",
+    "notes": "Two beaches: Kata and Kata Noi. Kata Noi quieter. Good surf May-October."
+  },
+  {
+    "id": "karon-beach",
+    "provinceId": "phuket",
+    "nameTh": "หาดกะรน",
+    "nameEn": "Karon Beach",
+    "category": [
+      "beach",
+      "family",
+      "swimming",
+      "relaxation"
+    ],
+    "coordinates": {
+      "lat": 7.8387,
+      "lng": 98.2843
+    },
+    "description": "Long stretch of golden sand (3km) ideal for sunbathing, swimming, and  relaxed beach walks. Family-friendly atmosphere with fewer crowds than Patong. Beautiful sunsets.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "karon-1.jpg",
+      "karon-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "restaurants",
+      "beach-chairs",
+      "massage"
+    ],
+    "contact": {
+      "phone": "076-286-155",
+      "website": null,
+      "facebook": "https://facebook.com/karonbeach",
+      "googleMapsUrl": "https://goo.gl/maps/KaronBeach"
+    },
+    "highlights": [
+      "Long Beach",
+      "Golden Sand",
+      "Family Friendly",
+      "Sunsets",
+      "Less Crowded"
+    ],
+    "bestTimeToVisit": "November-April",
+    "averageDuration": "Full day",
+    "rating": 4.5,
+    "dataSource": "TAT,Google Places",
+    "notes": "Quieter than Patong but still good facilities. Great for long beach walks."
+  },
+  {
+    "id": "freedom-beach",
+    "provinceId": "phuket",
+    "nameTh": "ฟรีด อมบีช",
+    "nameEn": "Freedom Beach",
+    "category": [
+      "beach",
+      "secluded",
+      "swimming",
+      "snorkeling"
+    ],
+    "coordinates": {
+      "lat": 7.8228,
+      "lng": 98.2695
+    },
+    "description": "Pristine hidden beach accessible only by boat or jungle hike. Bright white sand, crystal-clear emerald water, minimal development. Paradise away from crowds.",
+    "openingHours": "09:00-17:00",
+    "entranceFee": {
+      "thai": 200,
+      "foreigner": 200
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "freedom-1.jpg",
+      "freedom-2.jpg"
+    ],
+    "facilities": [
+      "beach-chairs",
+      "umbrellas",
+      "small-cafe",
+      "snorkel-rental"
+    ],
+    "contact": {
+      "phone": "089-873-1965",
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/FreedomBeach"
+    },
+    "highlights": [
+      "White Sand",
+      "Clear Water",
+      "Secluded",
+      "Snorkeling",
+      "Pristine"
+    ],
+    "bestTimeToVisit": "November-April | Avoid monsoon",
+    "averageDuration": "3-4 hours",
+    "rating": 4.8,
+    "dataSource": "TripAdvisor,Beach Guides",
+    "notes": "Access: boat from Patong (200 THB) or 30-min jungle hike. Entrance fee 200 THB."
+  },
+  {
+    "id": "nai-harn-beach",
+    "provinceId": "phuket",
+    "nameTh": "หาดในหาน",
+    "nameEn": "Nai Harn Beach",
+    "category": [
+      "beach",
+      "swimming",
+      "local",
+      "relaxation"
+    ],
+    "coordinates": {
+      "lat": 7.7732,
+      "lng": 98.3036
+    },
+    "description": "Picturesque crescent bay at Phuket's southern tip with crystal-clear turquoise waters. Popular with locals, less touristic. Backed by lake and monastery.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "nai-harn-1.jpg",
+      "nai-harn-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "restaurants",
+      "yacht-club",
+      "beach-chairs"
+    ],
+    "contact": {
+      "phone": "076-381-212",
+      "website": null,
+      "facebook": "https://facebook.com/naiharnbeach",
+      "googleMapsUrl": "https://goo.gl/maps/NaiHarnBeach"
+    },
+    "highlights": [
+      "Turquoise Water",
+      "Local Beach",
+      "Swimming",
+      "Scenic",
+      "Yacht Club"
+    ],
+    "bestTimeToVisit": "November-April",
+    "averageDuration": "Half-full day",
+    "rating": 4.6,
+    "dataSource": "TAT,Local Guides",
+    "notes": "Popular with expats and locals. Rougher water May-October. Great restaurants nearby."
+  },
+  {
+    "id": "phi-phi-islands",
+    "provinceId": "phuket",
+    "nameTh": "หมู่เกาะพีพี",
+    "nameEn": "Phi Phi Islands & Maya Bay",
+    "category": [
+      "island",
+      "beach",
+      "snorkeling",
+      "boat-tour",
+      "landmark"
+    ],
+    "coordinates": {
+      "lat": 7.6814,
+      "lng": 98.7697
+    },
+    "description": "Breathtaking limestone islands with crystal-clear waters and vibrant marine life. Maya Bay (The Beach movie location) has been beautifully restored. Perfect for snorkeling, diving, and island hopping.",
+    "openingHours": "Depends on tour",
+    "entranceFee": {
+      "thai": 400,
+      "foreigner": 400
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "phi-phi-1.jpg",
+      "phi-phi-2.jpg"
+    ],
+    "facilities": [
+      "boat-tour",
+      "snorkeling",
+      "lunch",
+      "guide",
+      "life-jackets"
+    ],
+    "contact": {
+      "phone": "075-620-630",
+      "website": "https://www.phiphi.phuket.com",
+      "facebook": "https://facebook.com/phiphiislands",
+      "googleMapsUrl": "https://goo.gl/maps/PhiPhi"
+    },
+    "highlights": [
+      "Maya Bay",
+      "Snorkeling",
+      "Limestone Cliffs",
+      "Clear Water",
+      "Marine Life"
+    ],
+    "bestTimeToVisit": "November-April (calm seas)",
+    "averageDuration": "Full day tour",
+    "rating": 4.9,
+    "dataSource": "TAT,Tour Operators",
+    "notes": "Day tours from Phuket 1,000-2,500 THB. Maya Bay entry 400 THB. Book early for speedboat tours."
+  },
+  {
+    "id": "big-buddha",
+    "provinceId": "phuket",
+    "nameTh": "พระพุทธมิ่งมงคลเอกก นาคคีรี",
+    "nameEn": "Big Buddha Phuket",
+    "category": [
+      "landmark",
+      "temple",
+      "viewpoint",
+      "cultural"
+    ],
+    "coordinates": {
+      "lat": 7.891,
+      "lng": 98.308
+    },
+    "description": "Iconic 45-meter marble Buddha statue atop Nakkerd Hill (400m) offering breathtaking 360° panoramic views of Phuket. Free entry, spiritual atmosphere, and stunning photo opportunities.",
+    "openingHours": "06:00-19:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "big-buddha-1.jpg",
+      "big-buddha-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "viewpoint",
+      "donation-boxes",
+      "cafe"
+    ],
+    "contact": {
+      "phone": "076-386-780",
+      "website": "https://www.mingmongkolphuket.com",
+      "facebook": "https://facebook.com/bigbuddhaphuket",
+      "googleMapsUrl": "https://goo.gl/maps/BigBuddha"
+    },
+    "highlights": [
+      "Panoramic Views",
+      "45m Buddha",
+      "Free Entry",
+      "Spiritual",
+      "Photo Spot"
+    ],
+    "bestTimeToVisit": "Late afternoon (16:00-18:00) for sunset",
+    "averageDuration": "1-2 hours",
+    "rating": 4.7,
+    "dataSource": "TAT,Google Places",
+    "notes": "Free but donations welcome for construction. Dress respectfully. Amazing views of island."
+  },
+  {
+    "id": "old-phuket-town",
+    "provinceId": "phuket",
+    "nameTh": "เมืองเก่าภูเก็ต",
+    "nameEn": "Old Phuket Town",
+    "category": [
+      "cultural",
+      "historical",
+      "architecture",
+      "shopping",
+      "food"
+    ],
+    "coordinates": {
+      "lat": 7.8841,
+      "lng": 98.3869
+    },
+    "description": "Charming historic district with colorful Sino-Portuguese buildings, quaint cafes, art galleries, and boutique shops. Sunday Walking Street market draws huge crowds.",
+    "openingHours": "All day | Market Sun 16:00-22:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "old-town-1.jpg",
+      "old-town-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "cafes",
+      "restaurants",
+      "shops",
+      "atm",
+      "art-galleries"
+    ],
+    "contact": {
+      "phone": "076-212-213",
+      "website": "https://www.phuket.com/oldtown",
+      "facebook": "https://facebook.com/oldphukettown",
+      "googleMapsUrl": "https://goo.gl/maps/OldTown"
+    },
+    "highlights": [
+      "Sino-Portuguese",
+      "Sunday Market",
+      "Street Art",
+      "Cafes",
+      "Photo Spots"
+    ],
+    "bestTimeToVisit": "Sunday for market | Weekday mornings quieter",
+    "averageDuration": "3-4 hours",
+    "rating": 4.6,
+    "dataSource": "TAT,Heritage Sites",
+    "notes": "Sunday Walking Street 16:00-22:00 on Thalang Road. Great for Instagram photos."
+  },
+  {
+    "id": "james-bond-island",
+    "provinceId": "phuket",
+    "nameTh": "เกาะเขาพิงกัน",
+    "nameEn": "James Bond Island (Phang Nga Bay)",
+    "category": [
+      "island",
+      "landmark",
+      "boat-tour",
+      "scenic",
+      "photography"
+    ],
+    "coordinates": {
+      "lat": 8.2746,
+      "lng": 98.5015
+    },
+    "description": "Iconic limestone karst island made famous by James Bond movie 'The Man with the Golden Gun'. Part of stunning Phang Nga Bay with spectacular sea caves and mangrove forests.",
+    "openingHours": "Depends on tour",
+    "entranceFee": {
+      "thai": 300,
+      "foreigner": 300
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "james-bond-1.jpg",
+      "james-bond-2.jpg"
+    ],
+    "facilities": [
+      "boat-tour",
+      "guide",
+      "lunch",
+      "kayaking",
+      "life-jackets"
+    ],
+    "contact": {
+      "phone": "076-481-188",
+      "website": "https://www.jamesbondisland-tours.com",
+      "facebook": "https://facebook.com/jamesbondisland",
+      "googleMapsUrl": "https://goo.gl/maps/JamesBond"
+    },
+    "highlights": [
+      "James Bond Rock",
+      "Phang Nga Bay",
+      "Sea Caves",
+      "Kayaking",
+      "Limestone Karsts"
+    ],
+    "bestTimeToVisit": "November-April",
+    "averageDuration": "Full day tour",
+    "rating": 4.5,
+    "dataSource": "TAT,Tour Operators",
+    "notes": "Tours from Phuket 1,200-2,000 THB. Entry 300 THB. Very touristy but iconic. Include kayaking in sea caves."
+  },
+  {
+    "id": "elephant-sanctuary-phuket",
+    "provinceId": "phuket",
+    "nameTh": "เขตรักษาพันธุ์ช้าง",
+    "nameEn": "Phuket Elephant Sanctuary",
+    "category": [
+      "sanctuary",
+      "nature",
+      "ethical-tourism",
+      "family"
+    ],
+    "coordinates": {
+      "lat": 8.088,
+      "lng": 98.377
+    },
+    "description": "Ethical elephant sanctuary where rescued elephants roam freely. Observe, feed, and learn about conservation without riding. Beautiful natural setting with mud spa experience for elephants.",
+    "openingHours": "09:00-15:00",
+    "entranceFee": {
+      "thai": 3000,
+      "foreigner": 3000
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "elephant-phuket-1.jpg",
+      "elephant-phuket-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "cafe",
+      "guide",
+      "vegetarian-lunch",
+      "transport"
+    ],
+    "contact": {
+      "phone": "076-521-350",
+      "website": "https://www.phuketelephantsanctuary.org",
+      "facebook": "https://facebook.com/phuketelephantsanctuary",
+      "googleMapsUrl": "https://goo.gl/maps/ElephantPhuket"
+    },
+    "highlights": [
+      "No Riding",
+      "Ethical",
+      "Rescue Stories",
+      "Mud Bath",
+      "Forest Setting"
+    ],
+    "bestTimeToVisit": "Year-round | Book 2-3 days ahead",
+    "averageDuration": "Half day",
+    "rating": 4.9,
+    "dataSource": "TripAdvisor,Ethical Tourism",
+    "notes": "Booking required. 3,000 THB includes lunch, guide, transfer. Morning or afternoon sessions."
+  },
+  {
+    "id": "wat-chalong",
+    "provinceId": "phuket",
+    "nameTh": "วัดฉลอง",
+    "nameEn": "Wat Chalong",
+    "category": [
+      "temple",
+      "cultural",
+      "historical",
+      "spiritual"
+    ],
+    "coordinates": {
+      "lat": 7.8491,
+      "lng": 98.3448
+    },
+    "description": "Phuket's most important and largest Buddhist temple. Beautiful architecture, important religious significance, and peaceful ambiance. Home to statues of revered monks.",
+    "openingHours": "07:00-17:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "wat-chalong-1.jpg",
+      "wat-chalong-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "guide",
+      "donation-boxes"
+    ],
+    "contact": {
+      "phone": "076-381-226",
+      "website": "https://www.watsup.phuket.com",
+      "facebook": "https://facebook.com/watchalong",
+      "googleMapsUrl": "https://goo.gl/maps/WatChalong"
+    },
+    "highlights": [
+      "Temple",
+      "Grand Pagoda",
+      "Monk Statues",
+      "Architecture",
+      "Peaceful"
+    ],
+    "bestTimeToVisit": "Morning (08:00-11:00)",
+    "averageDuration": "1-1.5 hours",
+    "rating": 4.5,
+    "dataSource": "TAT,Google Places",
+    "notes": "Free entry. Dress code: cover shoulders/knees. Most beautiful temple complex in Phuket."
+  },
+  {
+    "id": "phuket-weekend-market",
+    "provinceId": "phuket",
+    "nameTh": "ตลาดนัดสุดสัปดาห์",
+    "nameEn": "Phuket Weekend Night Market (Naka Market)",
+    "category": [
+      "market",
+      "food",
+      "shopping",
+      "nightlife",
+      "local"
+    ],
+    "coordinates": {
+      "lat": 7.895,
+      "lng": 98.3936
+    },
+    "description": "Huge local market offering incredible variety of street food, clothing, handicrafts, and souvenirs. Authentic local atmosphere, less touristy than Patong markets.",
+    "openingHours": "16:00-23:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "weekend-market-1.jpg",
+      "weekend-market-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "atm",
+      "food-stalls",
+      "seating-area"
+    ],
+    "contact": {
+      "phone": "089-724-3069",
+      "website": null,
+      "facebook": "https://facebook.com/nakaweekendmarket",
+      "googleMapsUrl": "https://goo.gl/maps/NakaMarket"
+    },
+    "highlights": [
+      "Street Food",
+      "Local Vibe",
+      "Cheap Shopping",
+      "Night Market",
+      "Authentic"
+    ],
+    "bestTimeToVisit": "Saturday-Sunday evenings",
+    "averageDuration": "2-3 hours",
+    "rating": 4.6,
+    "dataSource": "Locals,Google Places",
+    "notes": "Saturday-Sunday only. Great authentic food. Much cheaper than tourist areas. Very local."
+  },
+  {
+    "id": "andamanda-waterpark",
+    "provinceId": "phuket",
+    "nameTh": "อันดามันดา วอเตอร์พาร์ค",
+    "nameEn": "Andamanda Phuket Waterpark",
+    "category": [
+      "waterpark",
+      "family",
+      "entertainment",
+      "adventure"
+    ],
+    "coordinates": {
+      "lat": 7.938,
+      "lng": 98.355
+    },
+    "description": "Thailand's first world-class waterpark with thrilling slides, wave pools, lazy river, and family zones. Thai-themed design with various zones for all ages.",
+    "openingHours": "10:00-18:00",
+    "entranceFee": {
+      "thai": 1390,
+      "foreigner": 1390
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "andamanda-1.jpg",
+      "andamanda-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "lockers",
+      "restaurants",
+      "lifeguards",
+      "first-aid"
+    ],
+    "contact": {
+      "phone": "076-510-277",
+      "website": "https://www.andamandaphuket.com",
+      "facebook": "https://facebook.com/andamandaphuket",
+      "googleMapsUrl": "https://goo.gl/maps/Andamanda"
+    },
+    "highlights": [
+      "Water Slides",
+      "Wave Pool",
+      "Lazy River",
+      "Family Fun",
+      "Modern"
+    ],
+    "bestTimeToVisit": "Year-round | Weekdays less crowded",
+    "averageDuration": "Full day (5-6 hours)",
+    "rating": 4.7,
+    "dataSource": "TripAdvisor,Families",
+    "notes": "Tickets 1,390 THB. Book online for discounts. Lockers extra. Food inside pricey, can bring snacks."
+  },
+  {
+    "id": "promthep-cape",
+    "provinceId": "phuket",
+    "nameTh": "แหลมพรหมเทพ",
+    "nameEn": "Promthep Cape Viewpoint",
+    "category": [
+      "viewpoint",
+      "sunset",
+      "scenic",
+      "photography",
+      "landmark"
+    ],
+    "coordinates": {
+      "lat": 7.7548,
+      "lng": 98.305
+    },
+    "description": "Phuket's most famous sunset viewpoint at the southern tip. Breathtaking panoramic views of Andaman Sea, nearby islands, and spectacular sunsets. Lighthouse and elephant shrine.",
+    "openingHours": "All day | Best at sunset",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "promthep-1.jpg",
+      "promthep-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "viewpoint",
+      "restaurant",
+      "souvenirs",
+      "lighthouse"
+    ],
+    "contact": {
+      "phone": "076-391-221",
+      "website": null,
+      "facebook": null,
+      "googleMapsUrl": "https://goo.gl/maps/PromthepCape"
+    },
+    "highlights": [
+      "Sunset Views",
+      "Lighthouse",
+      "Panoramic",
+      "Southern Tip",
+      "Photo Spot"
+    ],
+    "bestTimeToVisit": "Sunset time (17:30-18:30)",
+    "averageDuration": "1-2 hours",
+    "rating": 4.6,
+    "dataSource": "TAT,Google Places",
+    "notes": "Free. Very crowded at sunset. Arrive 30-45 mins early for parking and good spot."
+  },
+  {
+    "id": "bangla-road",
+    "provinceId": "phuket",
+    "nameTh": "ถนนบางลา",
+    "nameEn": "Bangla Road (Patong Walking Street)",
+    "category": [
+      "nightlife",
+      "entertainment",
+      "bars",
+      "shows"
+    ],
+    "coordinates": {
+      "lat": 7.8994,
+      "lng": 98.2946
+    },
+    "description": "Legendary nightlife street in Patong. Hundreds of bars, clubs, go-go bars, live music, and street performances. Vibrant atmosphere from dusk till dawn.",
+    "openingHours": "18:00-03:00",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "bangla-1.jpg",
+      "bangla-2.jpg"
+    ],
+    "facilities": [
+      "bars",
+      "clubs",
+      "atm",
+      "street-food",
+      "shows"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "Various venues",
+      "facebook": "https://facebook.com/banglaroad",
+      "googleMapsUrl": "https://goo.gl/maps/BanglaRoad"
+    },
+    "highlights": [
+      "Nightlife",
+      "Live Music",
+      "Shows",
+      "Bars",
+      "Party Street"
+    ],
+    "bestTimeToVisit": "Evening-late night (21:00-02:00)",
+    "averageDuration": "3-4 hours",
+    "rating": 4.3,
+    "dataSource": "Google Places,Nightlifers",
+    "notes": "Pedestrian only 18:00+. Watch belongings. Drink prices higher than normal. Very touristy."
+  },
+  {
+    "id": "surin-beach",
+    "provinceId": "phuket",
+    "nameTh": "หาดสุรินทร์",
+    "nameEn": "Surin Beach",
+    "category": [
+      "beach",
+      "upscale",
+      "swimming",
+      "dining"
+    ],
+    "coordinates": {
+      "lat": 7.9728,
+      "lng": 98.2752
+    },
+    "description": "Chic and trendy beach with upscale vibe. Raw natural beauty with white sand and clear water. Numerous high-end beach clubs, bars, and restaurants. Popular with jet-setters.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "surin-1.jpg",
+      "surin-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "beach-clubs",
+      "restaurants",
+      "loungers"
+    ],
+    "contact": {
+      "phone": "076-271-376",
+      "website": null,
+      "facebook": "https://facebook.com/surinbeach",
+      "googleMapsUrl": "https://goo.gl/maps/SurinBeach"
+    },
+    "highlights": [
+      "Upscale",
+      "Beach Clubs",
+      "Clear Water",
+      "Dining",
+      "Trendy"
+    ],
+    "bestTimeToVisit": "November-April",
+    "averageDuration": "Half-full day",
+    "rating": 4.5,
+    "dataSource": "TAT,Luxury Guides",
+    "notes": "More upscale than other beaches. Beach clubs can be pricey. Rougher seas in monsoon."
+  },
+  {
+    "id": "kamala-beach",
+    "provinceId": "phuket",
+    "nameTh": "หาดกมลา",
+    "nameEn": "Kamala Beach",
+    "category": [
+      "beach",
+      "family",
+      "local",
+      "relaxation",
+      "village"
+    ],
+    "coordinates": {
+      "lat": 7.9618,
+      "lng": 98.28
+    },
+    "description": "Peaceful family-friendly beach with laid-back atmosphere. Powdery white sand, clear waters, and authentic fishing village charm. Less developed than major beaches.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "kamala-1.jpg",
+      "kamala-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "restroom",
+      "restaurants",
+      "fishing-village",
+      "massage"
+    ],
+    "contact": {
+      "phone": "076-385-370",
+      "website": null,
+      "facebook": "https://facebook.com/kamalabeach",
+      "googleMapsUrl": "https://goo.gl/maps/KamalaBeach"
+    },
+    "highlights": [
+      "Family Frien dly",
+      "Authentic",
+      "Quiet",
+      "Fishing Village",
+      "Local Life"
+    ],
+    "bestTimeToVisit": "November-April",
+    "averageDuration": "Half-full day",
+    "rating": 4.5,
+    "dataSource": "TAT,Family Guides",
+    "notes": "Great for families with kids. Authentic local seafood restaurants. Phuket FantaSea show nearby."
+  },
+  {
+    "id": "chalong-bay-rum-distillery",
+    "provinceId": "phuket",
+    "nameTh": "โรงกลั่นเหล้ารัมอ่าวฉลอง",
+    "nameEn": "Chalong Bay Rum Distillery",
+    "category": [
+      "distillery",
+      "tour",
+      "tasting",
+      "experience"
+    ],
+    "coordinates": {
+      "lat": 7.841,
+      "lng": 98.338
+    },
+    "description": "Award-winning craft rum distillery offering tours and tastings. Learn about rum production using local sugarcane, see the distillation process, and sample various rum varieties including cocktails.",
+    "openingHours": "10:00-19:00 | Tours at 14:00",
+    "entranceFee": {
+      "thai": 300,
+      "foreigner": 300
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "rum-1.jpg",
+      "rum-2.jpg"
+    ],
+    "facilities": [
+      "parking",
+      "bar",
+      "shop",
+      "tour",
+      "tasting-room"
+    ],
+    "contact": {
+      "phone": "076-604-051",
+      "website": "https://www.chalongbayrum.com",
+      "facebook": "https://facebook.com/chalongbayrum",
+      "googleMapsUrl": "https://goo.gl/maps/ChalongBayRum"
+    },
+    "highlights": [
+      "Rum Tasting",
+      "Distillery Tour",
+      "Craft Rum",
+      "Cocktails",
+      "Award-Winning"
+    ],
+    "bestTimeToVisit": "Afternoon tour (14:00)",
+    "averageDuration": "1.5-2 hours",
+    "rating": 4.7,
+    "dataSource": "TripAdvisor,Rum Enthusiasts",
+    "notes": "Tour 300 THB includes 3 tastings and cocktail. High-quality craft rum. Book tour in advance."
+  },
+  {
+    "id": "phuket-old-town-street-art",
+    "provinceId": "phuket",
+    "nameTh": "ศิลปะบนถนน",
+    "nameEn": "Old Town Street Art & Murals",
+    "category": [
+      "art",
+      "photography",
+      "culture",
+      "walking"
+    ],
+    "coordinates": {
+      "lat": 7.883,
+      "lng": 98.3891
+    },
+    "description": "Instagram-worthy street art and colorful murals throughout Old Phuket Town. Dozens of art pieces depicting local culture, history, and Sino-Portuguese heritage. Free photo tour.",
+    "openingHours": "All day",
+    "entranceFee": {
+      "thai": 0,
+      "foreigner": 0
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "street-art-1.jpg",
+      "street-art-2.jpg"
+    ],
+    "facilities": [
+      "photo-spots",
+      "cafes",
+      "walking-routes"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "https://www.phuketoldtownstreetart.com",
+      "facebook": "https://facebook.com/phuketstreetart",
+      "googleMapsUrl": "https://goo.gl/maps/StreetArt"
+    },
+    "highlights": [
+      "Instagram",
+      "Murals",
+      "Walking Tour",
+      "Photography",
+      "Free"
+    ],
+    "bestTimeToVisit": "Morning (08:00-11:00) best light",
+    "averageDuration": "2-3 hours",
+    "rating": 4.5,
+    "dataSource": "Instagram,Art Lovers",
+    "notes": "Free. Combine with Old Town visit. Map available online. Popular Soi Rommanee for best murals."
+  },
+  {
+    "id": "yona-floating-beach-club",
+    "provinceId": "phuket",
+    "nameTh": "โยน่า",
+    "nameEn": "YONA Floating Beach Club",
+    "category": [
+      "beach-club",
+      "unique",
+      "swimming",
+      "dining",
+      "luxury"
+    ],
+    "coordinates": {
+      "lat": 7.81,
+      "lng": 98.35
+    },
+    "description": "Unique floating beach club anchored in the Andaman Sea. Relax on floating platforms, sunbathe, swim, and enjoy food and drinks literally in the middle of the ocean. Instagram paradise.",
+    "openingHours": "11:00-19:00",
+    "entranceFee": {
+      "thai": 800,
+      "foreigner": 800
+    },
+    "isOpen": true,
+    "status": "open",
+    "lastVerified": "2025-11-25",
+    "images": [
+      "yona-1.jpg",
+      "yona-2.jpg"
+    ],
+    "facilities": [
+      "floating-platform",
+      "restaurant",
+      "bar",
+      "loungers",
+      "boat-transfer"
+    ],
+    "contact": {
+      "phone": "093-595-9999",
+      "website": "https://www.yonaphuket.com",
+      "facebook": "https://facebook.com/yonaphuket",
+      "googleMapsUrl": "https://goo.gl/maps/YONA"
+    },
+    "highlights": [
+      "Floating Club",
+      "Unique",
+      "Instagram",
+      "Luxury",
+      "Sea Views"
+    ],
+    "bestTimeToVisit": "November-April (calm seas)",
+    "averageDuration": "Half day (3-4 hours)",
+    "rating": 4.8,
+    "dataSource": "Instagram,Luxury Travel",
+    "notes": "Minimum spend 800 THB. Boat transfer included. Book in advance. Amazing for photos and unique experience."
+  }
+]
