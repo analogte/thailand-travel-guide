@@ -4,25 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essential travel guide for Thailand - currency converter, weather info, and practical tips for your journey.">
+    <meta name="description"
+        content="Essential travel guide for Thailand - currency converter, weather info, and practical tips for your journey.">
     <meta name="keywords" content="Thailand travel guide, Thai currency, Thailand weather, travel tips Thailand">
-    
+
     <title>Travel Guide - Thailand Travel Guide</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
-    
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 3D Background Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js"></script>
 </head>
 
 <body class="font-body bg-gray-50">
@@ -31,7 +41,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-temple text-white text-sm"></i>
                     </div>
                     <span class="font-display font-bold text-xl text-gray-800">Thailand Guide</span>
@@ -53,22 +64,30 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
+        <div
+            class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
-                <a href="destinations.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Destinations</a>
-                <a href="culture.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Culture</a>
-                <a href="guide.html" class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Travel Guide</a>
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
+                <a href="destinations.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Destinations</a>
+                <a href="culture.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Culture</a>
+                <a href="guide.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Travel
+                    Guide</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section small relative bg-gradient-to-br from-orange-500 to-red-600">
+        <div class="hero-bg" id="vanta-bg"></div>
         <div class="relative z-10 flex items-center justify-center min-h-[60vh]">
             <div class="text-center text-white px-4 max-w-4xl mx-auto">
                 <div class="floating-element mb-8">
-                    <div class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <div
+                        class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                         <i class="fas fa-compass text-4xl text-yellow-300"></i>
                     </div>
                 </div>
@@ -110,11 +129,13 @@
                         <p class="text-lg mb-6 opacity-90">
                             Convert your currency to Thai Baht instantly
                         </p>
-                        
+
                         <div class="bg-white/20 rounded-xl p-6 backdrop-blur-sm">
                             <div class="mb-4">
                                 <label class="block text-sm mb-2">Amount</label>
-                                <input type="number" class="amount-input w-full px-4 py-3 rounded-lg text-gray-800 text-xl font-semibold" value="100" min="0">
+                                <input type="number"
+                                    class="amount-input w-full px-4 py-3 rounded-lg text-gray-800 text-xl font-semibold"
+                                    value="100" min="0">
                             </div>
                             <div class="mb-4">
                                 <label class="block text-sm mb-2">Currency</label>
@@ -135,7 +156,7 @@
                                 <div class="result-display text-4xl font-bold">3,550 THB</div>
                             </div>
                         </div>
-                        
+
                         <p class="text-sm mt-4 opacity-75 text-center">
                             <i class="fas fa-info-circle mr-1"></i> Exchange rates are approximate
                         </p>
@@ -154,11 +175,12 @@
                         <p class="text-lg mb-6 opacity-90">
                             Check current weather conditions
                         </p>
-                        
+
                         <div class="bg-white/20 rounded-xl p-6 backdrop-blur-sm">
                             <div class="mb-4">
                                 <label class="block text-sm mb-2">Select City</label>
-                                <select id="city-select" class="w-full px-4 py-3 rounded-lg text-gray-800 font-semibold">
+                                <select id="city-select"
+                                    class="w-full px-4 py-3 rounded-lg text-gray-800 font-semibold">
                                     <option value="bangkok">Bangkok</option>
                                     <option value="chiangmai">Chiang Mai</option>
                                     <option value="phuket">Phuket</option>
@@ -166,7 +188,7 @@
                                     <option value="krabi">Krabi</option>
                                 </select>
                             </div>
-                            
+
                             <div id="weather-display" class="text-center pt-4 border-t border-white/30">
                                 <i id="weather-icon" class="fas fa-cloud-sun text-6xl mb-4"></i>
                                 <div id="temp-display" class="text-5xl font-bold mb-2">32°C</div>
@@ -174,7 +196,7 @@
                                 <div id="humidity-display" class="text-sm opacity-75">Humidity: 75%</div>
                             </div>
                         </div>
-                        
+
                         <p class="text-sm mt-4 opacity-75 text-center">
                             <i class="fas fa-info-circle mr-1"></i> Weather data is simulated
                         </p>
@@ -197,7 +219,8 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition" data-preference="beach">
+                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition"
+                    data-preference="beach">
                     <div class="text-center">
                         <i class="fas fa-umbrella-beach text-5xl text-blue-500 mb-4"></i>
                         <h3 class="font-display text-2xl font-bold text-gray-800 mb-2">Beach Lover</h3>
@@ -205,7 +228,8 @@
                     </div>
                 </div>
 
-                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition" data-preference="culture">
+                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition"
+                    data-preference="culture">
                     <div class="text-center">
                         <i class="fas fa-temple text-5xl text-purple-500 mb-4"></i>
                         <h3 class="font-display text-2xl font-bold text-gray-800 mb-2">Culture Seeker</h3>
@@ -213,7 +237,8 @@
                     </div>
                 </div>
 
-                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition" data-preference="adventure">
+                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition"
+                    data-preference="adventure">
                     <div class="text-center">
                         <i class="fas fa-hiking text-5xl text-green-500 mb-4"></i>
                         <h3 class="font-display text-2xl font-bold text-gray-800 mb-2">Adventure Hunter</h3>
@@ -221,7 +246,8 @@
                     </div>
                 </div>
 
-                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition" data-preference="food">
+                <div class="quiz-option bg-white rounded-2xl p-8 border-2 border-gray-200 cursor-pointer hover:border-teal-600 hover:shadow-lg transition"
+                    data-preference="food">
                     <div class="text-center">
                         <i class="fas fa-utensils text-5xl text-red-500 mb-4"></i>
                         <h3 class="font-display text-2xl font-bold text-gray-800 mb-2">Food Explorer</h3>
@@ -256,7 +282,8 @@
                     </div>
                     <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Visa Information</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Many nationalities get 30-day visa exemption on arrival. Check requirements for your country before traveling.
+                        Many nationalities get 30-day visa exemption on arrival. Check requirements for your country
+                        before traveling.
                     </p>
                 </div>
 
@@ -267,7 +294,8 @@
                     </div>
                     <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Health & Safety</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Get travel insurance, drink bottled water, use sunscreen, and be cautious with street food initially.
+                        Get travel insurance, drink bottled water, use sunscreen, and be cautious with street food
+                        initially.
                     </p>
                 </div>
 
@@ -290,7 +318,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <div class="flex items-center justify-center space-x-2 mb-6">
-                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-temple text-white text-sm"></i>
                     </div>
                     <span class="font-display font-bold text-2xl">Thailand Guide</span>
@@ -316,6 +345,25 @@
     <script src="js/culture.js"></script>
     <script src="js/guide.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Initialize Vanta Background -->
+    <script>
+        if (typeof VANTA !== 'undefined') {
+            VANTA.GLOBE({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0xffcc00,
+                backgroundColor: 0x852d18,
+                size: 1.50
+            });
+        }
+    </script>
 </body>
 
 </html>

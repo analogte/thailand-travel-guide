@@ -4,25 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Thai culture, traditions, etiquette, and essential phrases for your Thailand journey.">
+    <meta name="description"
+        content="Learn about Thai culture, traditions, etiquette, and essential phrases for your Thailand journey.">
     <meta name="keywords" content="Thai culture, Thai language, Thai etiquette, Thai traditions, Buddhism Thailand">
-    
+
     <title>Thai Culture - Thailand Travel Guide</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
-    
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 3D Background Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
 </head>
 
 <body class="font-body bg-gray-50">
@@ -31,7 +41,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-temple text-white text-sm"></i>
                     </div>
                     <span class="font-display font-bold text-xl text-gray-800">Thailand Guide</span>
@@ -53,23 +64,31 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
+        <div
+            class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
-                <a href="destinations.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Destinations</a>
-                <a href="culture.html" class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Culture</a>
-                <a href="guide.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Travel Guide</a>
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
+                <a href="destinations.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Destinations</a>
+                <a href="culture.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Culture</a>
+                <a href="guide.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Travel
+                    Guide</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section small relative bg-gradient-to-br from-purple-600 to-pink-500">
+        <div class="hero-bg" id="vanta-bg"></div>
         <div class="relative z-10 flex items-center justify-center min-h-[60vh]">
             <div class="text-center text-white px-4 max-w-4xl mx-auto">
                 <div class="floating-element mb-8">
-                    <div class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                        <i class="fas fa-om text-4xl text-yellow-300"></i>
+                    <div
+                        class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <i class="fas fa-hands-praying text-4xl text-yellow-300"></i>
                     </div>
                 </div>
 
@@ -97,10 +116,12 @@
                 </p>
             </div>
 
-            <div class="phrase-card bg-gradient-to-br from-teal-500 to-blue-600 rounded-3xl p-12 text-white shadow-2xl section-reveal">
+            <div
+                class="phrase-card bg-gradient-to-br from-teal-500 to-blue-600 rounded-3xl p-12 text-white shadow-2xl section-reveal">
                 <div class="text-center mb-8">
                     <div id="thai-text" class="text-6xl font-bold mb-4 transition-opacity duration-300">สวัสดี</div>
-                    <div id="roman-text" class="text-3xl mb-2 text-yellow-300 transition-opacity duration-300">Sawasdee</div>
+                    <div id="roman-text" class="text-3xl mb-2 text-yellow-300 transition-opacity duration-300">Sawasdee
+                    </div>
                     <div id="english-text" class="text-xl text-gray-200 transition-opacity duration-300">Hello</div>
                 </div>
 
@@ -108,7 +129,8 @@
                     <button id="prev-phrase" class="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full transition">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button id="play-audio" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-8 py-3 rounded-full font-semibold transition">
+                    <button id="play-audio"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-8 py-3 rounded-full font-semibold transition">
                         <i class="fas fa-volume-up mr-2"></i>Play Audio
                     </button>
                     <button id="next-phrase" class="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full transition">
@@ -224,7 +246,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <div class="flex items-center justify-center space-x-2 mb-6">
-                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-temple text-white text-sm"></i>
                     </div>
                     <span class="font-display font-bold text-2xl">Thailand Guide</span>
@@ -250,6 +273,27 @@
     <script src="js/culture.js"></script>
     <script src="js/guide.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Initialize Vanta Background -->
+    <script>
+        if (typeof VANTA !== 'undefined') {
+            VANTA.NET({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0xff6b6b,
+                backgroundColor: 0x2d0a4e,
+                points: 10.00,
+                maxDistance: 20.00,
+                spacing: 15.00
+            });
+        }
+    </script>
 </body>
 
 </html>
