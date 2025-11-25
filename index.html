@@ -682,66 +682,103 @@
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-white py-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <div class="flex items-center justify-center space-x-2 mb-6">
-                        <div
-                            class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                            <i class="fas fa-temple text-white text-sm"></i>
-                        </div>
-                        <span class="font-display font-bold text-2xl">Thailand Guide</span>
-                    </div>
+        </div>
+        </div>
+    </section>
 
-                    <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
-                        Your comprehensive guide to exploring the Land of Smiles.
-                        Discover temples, beaches, culture, and cuisine in amazing Thailand.
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-gradient-to-r from-teal-800 to-teal-900 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div
+                class="absolute top-0 left-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl transform -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full mix-blend-overlay filter blur-3xl transform translate-x-1/2 translate-y-1/2">
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 section-reveal">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Start Your Journey?
+            </h2>
+            <p class="text-xl text-gray-200 mb-10 leading-relaxed">
+                From planning your itinerary to learning local customs, we have everything you need for an unforgettable
+                Thai adventure.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="destinations.html"
+                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg flex items-center justify-center">
+                    <i class="fas fa-map-marked-alt mr-2"></i> Explore Destinations
+                </a>
+                <a href="guide.html"
+                    class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-teal-900 font-bold py-4 px-8 rounded-full transition-all flex items-center justify-center">
+                    <i class="fas fa-book-open mr-2"></i> Read Travel Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-6">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-temple text-white text-sm"></i>
+                    </div>
+                    <span class="font-display font-bold text-2xl">Thailand Guide</span>
+                </div>
+
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Your comprehensive guide to exploring the Land of Smiles.
+                    Discover temples, beaches, culture, and cuisine in amazing Thailand.
+                </p>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-500 text-sm">
+                        © 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.
                     </p>
-
-                    <div class="border-t border-gray-700 pt-8">
-                        <p class="text-gray-500 text-sm">
-                            © 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.
-                        </p>
-                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- Scripts -->
-        <script src="js/data-loader.js"></script>
-        <script src="js/ui-utils.js"></script>
-        <script src="js/destinations.js"></script>
-        <script src="js/culture.js"></script>
-        <script src="js/guide.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/ui-utils.js"></script>
+    <script src="js/destinations.js"></script>
+    <script src="js/culture.js"></script>
+    <script src="js/guide.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Initialize Vanta Background -->
-        <script>
-            if (typeof VANTA !== 'undefined') {
-                VANTA.BIRDS({
-                    el: "#vanta-bg",
-                    mouseControls: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 200.00,
-                    minWidth: 200.00,
-                    scale: 1.00,
-                    scaleMobile: 1.00,
-                    backgroundColor: 0x0d4f4c,
-                    color1: 0xd4af37,
-                    color2: 0xff6b6b,
-                    colorMode: "lerp",
-                    birdSize: 1.20,
-                    wingSpan: 25.00,
-                    speedLimit: 5.00,
-                    separation: 50.00,
-                    alignment: 50.00,
-                    cohesion: 50.00,
-                    quantity: 3.00
-                });
-            }
-        </script>
+    <!-- Initialize Vanta Background -->
+    <script>
+        if (typeof VANTA !== 'undefined') {
+            VANTA.BIRDS({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundColor: 0x0d4f4c,
+                color1: 0xd4af37,
+                color2: 0xff6b6b,
+                colorMode: "lerp",
+                birdSize: 1.20,
+                wingSpan: 25.00,
+                speedLimit: 5.00,
+                separation: 50.00,
+                alignment: 50.00,
+                cohesion: 50.00,
+                quantity: 3.00
+            });
+        }
+    </script>
 </body>
 
 </html>
