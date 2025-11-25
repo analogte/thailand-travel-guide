@@ -576,66 +576,172 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <!-- Traveler Reviews Section -->
+    <section class="py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <div class="flex items-center justify-center space-x-2 mb-6">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                    <span class="block text-gray-800">Traveler</span>
+                    <span class="gradient-text">Stories</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
+                    Hear from travelers around the world who have fallen in love with the Land of Smiles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-8 relative section-reveal hover:shadow-xl transition-shadow duration-300">
                     <div
-                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                        <i class="fas fa-temple text-white text-sm"></i>
+                        class="absolute -top-6 left-8 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span class="font-display font-bold text-2xl">Thailand Guide</span>
+                    <div class="mt-4 mb-6">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed">
+                            "The temples in Chiang Mai took my breath away. The people are so friendly and the food is
+                            just incredible. Best trip of my life!"
+                        </p>
+                    </div>
+                    <div class="flex items-center border-t border-gray-200 pt-6">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J."
+                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Jenkins</h4>
+                            <p class="text-sm text-gray-500">United Kingdom 🇬🇧</p>
+                        </div>
+                    </div>
                 </div>
 
-                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
-                    Your comprehensive guide to exploring the Land of Smiles.
-                    Discover temples, beaches, culture, and cuisine in amazing Thailand.
-                </p>
+                <!-- Review 2 -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-8 relative section-reveal hover:shadow-xl transition-shadow duration-300">
+                    <div
+                        class="absolute -top-6 left-8 w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="mt-4 mb-6">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed">
+                            "Phuket's beaches are paradise on earth. I spent 2 weeks island hopping and every sunset was
+                            more magical than the last."
+                        </p>
+                    </div>
+                    <div class="flex items-center border-t border-gray-200 pt-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael C."
+                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-sm text-gray-500">Singapore 🇸🇬</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="border-t border-gray-700 pt-8">
-                    <p class="text-gray-500 text-sm">
-                        © 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.
-                    </p>
+                <!-- Review 3 -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-8 relative section-reveal hover:shadow-xl transition-shadow duration-300">
+                    <div
+                        class="absolute -top-6 left-8 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="mt-4 mb-6">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed">
+                            "Bangkok is a city that never sleeps! The street food at Yaowarat is a must-try. So much
+                            energy and culture in one place."
+                        </p>
+                    </div>
+                    <div class="flex items-center border-t border-gray-200 pt-6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma W."
+                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emma Wilson</h4>
+                            <p class="text-sm text-gray-500">Australia 🇦🇺</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="js/data-loader.js"></script>
-    <script src="js/ui-utils.js"></script>
-    <script src="js/destinations.js"></script>
-    <script src="js/culture.js"></script>
-    <script src="js/guide.js"></script>
-    <script src="js/main.js"></script>
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <div class="flex items-center justify-center space-x-2 mb-6">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-temple text-white text-sm"></i>
+                        </div>
+                        <span class="font-display font-bold text-2xl">Thailand Guide</span>
+                    </div>
 
-    <!-- Initialize Vanta Background -->
-    <script>
-        if (typeof VANTA !== 'undefined') {
-            VANTA.BIRDS({
-                el: "#vanta-bg",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                backgroundColor: 0x0d4f4c,
-                color1: 0xd4af37,
-                color2: 0xff6b6b,
-                colorMode: "lerp",
-                birdSize: 1.20,
-                wingSpan: 25.00,
-                speedLimit: 5.00,
-                separation: 50.00,
-                alignment: 50.00,
-                cohesion: 50.00,
-                quantity: 3.00
-            });
-        }
-    </script>
+                    <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                        Your comprehensive guide to exploring the Land of Smiles.
+                        Discover temples, beaches, culture, and cuisine in amazing Thailand.
+                    </p>
+
+                    <div class="border-t border-gray-700 pt-8">
+                        <p class="text-gray-500 text-sm">
+                            © 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="js/data-loader.js"></script>
+        <script src="js/ui-utils.js"></script>
+        <script src="js/destinations.js"></script>
+        <script src="js/culture.js"></script>
+        <script src="js/guide.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Initialize Vanta Background -->
+        <script>
+            if (typeof VANTA !== 'undefined') {
+                VANTA.BIRDS({
+                    el: "#vanta-bg",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    backgroundColor: 0x0d4f4c,
+                    color1: 0xd4af37,
+                    color2: 0xff6b6b,
+                    colorMode: "lerp",
+                    birdSize: 1.20,
+                    wingSpan: 25.00,
+                    speedLimit: 5.00,
+                    separation: 50.00,
+                    alignment: 50.00,
+                    cohesion: 50.00,
+                    quantity: 3.00
+                });
+            }
+        </script>
 </body>
 
 </html>
