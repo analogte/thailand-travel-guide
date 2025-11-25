@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initScrollReveal();
         initSmoothScrolling();
         initMobileMenu();
+        initCountdown();
 
         // Initialize page-specific features
         await initDestinationsPage();

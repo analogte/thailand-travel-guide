@@ -194,3 +194,48 @@ function hideLoading(element) {
         element.classList.remove('loading');
     }
 }
+
+/**
+ * Initialize countdown timer
+ * @param {string} targetDate - Date string (e.g., '2026-04-13')
+ */
+function initCountdown(targetDate = '2026-04-13T00:00:00') {
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+
+    if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+    const target = new Date(targetDate).getTime();
+
+    const updateCountdown = () => {
+        const now = new Date().getTime();
+        const distance = target - now;
+
+        if (distance < 0) {
+            // Event has passed
+            daysEl.innerText = '00';
+            hoursEl.innerText = '00';
+            minutesEl.innerText = '00';
+            secondsEl.innerText = '00';
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        daysEl.innerText = days < 10 ? `0${days}` : days;
+        hoursEl.innerText = hours < 10 ? `0${hours}` : hours;
+        minutesEl.innerText = minutes < 10 ? `0${minutes}` : minutes;
+        secondsEl.innerText = seconds < 10 ? `0${seconds}` : seconds;
+    };
+
+    // Initial call
+    updateCountdown();
+
+    // Update every second
+    setInterval(updateCountdown, 1000);
+}
