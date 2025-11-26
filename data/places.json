@@ -1,11 +1,111 @@
 [
     {
+        "id": "bkk_grand_palace",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Grand Palace & Wat Phra Kaew",
+        "thaiName": "พระบรมมหาราชวังและวัดพระศรีรัตนศาสดาราม",
+        "description": "Thailand's most sacred site, home to the Emerald Buddha and a stunning complex of royal buildings showcasing Thai architecture at its finest.",
+        "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+        "images": [
+            "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800",
+            "https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=800"
+        ],
+        "rating": 4.9,
+        "reviews": 45000,
+        "address": "Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:30 - 15:30 (Last entry)",
+        "entranceFee": "500 THB (Foreigners), Free (Thais with ID)",
+        "dressCode": "STRICT: Long pants/skirts (below knee), covered shoulders. NO tank tops, shorts, ripped jeans, or leggings. Scarves NOT accepted as shoulder cover.",
+        "highlights": [
+            "Emerald Buddha (Phra Kaew Morakot)",
+            "Ramakien Mural Gallery (longest in the world)",
+            "Golden Chedi and Phra Mondop",
+            "Royal Changing of Robes Ceremony (3 times/year)"
+        ],
+        "tips": [
+            "Arrive early (08:30-09:00) to avoid crowds and heat.",
+            "Ticket includes Queen Sirikit Museum and Khon performance (within 7 days).",
+            "Beware of scams claiming 'temple closed' - it's open daily.",
+            "Photography prohibited inside Emerald Buddha chapel.",
+            "Clothing rental available at entrance (limited during peak hours)."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Sanam Chai Station (BL31), Exit 1, walk 5 mins."
+            },
+            {
+                "type": "Boat",
+                "detail": "Chao Phraya Express to Tha Chang Pier (N9)."
+            },
+            {
+                "type": "Bus",
+                "detail": "Lines 1, 3, 9, 15, 25, 30, 32, 33, 43, 44, 47, 53, 82, 91, 203, 508, 512."
+            }
+        ],
+        "location": {
+            "lat": 13.7500,
+            "lng": 100.4915
+        }
+    },
+    {
+        "id": "bkk_wat_pho",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Pho (Temple of the Reclining Buddha)",
+        "thaiName": "วัดพระเชตุพนวิมลมังคลาราม",
+        "description": "Thailand's first university and UNESCO Memory of the World site, famous for its 46-meter Reclining Buddha and traditional Thai massage school.",
+        "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+        "images": [
+            "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800"
+        ],
+        "rating": 4.8,
+        "reviews": 38000,
+        "address": "2 Sanam Chai Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:00 - 19:30 (Extended hours)",
+        "entranceFee": "300 THB (Foreigners), Free (Children under 120cm)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "46m Reclining Buddha with mother-of-pearl feet",
+            "Four Royal Chedis (colorful stupas)",
+            "108 Lakshana on Buddha's feet",
+            "Traditional Thai Massage School"
+        ],
+        "tips": [
+            "Visit at 17:00-18:00 for evening chanting ceremony.",
+            "Book massage early - queues can be 1-2 hours long.",
+            "Thai Massage: 480-520 THB/hour, Herbal Compress: 720 THB/hour.",
+            "Explore beyond the Reclining Buddha - the complex has many hidden gems."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Sanam Chai Station (BL31), Exit 1, walk 5 mins."
+            },
+            {
+                "type": "Boat",
+                "detail": "Chao Phraya Express to Tha Tien Pier (N8), walk 2 mins."
+            },
+            {
+                "type": "Ferry",
+                "detail": "Cross-river ferry from Wat Arun (5 THB)."
+            }
+        ],
+        "location": {
+            "lat": 13.7465,
+            "lng": 100.4927
+        }
+    },
+    {
         "id": "bkk_wat_arun",
         "provinceId": "bangkok",
         "category": "temple",
-        "name": "Wat Arun",
+        "name": "Wat Arun (Temple of Dawn)",
         "thaiName": "วัดอรุณราชวราราม",
-        "description": "The Temple of Dawn is one of Bangkok's most iconic landmarks, known for its massive prang (tower) encrusted with colorful porcelain.",
+        "description": "Bangkok's most iconic riverside temple, featuring an 82-meter Khmer-style prang decorated with colorful Chinese porcelain. Fully restored in 2025.",
         "image": "images/bangkok.png",
         "images": [
             "images/bangkok.png",
@@ -16,31 +116,32 @@
         "reviews": 12500,
         "address": "158 Thanon Wang Doem, Wat Arun, Bangkok Yai, Bangkok 10600",
         "openingHours": "08:00 - 18:00",
-        "entranceFee": "100 THB (Foreigners), Free (Thais)",
+        "entranceFee": "200 THB (Foreigners, updated 2025), Free (Thais)",
         "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
         "highlights": [
-            "The central Prang (tower) climbing",
-            "Colorful porcelain mosaics",
-            "Sunset view from across the river",
-            "Ordination Hall"
+            "82m Central Prang with steep climbing stairs",
+            "Colorful porcelain and seashell mosaics",
+            "Best sunset views from across the river",
+            "Thai costume rental for photoshoots (popular trend)"
         ],
         "tips": [
-            "Best time to visit is late afternoon for sunset photos.",
-            "Take the river ferry from Tha Tien pier for a scenic arrival.",
-            "Wear slip-on shoes as you'll need to take them off frequently."
+            "Despite the name 'Dawn', best photos are at late afternoon/sunset.",
+            "Climb the prang carefully - stairs are very steep.",
+            "Rent traditional Thai costume nearby for Instagram-worthy photos.",
+            "Cross from Wat Pho via ferry (5 THB) for scenic approach."
         ],
         "transportation": [
             {
-                "type": "Boat",
-                "detail": "Take Chao Phraya Express Boat to Wat Arun Pier (N8)."
-            },
-            {
                 "type": "MRT",
-                "detail": "Take MRT Blue Line to Itsaraphap Station (Exit 2), then walk 10 mins."
+                "detail": "Itsaraphap Station (BL32), Exit 2, walk 10-12 mins or motorbike taxi."
             },
             {
-                "type": "Tuk Tuk",
-                "detail": "From Wat Pho or Museum of Siam, take a Tuk Tuk to the ferry pier (approx. 50-60 THB)."
+                "type": "Boat",
+                "detail": "Chao Phraya Express to Wat Arun Pier (N8)."
+            },
+            {
+                "type": "Ferry",
+                "detail": "Cross-river ferry from Tha Tien (Wat Pho side), 5 THB."
             }
         ],
         "location": {
@@ -136,6 +237,202 @@
         "location": {
             "lat": 13.7462,
             "lng": 100.5347
+        }
+    },
+    {
+        "id": "bkk_golden_mount",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Saket (Golden Mount)",
+        "thaiName": "วัดสระเกศราชวรมหาวิหาร",
+        "description": "Climb 344 steps to the top of Bangkok's Golden Mount for stunning 360-degree panoramic views of the old city and modern skyline.",
+        "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+        "images": [
+            "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800"
+        ],
+        "rating": 4.7,
+        "reviews": 8500,
+        "address": "344 Thanon Chakkraphatdi Phong, Ban Bat, Pom Prap Sattru Phai, Bangkok 10100",
+        "openingHours": "07:00 - 19:00",
+        "entranceFee": "100 THB (Foreigners, for climbing the mount), Free (Temple grounds)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "77m high artificial hill with golden chedi",
+            "360-degree panoramic city views",
+            "344 gentle spiral steps with bells to ring",
+            "Annual Temple Fair during Loy Krathong (November)"
+        ],
+        "tips": [
+            "Visit at sunset for best views and cooler temperature.",
+            "Stairs are gentle and easy to climb - suitable for all ages.",
+            "Ring the bells along the way for good luck.",
+            "Annual Loy Krathong festival here is one of Bangkok's biggest."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Sam Yot Station (BL30), walk 15 mins."
+            },
+            {
+                "type": "Bus",
+                "detail": "Lines 2, 15, 37, 47, 49, 79."
+            },
+            {
+                "type": "Grab/Bolt",
+                "detail": "Most convenient option from hotels."
+            }
+        ],
+        "location": {
+            "lat": 13.7544,
+            "lng": 100.5063
+        }
+    },
+    {
+        "id": "bkk_wat_suthat",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Suthat & Giant Swing",
+        "thaiName": "วัดสุทัศนเทพวราราม",
+        "description": "One of Bangkok's most beautiful temples with perfect Rattanakosin architecture, standing before the iconic red Giant Swing.",
+        "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+        "images": [
+            "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800"
+        ],
+        "rating": 4.6,
+        "reviews": 5200,
+        "address": "146 Bamrung Mueang Road, Wat Ratchabophit, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:30 - 17:00 (Temple hall), 08:00 - 21:00 (Grounds)",
+        "entranceFee": "100 THB (Foreigners)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "Phra Sri Sakyamuni - massive Sukhothai-era bronze Buddha",
+            "Giant Swing (Sao Ching Cha) - 21m tall red structure",
+            "Intricate murals and hand-carved teak doors",
+            "Evening chanting ceremony (18:00-19:00)"
+        ],
+        "tips": [
+            "Less crowded than major temples - peaceful atmosphere.",
+            "Join evening chanting for authentic spiritual experience.",
+            "Giant Swing is best photographed in morning light.",
+            "Combine with nearby Wat Ratchabophit for full cultural day."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Sam Yot Station (BL30), walk 10 mins."
+            },
+            {
+                "type": "Bus",
+                "detail": "Lines 8, 12, 42, 47, 82."
+            },
+            {
+                "type": "Tuk Tuk",
+                "detail": "From Khao San Road area, approx. 60-80 THB."
+            }
+        ],
+        "location": {
+            "lat": 13.7507,
+            "lng": 100.5014
+        }
+    },
+    {
+        "id": "bkk_marble_temple",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Benchamabophit (Marble Temple)",
+        "thaiName": "วัดเบญจมบพิตรดุสิตวนาราม",
+        "description": "Thailand's most symmetrically perfect temple, built entirely from Italian Carrara marble with a gallery of 52 Buddha images from across Asia.",
+        "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+        "images": [
+            "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800"
+        ],
+        "rating": 4.7,
+        "reviews": 6800,
+        "address": "69 Thanon Si Ayutthaya, Dusit, Bangkok 10300",
+        "openingHours": "08:00 - 17:30",
+        "entranceFee": "100 THB (Foreigners), 50 THB (Some sources - bring 100 THB to be safe)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "Pure white Italian Carrara marble construction",
+            "52 Buddha statues from Thailand and abroad",
+            "Perfectly symmetrical Thai-European architecture",
+            "Peaceful courtyard with koi ponds"
+        ],
+        "tips": [
+            "Visit early morning (06:00-07:00) to see monks' alms ceremony.",
+            "Less touristy than Grand Palace - great for photography.",
+            "Study the 52 different Buddha postures in the gallery.",
+            "Combine with nearby Dusit Zoo (if still open) or Ananta Samakhom."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Phaya Thai Station, then taxi/Grab (10 mins)."
+            },
+            {
+                "type": "Bus",
+                "detail": "Lines 3, 16, 28, 72, 503, 510."
+            },
+            {
+                "type": "Grab/Bolt",
+                "detail": "Most convenient from central Bangkok."
+            }
+        ],
+        "location": {
+            "lat": 13.7656,
+            "lng": 100.5153
+        }
+    },
+    {
+        "id": "bkk_wat_paknam",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Paknam Phasi Charoen (Big Buddha)",
+        "thaiName": "วัดปากน้ำภาษีเจริญ",
+        "description": "Bangkok's newest landmark featuring a 69-meter golden Buddha statue and the stunning Emerald Crystal Chedi with cosmic ceiling murals.",
+        "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+        "images": [
+            "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800"
+        ],
+        "rating": 4.8,
+        "reviews": 15000,
+        "address": "300 Ratchamongkhon Prasat Alley, Pak Khlong Phasi Charoen, Phasi Charoen, Bangkok 10160",
+        "openingHours": "08:00 - 18:00",
+        "entranceFee": "Free",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "69m tall golden Buddha (equivalent to 20-story building)",
+            "Emerald Crystal Chedi with cosmic ceiling art",
+            "Instagram-famous green glass stupa",
+            "Thonburi riverside location - changing Bangkok's tourism flow"
+        ],
+        "tips": [
+            "Construction fully complete as of 2025 - scaffolding removed.",
+            "Best photos from Soi Lat Ya 8 showing Buddha among old houses.",
+            "Visit Emerald Chedi on top floor - arrive early to avoid crowds.",
+            "Free entry makes it excellent value compared to other temples."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Bang Phai Station (BL33), walk 10-15 mins."
+            },
+            {
+                "type": "Boat",
+                "detail": "Khlong Bangkok Yai boat to Wat Paknam Pier."
+            },
+            {
+                "type": "Grab/Bolt",
+                "detail": "Set destination 'Wat Paknam Phasi Charoen'."
+            }
+        ],
+        "location": {
+            "lat": 13.7194,
+            "lng": 100.4897
         }
     },
     {
