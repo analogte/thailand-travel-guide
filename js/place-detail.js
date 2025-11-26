@@ -230,6 +230,8 @@ function initImageGallery(place) {
     const mainImage = document.getElementById('main-image');
     const prevBtn = document.querySelector('.gallery-prev');
     const nextBtn = document.querySelector('.gallery-next');
+    const thumbnailGallery = document.getElementById('thumbnail-gallery');
+    const thumbnailContainer = document.getElementById('thumbnail-container');
 
     if (!mainImage || !prevBtn || !nextBtn) return;
 
@@ -239,19 +241,44 @@ function initImageGallery(place) {
     if (images.length <= 1) {
         prevBtn.style.display = 'none';
         nextBtn.style.display = 'none';
+        if (thumbnailContainer) thumbnailContainer.style.display = 'none';
         return;
+    }
+
+    // Render thumbnails
+    if (thumbnailGallery) {
+        thumbnailGallery.innerHTML = images.map((img, index) => `
+            <button 
+                class="thumbnail-btn w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${index === 0 ? 'border-white' : 'border-transparent opacity-60 hover:opacity-100'}"
+                data-index="${index}"
+            >
+                <img src="${img}" alt="Thumbnail ${index + 1}" class="w-full h-full object-cover">
+            </button>
+        `).join('');
+
+        // Thumbnail click events
+        document.querySelectorAll('.thumbnail-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const index = parseInt(btn.dataset.index);
+                currentImageIndex = index;
+                updateGalleryImage(mainImage, images[index]);
+                updateThumbnailActive(index);
+            });
+        });
     }
 
     // Previous image
     prevBtn.addEventListener('click', () => {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
         updateGalleryImage(mainImage, images[currentImageIndex]);
+        updateThumbnailActive(currentImageIndex);
     });
 
     // Next image
     nextBtn.addEventListener('click', () => {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         updateGalleryImage(mainImage, images[currentImageIndex]);
+        updateThumbnailActive(currentImageIndex);
     });
 
     // Keyboard navigation
@@ -260,6 +287,22 @@ function initImageGallery(place) {
             prevBtn.click();
         } else if (e.key === 'ArrowRight') {
             nextBtn.click();
+        }
+    });
+}
+
+/**
+ * Update active thumbnail
+ * @param {number} index - Active index
+ */
+function updateThumbnailActive(index) {
+    document.querySelectorAll('.thumbnail-btn').forEach((btn, i) => {
+        if (i === index) {
+            btn.classList.remove('border-transparent', 'opacity-60');
+            btn.classList.add('border-white');
+        } else {
+            btn.classList.remove('border-white');
+            btn.classList.add('border-transparent', 'opacity-60');
         }
     });
 }
