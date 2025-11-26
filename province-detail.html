@@ -185,7 +185,7 @@
                             <div class="text-xs font-bold text-teal-600 uppercase tracking-wide mb-1">${place.category}</div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">${place.name}</h3>
                             <p class="text-gray-600 text-sm mb-4 line-clamp-2">${place.description}</p>
-                            <button class="w-full py-2 rounded-lg border border-teal-600 text-teal-600 font-semibold hover:bg-teal-600 hover:text-white transition-colors">
+                            <button onclick="window.location.href='place-detail.html?id=${place.id}'" class="w-full py-2 rounded-lg border border-teal-600 text-teal-600 font-semibold hover:bg-teal-600 hover:text-white transition-colors">
                                 View Details
                             </button>
                         </div>

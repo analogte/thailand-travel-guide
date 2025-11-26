@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Detail - Thailand Travel Guide</title>
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-2 group">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                        <i class="fas fa-temple text-white text-lg"></i>
+                    </div>
+                    <span class="font-display font-bold text-2xl text-gray-800 tracking-tight">Thailand<span
+                            class="text-yellow-500">Guide</span></span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-yellow-600 font-medium">Home</a>
+                    <a href="destinations.html" class="nav-link text-yellow-600 font-medium">Destinations</a>
+                    <a href="culture.html" class="nav-link text-gray-600 hover:text-yellow-600 font-medium">Culture</a>
+                    <a href="guide.html" class="nav-link text-gray-600 hover:text-yellow-600 font-medium">Guide</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Gallery -->
+    <section class="relative h-[60vh] bg-gray-900 group">
+        <img id="main-image" src="" alt="Place Image"
+            class="w-full h-full object-cover opacity-80 transition-opacity duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+        <!-- Navigation Arrows (Mockup) -->
+        <button
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-sm transition-colors">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-sm transition-colors">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="absolute bottom-0 left-0 w-full p-8 md:p-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center space-x-2 text-yellow-400 mb-2">
+                    <i class="fas fa-star"></i>
+                    <span id="place-rating" class="font-bold text-lg"></span>
+                    <span id="place-reviews" class="text-gray-300 text-sm"></span>
+                </div>
+                <h1 id="place-name" class="font-display text-4xl md:text-6xl font-bold text-white mb-2">Loading...</h1>
+                <p id="place-thai-name" class="text-2xl text-gray-300 font-light mb-6">...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+                <!-- Main Content -->
+                <div class="lg:col-span-2 space-y-12">
+                    <!-- About -->
+                    <div>
+                        <h2 class="font-display text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-info-circle text-teal-600 mr-3"></i> About
+                        </h2>
+                        <p id="place-desc" class="text-lg text-gray-600 leading-relaxed"></p>
+                    </div>
+
+                    <!-- Highlights -->
+                    <div>
+                        <h2 class="font-display text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-star text-teal-600 mr-3"></i> Highlights
+                        </h2>
+                        <ul id="place-highlights" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Injected by JS -->
+                        </ul>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="bg-yellow-50 rounded-2xl p-8 border border-yellow-100">
+                        <h2 class="font-display text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-lightbulb text-yellow-500 mr-3"></i> Local Tips
+                        </h2>
+                        <ul id="place-tips" class="space-y-3 text-gray-700">
+                            <!-- Injected by JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-2xl shadow-lg p-8 sticky top-24 border border-gray-100">
+                        <h3 class="font-display text-xl font-bold text-gray-800 mb-6 border-b pb-4">Visitor Information
+                        </h3>
+
+                        <div class="space-y-6">
+                            <!-- Opening Hours -->
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-gray-700 text-sm uppercase tracking-wide">Opening Hours
+                                    </h4>
+                                    <p id="place-hours" class="text-gray-600 mt-1"></p>
+                                </div>
+                            </div>
+
+                            <!-- Entrance Fee -->
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-gray-700 text-sm uppercase tracking-wide">Entrance Fee
+                                    </h4>
+                                    <p id="place-fee" class="text-gray-600 mt-1"></p>
+                                </div>
+                            </div>
+
+                            <!-- Dress Code -->
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-gray-700 text-sm uppercase tracking-wide">Dress Code</h4>
+                                    <p id="place-dress" class="text-gray-600 mt-1"></p>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-gray-700 text-sm uppercase tracking-wide">Location</h4>
+                                    <p id="place-address" class="text-gray-600 mt-1 text-sm"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t">
+                            <button
+                                class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
+                                <i class="fas fa-directions mr-2"></i> Get Directions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12">
+                <button onclick="history.back()"
+                    class="inline-flex items-center text-gray-500 hover:text-teal-600 font-medium transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Province
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">© 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const placeId = urlParams.get('id');
+
+            if (!placeId) {
+                window.location.href = 'destinations.html';
+                return;
+            }
+
+            try {
+                const response = await fetch('data/places.json');
+                const places = await response.json();
+                const place = places.find(p => p.id === placeId);
+
+                if (!place) {
+                    alert('Place not found!');
+                    window.location.href = 'destinations.html';
+                    return;
+                }
+
+                // Render Content
+                document.getElementById('main-image').src = place.image;
+                document.getElementById('place-name').innerText = place.name;
+                document.getElementById('place-thai-name').innerText = place.thaiName;
+                document.getElementById('place-rating').innerText = place.rating;
+                document.getElementById('place-reviews').innerText = `(${place.reviews.toLocaleString()} reviews)`;
+                document.getElementById('place-desc').innerText = place.description;
+
+                // Sidebar Info
+                document.getElementById('place-hours').innerText = place.openingHours;
+                document.getElementById('place-fee').innerText = place.entranceFee;
+                document.getElementById('place-dress').innerText = place.dressCode;
+                document.getElementById('place-address').innerText = place.address;
+
+                // Highlights
+                const highlightsList = document.getElementById('place-highlights');
+                place.highlights.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-center bg-white p-4 rounded-xl shadow-sm border border-gray-100';
+                    li.innerHTML = `<i class="fas fa-check-circle text-teal-500 mr-3"></i> <span class="text-gray-700 font-medium">${item}</span>`;
+                    highlightsList.appendChild(li);
+                });
+
+                // Tips
+                const tipsList = document.getElementById('place-tips');
+                place.tips.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-start';
+                    li.innerHTML = `<i class="fas fa-angle-right text-yellow-500 mt-1 mr-3 flex-shrink-0"></i> <span>${item}</span>`;
+                    tipsList.appendChild(li);
+                });
+
+            } catch (error) {
+                console.error('Error loading place data:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>

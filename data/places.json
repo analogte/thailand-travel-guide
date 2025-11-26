@@ -4,62 +4,234 @@
         "provinceId": "bangkok",
         "category": "temple",
         "name": "Wat Arun",
-        "description": "The Temple of Dawn, a riverside landmark.",
+        "thaiName": "วัดอรุณราชวราราม",
+        "description": "The Temple of Dawn is one of Bangkok's most iconic landmarks, known for its massive prang (tower) encrusted with colorful porcelain.",
         "image": "images/bangkok.png",
-        "rating": 4.8
+        "images": [
+            "images/bangkok.png",
+            "https://images.unsplash.com/photo-1582558486241-7667a422a04e?q=80&w=800",
+            "https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=800"
+        ],
+        "rating": 4.8,
+        "reviews": 12500,
+        "address": "158 Thanon Wang Doem, Wat Arun, Bangkok Yai, Bangkok 10600",
+        "openingHours": "08:00 - 18:00",
+        "entranceFee": "100 THB (Foreigners), Free (Thais)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "The central Prang (tower) climbing",
+            "Colorful porcelain mosaics",
+            "Sunset view from across the river",
+            "Ordination Hall"
+        ],
+        "tips": [
+            "Best time to visit is late afternoon for sunset photos.",
+            "Take the river ferry from Tha Tien pier for a scenic arrival.",
+            "Wear slip-on shoes as you'll need to take them off frequently."
+        ],
+        "location": {
+            "lat": 13.7437,
+            "lng": 100.4888
+        }
     },
     {
         "id": "bkk_jay_fai",
         "provinceId": "bangkok",
         "category": "food",
         "name": "Raan Jay Fai",
-        "description": "Michelin-starred street food famous for crab omelet.",
+        "thaiName": "ร้านเจ๊ไฝ",
+        "description": "Legendary street food stall awarded a Michelin star, famous for its crab omelet and the chef's iconic goggles.",
         "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800",
-        "rating": 4.7
+        "images": [
+            "https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800",
+            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800"
+        ],
+        "rating": 4.7,
+        "reviews": 3400,
+        "address": "327 Mahachai Road, Samran Rat, Phra Nakhon, Bangkok 10200",
+        "openingHours": "09:00 - 20:30 (Closed Mon-Tue)",
+        "entranceFee": "N/A (Food prices 500-1500 THB)",
+        "dressCode": "Casual",
+        "highlights": [
+            "Crab Omelet (Kai Jeaw Poo)",
+            "Drunken Noodles (Pad Kee Mao)",
+            "Watching Jay Fai cook with charcoal fire"
+        ],
+        "tips": [
+            "Queue can be very long (2-4 hours). Booking in advance is recommended.",
+            "Pricey for street food but portions are huge.",
+            "Cash only."
+        ],
+        "location": {
+            "lat": 13.7525,
+            "lng": 100.5048
+        }
     },
     {
         "id": "bkk_after_you",
         "provinceId": "bangkok",
         "category": "cafe",
         "name": "After You Dessert Cafe",
-        "description": "Famous for Shibuya Honey Toast and Kakigori.",
+        "thaiName": "อาฟเตอร์ ยู",
+        "description": "Thailand's most famous dessert cafe chain, beloved for its Shibuya Honey Toast and Kakigori (shaved ice).",
         "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800",
-        "rating": 4.5
+        "images": [
+            "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800",
+            "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800"
+        ],
+        "rating": 4.5,
+        "reviews": 5600,
+        "address": "Various locations (Siam Paragon, Central World, etc.)",
+        "openingHours": "10:00 - 22:00",
+        "entranceFee": "N/A",
+        "dressCode": "Casual",
+        "highlights": [
+            "Shibuya Honey Toast",
+            "Thai Tea Kakigori",
+            "Two-Tone Kakigori"
+        ],
+        "tips": [
+            "Siam Paragon branch usually has the longest queue.",
+            "Try the seasonal menus (Durian, Mango, Strawberry).",
+            "Free tea is provided."
+        ],
+        "location": {
+            "lat": 13.7462,
+            "lng": 100.5347
+        }
     },
     {
         "id": "cm_doi_suthep",
         "provinceId": "chiangmai",
         "category": "temple",
         "name": "Wat Phra That Doi Suthep",
-        "description": "Golden temple on the mountain with city views.",
+        "thaiName": "วัดพระธาตุดอยสุเทพ",
+        "description": "The most sacred temple in Northern Thailand, sitting atop a mountain with breathtaking views of Chiang Mai city.",
         "image": "https://images.unsplash.com/photo-1598935898639-5a711696e1e2?q=80&w=800",
-        "rating": 4.9
+        "images": [
+            "https://images.unsplash.com/photo-1598935898639-5a711696e1e2?q=80&w=800",
+            "https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=800"
+        ],
+        "rating": 4.9,
+        "reviews": 15000,
+        "address": "Suthep, Mueang Chiang Mai District, Chiang Mai 50200",
+        "openingHours": "06:00 - 20:00",
+        "entranceFee": "30 THB (Foreigners), Free (Thais)",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "Golden Chedi (Pagoda)",
+            "Naga Staircase (306 steps)",
+            "Viewpoint of Chiang Mai city",
+            "Jade Buddha"
+        ],
+        "tips": [
+            "Visit early morning for sunrise or evening for night view.",
+            "There is a cable car if you can't walk up the stairs.",
+            "Red trucks (Songthaew) are available from Chiang Mai Zoo."
+        ],
+        "location": {
+            "lat": 18.8049,
+            "lng": 98.9216
+        }
     },
     {
         "id": "cm_khao_soi",
         "provinceId": "chiangmai",
         "category": "food",
         "name": "Khao Soi Mae Sai",
-        "description": "Authentic Northern Thai curry noodles.",
+        "thaiName": "ข้าวซอยแม่สาย",
+        "description": "A local favorite spot serving authentic Northern Thai curry noodles (Khao Soi) with rich, creamy broth.",
         "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=800",
-        "rating": 4.8
+        "images": [
+            "https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=800"
+        ],
+        "rating": 4.8,
+        "reviews": 1200,
+        "address": "29/1 Ratchaphuek Alley, Chang Phueak, Chiang Mai 50300",
+        "openingHours": "08:00 - 16:00 (Closed Sundays)",
+        "entranceFee": "N/A (Dish price 50-80 THB)",
+        "dressCode": "Casual",
+        "highlights": [
+            "Chicken Khao Soi",
+            "Beef Khao Soi",
+            "Nam Ngiao (Spicy Pork Noodle)"
+        ],
+        "tips": [
+            "Come before noon to avoid running out of soup.",
+            "Very affordable prices.",
+            "Parking is limited in the alley."
+        ],
+        "location": {
+            "lat": 18.8015,
+            "lng": 98.9765
+        }
     },
     {
         "id": "pkt_patong",
         "provinceId": "phuket",
         "category": "nature",
         "name": "Patong Beach",
-        "description": "Famous beach with vibrant nightlife and water sports.",
+        "thaiName": "หาดป่าตอง",
+        "description": "Phuket's most famous and developed beach, offering a wide variety of activities, nightlife, and dining options.",
         "image": "images/Phuket01.jpg",
-        "rating": 4.4
+        "images": [
+            "images/Phuket01.jpg",
+            "https://images.unsplash.com/photo-1537956965359-7573183d1f57?q=80&w=800"
+        ],
+        "rating": 4.4,
+        "reviews": 8900,
+        "address": "Patong, Kathu District, Phuket 83150",
+        "openingHours": "24 Hours",
+        "entranceFee": "Free",
+        "dressCode": "Beachwear",
+        "highlights": [
+            "Bangla Road Nightlife",
+            "Water sports (Jet ski, Parasailing)",
+            "Sunset views",
+            "Shopping malls"
+        ],
+        "tips": [
+            "Can be very crowded and noisy.",
+            "Always negotiate prices for tuk-tuks and goods.",
+            "Swimming is dangerous during monsoon season (red flags)."
+        ],
+        "location": {
+            "lat": 7.8960,
+            "lng": 98.2953
+        }
     },
     {
         "id": "pkt_old_town",
         "provinceId": "phuket",
         "category": "culture",
         "name": "Old Phuket Town",
-        "description": "Sino-Portuguese architecture and colorful streets.",
+        "thaiName": "ย่านเมืองเก่าภูเก็ต",
+        "description": "A historical area known for its well-preserved Sino-Portuguese shophouses, colorful buildings, and street art.",
         "image": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=800",
-        "rating": 4.6
+        "images": [
+            "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=800",
+            "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=800"
+        ],
+        "rating": 4.6,
+        "reviews": 4500,
+        "address": "Thalang Road, Mueang Phuket District, Phuket 83000",
+        "openingHours": "Shops open 10:00 - 18:00 (Walking Street on Sunday 16:00-22:00)",
+        "entranceFee": "Free",
+        "dressCode": "Casual",
+        "highlights": [
+            "Soi Romanee",
+            "Sunday Walking Street Market",
+            "Street Art",
+            "Local Museums"
+        ],
+        "tips": [
+            "Sunday evening is the best time for the Walking Street market.",
+            "Great for photography.",
+            "Try local desserts like Oh Aew."
+        ],
+        "location": {
+            "lat": 7.8856,
+            "lng": 98.3907
+        }
     }
 ]
