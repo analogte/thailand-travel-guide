@@ -1,0 +1,65 @@
+[
+    {
+        "id": "bkk_wat_arun",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Arun",
+        "description": "The Temple of Dawn, a riverside landmark.",
+        "image": "images/bangkok.png",
+        "rating": 4.8
+    },
+    {
+        "id": "bkk_jay_fai",
+        "provinceId": "bangkok",
+        "category": "food",
+        "name": "Raan Jay Fai",
+        "description": "Michelin-starred street food famous for crab omelet.",
+        "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800",
+        "rating": 4.7
+    },
+    {
+        "id": "bkk_after_you",
+        "provinceId": "bangkok",
+        "category": "cafe",
+        "name": "After You Dessert Cafe",
+        "description": "Famous for Shibuya Honey Toast and Kakigori.",
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800",
+        "rating": 4.5
+    },
+    {
+        "id": "cm_doi_suthep",
+        "provinceId": "chiangmai",
+        "category": "temple",
+        "name": "Wat Phra That Doi Suthep",
+        "description": "Golden temple on the mountain with city views.",
+        "image": "https://images.unsplash.com/photo-1598935898639-5a711696e1e2?q=80&w=800",
+        "rating": 4.9
+    },
+    {
+        "id": "cm_khao_soi",
+        "provinceId": "chiangmai",
+        "category": "food",
+        "name": "Khao Soi Mae Sai",
+        "description": "Authentic Northern Thai curry noodles.",
+        "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=800",
+        "rating": 4.8
+    },
+    {
+        "id": "pkt_patong",
+        "provinceId": "phuket",
+        "category": "nature",
+        "name": "Patong Beach",
+        "description": "Famous beach with vibrant nightlife and water sports.",
+        "image": "images/Phuket01.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": "pkt_old_town",
+        "provinceId": "phuket",
+        "category": "culture",
+        "name": "Old Phuket Town",
+        "description": "Sino-Portuguese architecture and colorful streets.",
+        "image": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=800",
+        "rating": 4.6
+    }
+]

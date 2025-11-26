@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Province Detail - Thailand Travel Guide</title>
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-2 group">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                        <i class="fas fa-temple text-white text-lg"></i>
+                    </div>
+                    <span class="font-display font-bold text-2xl text-gray-800 tracking-tight">Thailand<span
+                            class="text-yellow-500">Guide</span></span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-yellow-600 font-medium">Home</a>
+                    <a href="destinations.html" class="nav-link text-yellow-600 font-medium">Destinations</a>
+                    <a href="culture.html" class="nav-link text-gray-600 hover:text-yellow-600 font-medium">Culture</a>
+                    <a href="guide.html" class="nav-link text-gray-600 hover:text-yellow-600 font-medium">Guide</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img id="province-cover" src="" alt="Cover" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 id="province-name" class="font-display text-5xl md:text-7xl font-bold mb-4">Loading...</h1>
+            <p id="province-thai-name" class="text-2xl font-light opacity-90 mb-8">...</p>
+            <p id="province-desc" class="text-lg max-w-2xl mx-auto text-gray-200">Please wait while we load the
+                information.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Tabs -->
+            <div class="flex justify-center mb-12 space-x-4 overflow-x-auto pb-4">
+                <button
+                    class="tab-btn active px-6 py-2 rounded-full bg-teal-600 text-white font-semibold shadow-md transition-all"
+                    data-category="all">All Places</button>
+                <button
+                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
+                    data-category="temple">Temples</button>
+                <button
+                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
+                    data-category="food">Food & Drink</button>
+                <button
+                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
+                    data-category="nature">Nature</button>
+                <button
+                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
+                    data-category="cafe">Cafes</button>
+            </div>
+
+            <!-- Places Grid -->
+            <div id="places-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Places will be injected here -->
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="destinations.html"
+                    class="inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to All Provinces
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">© 2024 Thailand Travel Guide. Made with ❤️ for travelers worldwide.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Get Province ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const provinceId = urlParams.get('id');
+
+            if (!provinceId) {
+                window.location.href = 'destinations.html';
+                return;
+            }
+
+            // Load Data
+            try {
+                const [provincesRes, placesRes] = await Promise.all([
+                    fetch('data/provinces.json'),
+                    fetch('data/places.json')
+                ]);
+
+                const provinces = await provincesRes.json();
+                const places = await placesRes.json();
+
+                const province = provinces.find(p => p.id === provinceId);
+                const provincePlaces = places.filter(p => p.provinceId === provinceId);
+
+                if (!province) {
+                    alert('Province not found!');
+                    window.location.href = 'destinations.html';
+                    return;
+                }
+
+                // Render Header
+                document.getElementById('province-name').innerText = province.name;
+                document.getElementById('province-thai-name').innerText = province.thaiName;
+                document.getElementById('province-desc').innerText = province.description;
+                document.getElementById('province-cover').src = province.coverImage || province.image;
+
+                // Render Places
+                renderPlaces(provincePlaces);
+
+                // Tab Logic
+                const tabs = document.querySelectorAll('.tab-btn');
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        // Update Active State
+                        tabs.forEach(t => {
+                            t.classList.remove('bg-teal-600', 'text-white', 'shadow-md');
+                            t.classList.add('bg-white', 'text-gray-600', 'hover:bg-gray-100');
+                        });
+                        tab.classList.remove('bg-white', 'text-gray-600', 'hover:bg-gray-100');
+                        tab.classList.add('bg-teal-600', 'text-white', 'shadow-md');
+
+                        // Filter
+                        const category = tab.dataset.category;
+                        const filtered = category === 'all'
+                            ? provincePlaces
+                            : provincePlaces.filter(p => p.category === category);
+                        renderPlaces(filtered);
+                    });
+                });
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+
+            function renderPlaces(data) {
+                const grid = document.getElementById('places-grid');
+                grid.innerHTML = '';
+
+                if (data.length === 0) {
+                    grid.innerHTML = '<div class="col-span-full text-center py-10 text-gray-500">No places found in this category yet.</div>';
+                    return;
+                }
+
+                data.forEach(place => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group';
+                    card.innerHTML = `
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="${place.image}" alt="${place.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold text-gray-800 flex items-center shadow-sm">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i> ${place.rating}
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs font-bold text-teal-600 uppercase tracking-wide mb-1">${place.category}</div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">${place.name}</h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">${place.description}</p>
+                            <button class="w-full py-2 rounded-lg border border-teal-600 text-teal-600 font-semibold hover:bg-teal-600 hover:text-white transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
