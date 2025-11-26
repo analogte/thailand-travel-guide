@@ -251,6 +251,73 @@ function isValidEmail(email) {
 }
 
 /**
+ * Rate limiter for newsletter submissions
+ */
+const NewsletterRateLimiter = {
+    attempts: new Map(),
+    maxAttempts: 3,
+    windowMs: 60000, // 1 minute
+
+    check(email) {
+        const now = Date.now();
+        const key = email.toLowerCase();
+        const attempts = this.attempts.get(key) || [];
+
+        // Clean old attempts outside the window
+        const validAttempts = attempts.filter(timestamp => now - timestamp < this.windowMs);
+
+        if (validAttempts.length >= this.maxAttempts) {
+            const oldestAttempt = validAttempts[0];
+            const waitTime = Math.ceil((this.windowMs - (now - oldestAttempt)) / 1000);
+            return { allowed: false, waitTime };
+        }
+
+        // Add new attempt
+        validAttempts.push(now);
+        this.attempts.set(key, validAttempts);
+
+        return { allowed: true };
+    },
+
+    reset(email) {
+        this.attempts.delete(email.toLowerCase());
+    }
+};
+
+/**
+ * Submit newsletter subscription to API
+ * @param {string} email - Email address
+ * @returns {Promise<boolean>} Success status
+ */
+async function submitNewsletterSubscription(email) {
+    // TODO: Replace with actual API endpoint
+    const API_ENDPOINT = '/api/newsletter/subscribe';
+
+    try {
+        // Simulate API call (replace with actual fetch when ready)
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
+        // Uncomment when API is ready:
+        /*
+        const response = await fetch(API_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email }),
+        });
+
+        if (!response.ok) throw new Error('API request failed');
+        const data = await response.json();
+        return data.success;
+        */
+
+        return true;
+    } catch (error) {
+        console.error('API submission failed:', error);
+        return true; // Fallback to localStorage
+    }
+}
+
+/**
  * Initialize newsletter subscription form
  */
 function initNewsletterForm() {
@@ -281,27 +348,54 @@ function initNewsletterForm() {
                 return;
             }
 
+            // Check rate limit
+            const rateLimitCheck = NewsletterRateLimiter.check(email);
+            if (!rateLimitCheck.allowed) {
+                showNotification(
+                    `⚠️ Too many attempts. Please wait ${rateLimitCheck.waitTime} seconds.`,
+                    'error'
+                );
+                return;
+            }
+
+            // Check if already subscribed
+            const subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
+            if (subscribers.includes(email)) {
+                showNotification('ℹ️ You are already subscribed!', 'info');
+                emailInput.value = '';
+                return;
+            }
+
             // Disable button and show loading
             submitBtn.disabled = true;
+            const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Subscribing...';
 
-            // Simulate API call (replace with actual API endpoint)
-            setTimeout(() => {
-                // Success
-                showNotification('🎉 Thank you for subscribing!', 'success');
-                emailInput.value = '';
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Subscribe';
+            try {
+                const success = await submitNewsletterSubscription(email);
 
-                // Store email in localStorage (for demo purposes)
-                const subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
-                if (!subscribers.includes(email)) {
+                if (success) {
+                    showNotification('🎉 Thank you for subscribing!', 'success');
+                    emailInput.value = '';
+
+                    // Store email in localStorage
                     subscribers.push(email);
                     localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
-                }
 
-                console.log('✓ Newsletter subscription:', email);
-            }, 1500);
+                    // Reset rate limiter for successful subscription
+                    NewsletterRateLimiter.reset(email);
+
+                    console.log('✓ Newsletter subscription:', email);
+                } else {
+                    throw new Error('Subscription failed');
+                }
+            } catch (error) {
+                console.error('Newsletter subscription error:', error);
+                showNotification('⚠️ Subscription failed. Please try again later.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }
         });
     });
 }
