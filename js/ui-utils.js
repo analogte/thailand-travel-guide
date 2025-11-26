@@ -239,3 +239,69 @@ function initCountdown(targetDate = '2026-04-13T00:00:00') {
     // Update every second
     setInterval(updateCountdown, 1000);
 }
+
+/**
+ * Validate email address
+ * @param {string} email
+ * @returns {boolean}
+ */
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+/**
+ * Initialize newsletter subscription form
+ */
+function initNewsletterForm() {
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+        // Check if this is a newsletter form (has email input and subscribe button)
+        const emailInput = form.querySelector('input[type="email"]');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        if (!emailInput || !submitBtn) return;
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = emailInput.value.trim();
+
+            // Validate email
+            if (!email) {
+                showNotification('⚠️ Please enter your email address', 'warning');
+                emailInput.focus();
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showNotification('⚠️ Please enter a valid email address', 'warning');
+                emailInput.focus();
+                return;
+            }
+
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Subscribing...';
+
+            // Simulate API call (replace with actual API endpoint)
+            setTimeout(() => {
+                // Success
+                showNotification('🎉 Thank you for subscribing!', 'success');
+                emailInput.value = '';
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Subscribe';
+
+                // Store email in localStorage (for demo purposes)
+                const subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
+                if (!subscribers.includes(email)) {
+                    subscribers.push(email);
+                    localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
+                }
+
+                console.log('✓ Newsletter subscription:', email);
+            }, 1500);
+        });
+    });
+}

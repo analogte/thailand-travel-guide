@@ -122,117 +122,13 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/data-loader.js"></script>
     <script src="js/ui-utils.js"></script>
+    <script src="js/provinces.js"></script>
     <script>
-        // Inline script for destinations page logic (will be moved to js/destinations.js later)
-        document.addEventListener('DOMContentLoaded', async () => {
-            // Init Vanta
-            try {
-                VANTA.WAVES({
-                    el: "#vanta-bg",
-                    mouseControls: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 200.00,
-                    minWidth: 200.00,
-                    scale: 1.00,
-                    scaleMobile: 1.00,
-                    color: 0x0d4f4c,
-                    shininess: 35.00,
-                    waveHeight: 20.00,
-                    waveSpeed: 0.75,
-                    zoom: 0.65
-                });
-            } catch (e) {
-                console.error("Vanta init failed", e);
-            }
-
-            // Load Data
-            let provinces = [];
-            try {
-                const response = await fetch('data/provinces.json');
-                provinces = await response.json();
-                renderProvinces(provinces);
-            } catch (error) {
-                console.error('Error loading provinces:', error);
-                document.getElementById('provinces-grid').innerHTML = '<p class="text-center col-span-full text-red-500">Failed to load data.</p>';
-            }
-
-            // Render Function
-            function renderProvinces(data) {
-                const grid = document.getElementById('provinces-grid');
-                grid.innerHTML = '';
-
-                if (data.length === 0) {
-                    grid.innerHTML = '<p class="text-center col-span-full text-gray-500">No provinces found.</p>';
-                    return;
-                }
-
-                data.forEach(province => {
-                    const card = document.createElement('div');
-                    card.className = 'group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2';
-                    card.onclick = () => window.location.href = `province-detail.html?id=${province.id}`;
-
-                    card.innerHTML = `
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="${province.image}" alt="${province.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-4 left-4 text-white">
-                                <h3 class="text-2xl font-bold font-display">${province.name}</h3>
-                                <p class="text-sm opacity-90">${province.thaiName}</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-teal-800 uppercase tracking-wide">
-                                ${province.region}
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-gray-600 line-clamp-2 mb-4">${province.description}</p>
-                            <div class="flex items-center text-teal-600 font-semibold group-hover:translate-x-2 transition-transform">
-                                Explore Places <i class="fas fa-arrow-right ml-2"></i>
-                            </div>
-                        </div>
-                    `;
-                    grid.appendChild(card);
-                });
-            }
-
-            // Filter Logic
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Remove active class
-                    filterBtns.forEach(b => {
-                        b.classList.remove('bg-teal-50', 'border-teal-500', 'text-teal-700');
-                        b.classList.add('border-gray-300');
-                    });
-                    // Add active class
-                    btn.classList.remove('border-gray-300');
-                    btn.classList.add('bg-teal-50', 'border-teal-500', 'text-teal-700');
-
-                    const region = btn.dataset.region;
-                    const filtered = region === 'all' ? provinces : provinces.filter(p => p.region === region);
-                    renderProvinces(filtered);
-                });
-            });
-
-            // Search Logic
-            const searchInput = document.getElementById('search-input');
-            searchInput.addEventListener('input', (e) => {
-                const term = e.target.value.toLowerCase();
-                const filtered = provinces.filter(p =>
-                    p.name.toLowerCase().includes(term) ||
-                    p.thaiName.includes(term)
-                );
-                renderProvinces(filtered);
-            });
-
-            // Mobile Menu
-            const btn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        });
+        // Initialize provinces page
+        document.addEventListener('DOMContentLoaded', initProvincesPage);
     </script>
 </body>
 

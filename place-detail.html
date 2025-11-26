@@ -46,13 +46,13 @@
             class="w-full h-full object-cover opacity-80 transition-opacity duration-500">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
-        <!-- Navigation Arrows (Mockup) -->
+        <!-- Navigation Arrows -->
         <button
-            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-sm transition-colors">
+            class="gallery-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-sm transition-colors">
             <i class="fas fa-chevron-left"></i>
         </button>
         <button
-            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-sm transition-colors">
+            class="gallery-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 p-3 rounded-full text-white backdrop-blur-sm transition-colors">
             <i class="fas fa-chevron-right"></i>
         </button>
 
@@ -165,7 +165,7 @@
 
                         <div class="mt-8 pt-6 border-t">
                             <button
-                                class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
+                                class="directions-btn w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded-xl transition-colors flex items-center justify-center">
                                 <i class="fas fa-directions mr-2"></i> Get Directions
                             </button>
                         </div>
@@ -190,63 +190,12 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/ui-utils.js"></script>
+    <script src="js/place-detail.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const placeId = urlParams.get('id');
-
-            if (!placeId) {
-                window.location.href = 'destinations.html';
-                return;
-            }
-
-            try {
-                const response = await fetch('data/places.json');
-                const places = await response.json();
-                const place = places.find(p => p.id === placeId);
-
-                if (!place) {
-                    alert('Place not found!');
-                    window.location.href = 'destinations.html';
-                    return;
-                }
-
-                // Render Content
-                document.getElementById('main-image').src = place.image;
-                document.getElementById('place-name').innerText = place.name;
-                document.getElementById('place-thai-name').innerText = place.thaiName;
-                document.getElementById('place-rating').innerText = place.rating;
-                document.getElementById('place-reviews').innerText = `(${place.reviews.toLocaleString()} reviews)`;
-                document.getElementById('place-desc').innerText = place.description;
-
-                // Sidebar Info
-                document.getElementById('place-hours').innerText = place.openingHours;
-                document.getElementById('place-fee').innerText = place.entranceFee;
-                document.getElementById('place-dress').innerText = place.dressCode;
-                document.getElementById('place-address').innerText = place.address;
-
-                // Highlights
-                const highlightsList = document.getElementById('place-highlights');
-                place.highlights.forEach(item => {
-                    const li = document.createElement('li');
-                    li.className = 'flex items-center bg-white p-4 rounded-xl shadow-sm border border-gray-100';
-                    li.innerHTML = `<i class="fas fa-check-circle text-teal-500 mr-3"></i> <span class="text-gray-700 font-medium">${item}</span>`;
-                    highlightsList.appendChild(li);
-                });
-
-                // Tips
-                const tipsList = document.getElementById('place-tips');
-                place.tips.forEach(item => {
-                    const li = document.createElement('li');
-                    li.className = 'flex items-start';
-                    li.innerHTML = `<i class="fas fa-angle-right text-yellow-500 mt-1 mr-3 flex-shrink-0"></i> <span>${item}</span>`;
-                    tipsList.appendChild(li);
-                });
-
-            } catch (error) {
-                console.error('Error loading place data:', error);
-            }
-        });
+        // Initialize place detail page
+        document.addEventListener('DOMContentLoaded', initPlaceDetailPage);
     </script>
 </body>
 

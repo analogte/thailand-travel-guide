@@ -59,22 +59,37 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Tabs -->
-            <div class="flex justify-center mb-12 space-x-4 overflow-x-auto pb-4">
+            <div class="flex justify-center mb-12 space-x-2 md:space-x-4 overflow-x-auto pb-4">
                 <button
-                    class="tab-btn active px-6 py-2 rounded-full bg-teal-600 text-white font-semibold shadow-md transition-all"
-                    data-category="all">All Places</button>
+                    class="tab-btn active px-4 md:px-6 py-2 rounded-full bg-teal-600 text-white font-semibold shadow-md transition-all whitespace-nowrap"
+                    data-category="all">
+                    <i class="fas fa-th-large mr-1"></i> All
+                </button>
                 <button
-                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
-                    data-category="temple">Temples</button>
+                    class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
+                    data-category="temple">
+                    <i class="fas fa-place-of-worship mr-1"></i> Temples
+                </button>
                 <button
-                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
-                    data-category="food">Food & Drink</button>
+                    class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
+                    data-category="food">
+                    <i class="fas fa-utensils mr-1"></i> Food
+                </button>
                 <button
-                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
-                    data-category="nature">Nature</button>
+                    class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
+                    data-category="cafe">
+                    <i class="fas fa-coffee mr-1"></i> Cafes
+                </button>
                 <button
-                    class="tab-btn px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all"
-                    data-category="cafe">Cafes</button>
+                    class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
+                    data-category="nature">
+                    <i class="fas fa-tree mr-1"></i> Nature
+                </button>
+                <button
+                    class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
+                    data-category="culture">
+                    <i class="fas fa-masks-theater mr-1"></i> Culture
+                </button>
             </div>
 
             <!-- Places Grid -->
@@ -98,102 +113,13 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/ui-utils.js"></script>
+    <script src="js/province-detail.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            // Get Province ID from URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const provinceId = urlParams.get('id');
-
-            if (!provinceId) {
-                window.location.href = 'destinations.html';
-                return;
-            }
-
-            // Load Data
-            try {
-                const [provincesRes, placesRes] = await Promise.all([
-                    fetch('data/provinces.json'),
-                    fetch('data/places.json')
-                ]);
-
-                const provinces = await provincesRes.json();
-                const places = await placesRes.json();
-
-                const province = provinces.find(p => p.id === provinceId);
-                const provincePlaces = places.filter(p => p.provinceId === provinceId);
-
-                if (!province) {
-                    alert('Province not found!');
-                    window.location.href = 'destinations.html';
-                    return;
-                }
-
-                // Render Header
-                document.getElementById('province-name').innerText = province.name;
-                document.getElementById('province-thai-name').innerText = province.thaiName;
-                document.getElementById('province-desc').innerText = province.description;
-                document.getElementById('province-cover').src = province.coverImage || province.image;
-
-                // Render Places
-                renderPlaces(provincePlaces);
-
-                // Tab Logic
-                const tabs = document.querySelectorAll('.tab-btn');
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        // Update Active State
-                        tabs.forEach(t => {
-                            t.classList.remove('bg-teal-600', 'text-white', 'shadow-md');
-                            t.classList.add('bg-white', 'text-gray-600', 'hover:bg-gray-100');
-                        });
-                        tab.classList.remove('bg-white', 'text-gray-600', 'hover:bg-gray-100');
-                        tab.classList.add('bg-teal-600', 'text-white', 'shadow-md');
-
-                        // Filter
-                        const category = tab.dataset.category;
-                        const filtered = category === 'all'
-                            ? provincePlaces
-                            : provincePlaces.filter(p => p.category === category);
-                        renderPlaces(filtered);
-                    });
-                });
-
-            } catch (error) {
-                console.error('Error loading data:', error);
-            }
-
-            function renderPlaces(data) {
-                const grid = document.getElementById('places-grid');
-                grid.innerHTML = '';
-
-                if (data.length === 0) {
-                    grid.innerHTML = '<div class="col-span-full text-center py-10 text-gray-500">No places found in this category yet.</div>';
-                    return;
-                }
-
-                data.forEach(place => {
-                    const card = document.createElement('div');
-                    card.className = 'bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group';
-                    card.innerHTML = `
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="${place.image}" alt="${place.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold text-gray-800 flex items-center shadow-sm">
-                                <i class="fas fa-star text-yellow-400 mr-1"></i> ${place.rating}
-                            </div>
-                        </div>
-                        <div class="p-5">
-                            <div class="text-xs font-bold text-teal-600 uppercase tracking-wide mb-1">${place.category}</div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">${place.name}</h3>
-                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">${place.description}</p>
-                            <button onclick="window.location.href='place-detail.html?id=${place.id}'" class="w-full py-2 rounded-lg border border-teal-600 text-teal-600 font-semibold hover:bg-teal-600 hover:text-white transition-colors">
-                                View Details
-                            </button>
-                        </div>
-                    `;
-                    grid.appendChild(card);
-                });
-            }
-        });
+        // Initialize province detail page
+        document.addEventListener('DOMContentLoaded', initProvinceDetailPage);
     </script>
 </body>
 
