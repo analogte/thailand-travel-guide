@@ -54,14 +54,28 @@ document.addEventListener('visibilitychange', () => {
 });
 
 /**
- * Service Worker registration (for future PWA support)
+ * Service Worker registration (PWA support)
  */
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        // Uncomment when service worker is ready
-        // navigator.serviceWorker.register('/sw.js')
-        //     .then(reg => console.log('Service Worker registered'))
-        //     .catch(err => console.log('Service Worker registration failed'));
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('✅ Service Worker registered:', registration.scope);
+
+                // Check for updates
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            // New update available
+                            showNotification('🎉 New version available! Refresh to update.', 'info');
+                        }
+                    });
+                });
+            })
+            .catch(err => {
+                console.warn('⚠️ Service Worker registration failed:', err);
+            });
     });
 }
 
