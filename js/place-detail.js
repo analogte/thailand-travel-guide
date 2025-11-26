@@ -82,7 +82,7 @@ function renderPlaceContent(place) {
     if (mainImage) {
         mainImage.src = place.image;
         mainImage.alt = place.name;
-        mainImage.onerror = function() {
+        mainImage.onerror = function () {
             this.src = 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800';
         };
     }
@@ -131,7 +131,42 @@ function renderPlaceContent(place) {
                 <span class="text-gray-700">${item}</span>
             `;
             tipsList.appendChild(li);
+            tipsList.appendChild(li);
         });
+    }
+
+    // Transportation
+    const transportContainer = document.getElementById('place-transport');
+    if (transportContainer && place.transportation) {
+        transportContainer.innerHTML = '';
+        place.transportation.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'flex items-start bg-white p-4 rounded-xl shadow-sm';
+
+            let iconClass = 'fa-bus'; // Default icon
+            const type = item.type.toLowerCase();
+
+            if (type.includes('boat') || type.includes('ferry') || type.includes('pier')) iconClass = 'fa-ship';
+            else if (type.includes('train') || type.includes('mrt') || type.includes('bts') || type.includes('arl')) iconClass = 'fa-subway';
+            else if (type.includes('taxi') || type.includes('grab') || type.includes('bolt') || type.includes('uber') || type.includes('car')) iconClass = 'fa-taxi';
+            else if (type.includes('motorbike') || type.includes('motorcycle') || type.includes('win') || type.includes('scooter')) iconClass = 'fa-motorcycle';
+            else if (type.includes('tuk') || type.includes('songthaew') || type.includes('van') || type.includes('bus')) iconClass = 'fa-shuttle-van';
+            else if (type.includes('walk') || type.includes('foot')) iconClass = 'fa-walking';
+            else if (type.includes('plane') || type.includes('flight')) iconClass = 'fa-plane';
+
+            div.innerHTML = `
+                <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1 mr-4">
+                    <i class="fas ${iconClass}"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 text-sm uppercase tracking-wide mb-1">${item.type}</h4>
+                    <p class="text-gray-600 text-sm">${item.detail}</p>
+                </div>
+            `;
+            transportContainer.appendChild(div);
+        });
+    } else if (transportContainer) {
+        transportContainer.innerHTML = '<p class="text-gray-500 italic">Transportation information not available.</p>';
     }
 }
 
@@ -186,7 +221,7 @@ function updateGalleryImage(imgElement, src) {
     imgElement.style.opacity = '0';
     setTimeout(() => {
         imgElement.src = src;
-        imgElement.onerror = function() {
+        imgElement.onerror = function () {
             this.src = 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800';
         };
         imgElement.style.opacity = '0.8';

@@ -29,6 +29,20 @@
             "Take the river ferry from Tha Tien pier for a scenic arrival.",
             "Wear slip-on shoes as you'll need to take them off frequently."
         ],
+        "transportation": [
+            {
+                "type": "Boat",
+                "detail": "Take Chao Phraya Express Boat to Wat Arun Pier (N8)."
+            },
+            {
+                "type": "MRT",
+                "detail": "Take MRT Blue Line to Itsaraphap Station (Exit 2), then walk 10 mins."
+            },
+            {
+                "type": "Tuk Tuk",
+                "detail": "From Wat Pho or Museum of Siam, take a Tuk Tuk to the ferry pier (approx. 50-60 THB)."
+            }
+        ],
         "location": {
             "lat": 13.7437,
             "lng": 100.4888
@@ -62,6 +76,20 @@
             "Pricey for street food but portions are huge.",
             "Cash only."
         ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Take MRT Blue Line to Sam Yot Station (Exit 1), walk 10 mins."
+            },
+            {
+                "type": "Grab/Bolt",
+                "detail": "Convenient apps to avoid taxi refusal. Set destination to 'Raan Jay Fai'."
+            },
+            {
+                "type": "Win Motosai",
+                "detail": "Motorbike taxi from Golden Mount or Khaosan Road (approx. 40-60 THB)."
+            }
+        ],
         "location": {
             "lat": 13.7525,
             "lng": 100.5048
@@ -94,6 +122,16 @@
             "Siam Paragon branch usually has the longest queue.",
             "Try the seasonal menus (Durian, Mango, Strawberry).",
             "Free tea is provided."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "Take BTS to Siam Station (Exit 3 for Siam Paragon)."
+            },
+            {
+                "type": "BTS",
+                "detail": "Take BTS to Chit Lom Station (for Central World)."
+            }
         ],
         "location": {
             "lat": 13.7462,
@@ -129,6 +167,20 @@
             "There is a cable car if you can't walk up the stairs.",
             "Red trucks (Songthaew) are available from Chiang Mai Zoo."
         ],
+        "transportation": [
+            {
+                "type": "Red Truck",
+                "detail": "Take a Red Truck (Songthaew) from Chiang Mai Zoo (approx. 40-50 THB/person)."
+            },
+            {
+                "type": "Taxi",
+                "detail": "Charter a private Red Truck or Taxi from the city center (approx. 400-600 THB round trip)."
+            },
+            {
+                "type": "Motorbike",
+                "detail": "Rent a motorbike and ride up (approx. 30-40 mins). Drive carefully!"
+            }
+        ],
         "location": {
             "lat": 18.8049,
             "lng": 98.9216
@@ -160,6 +212,16 @@
             "Come before noon to avoid running out of soup.",
             "Very affordable prices.",
             "Parking is limited in the alley."
+        ],
+        "transportation": [
+            {
+                "type": "Red Truck",
+                "detail": "Take a Red Truck to Santitham area or Kad Suan Kaew."
+            },
+            {
+                "type": "Grab",
+                "detail": "Search for 'Khao Soi Mae Sai' in Grab app."
+            }
         ],
         "location": {
             "lat": 18.8015,
@@ -195,6 +257,20 @@
             "Always negotiate prices for tuk-tuks and goods.",
             "Swimming is dangerous during monsoon season (red flags)."
         ],
+        "transportation": [
+            {
+                "type": "Smart Bus",
+                "detail": "Phuket Smart Bus stops at Patong (100 THB flat rate)."
+            },
+            {
+                "type": "Grab/Bolt",
+                "detail": "Convenient but can be pricey in Phuket. Check price before booking."
+            },
+            {
+                "type": "Win Motosai",
+                "detail": "Motorbike taxi is the fastest way to get around Patong (starts 40-50 THB)."
+            }
+        ],
         "location": {
             "lat": 7.8960,
             "lng": 98.2953
@@ -228,6 +304,20 @@
             "Sunday evening is the best time for the Walking Street market.",
             "Great for photography.",
             "Try local desserts like Oh Aew."
+        ],
+        "transportation": [
+            {
+                "type": "Songthaew",
+                "detail": "Blue bus from any beach usually ends up in Phuket Town (Ranong Road)."
+            },
+            {
+                "type": "Airport Bus",
+                "detail": "Orange Airport Bus to Phuket Bus Terminal 1."
+            },
+            {
+                "type": "Taxi/Grab",
+                "detail": "Easy to find from anywhere on the island."
+            }
         ],
         "location": {
             "lat": 7.8856,
