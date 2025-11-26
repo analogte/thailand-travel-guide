@@ -4,30 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Thailand's amazing destinations - from Bangkok's temples to Phuket's beaches and Chiang Mai's culture.">
-    <meta name="keywords" content="Thailand destinations, Bangkok, Phuket, Chiang Mai, Thai attractions, travel Thailand">
-    
+    <meta name="description"
+        content="Explore Thailand's amazing destinations - from Bangkok's temples to Phuket's beaches and Chiang Mai's culture.">
+    <meta name="keywords"
+        content="Thailand destinations, Bangkok, Phuket, Chiang Mai, Thai attractions, travel Thailand">
+
     <title>Destinations - Thailand Travel Guide</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
-    
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Leaflet CSS & JS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- 3D Background Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
@@ -39,7 +48,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-temple text-white text-sm"></i>
                     </div>
                     <span class="font-display font-bold text-xl text-gray-800">Thailand Guide</span>
@@ -61,12 +71,18 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
+        <div
+            class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-16 left-0 w-full shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
-                <a href="destinations.html" class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Destinations</a>
-                <a href="culture.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Culture</a>
-                <a href="guide.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Travel Guide</a>
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Home</a>
+                <a href="destinations.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-yellow-600 bg-yellow-50">Destinations</a>
+                <a href="culture.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Culture</a>
+                <a href="guide.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">Travel
+                    Guide</a>
             </div>
         </div>
     </nav>
@@ -77,7 +93,8 @@
         <div class="relative z-10 flex items-center justify-center min-h-[60vh]">
             <div class="text-center text-white px-4 max-w-4xl mx-auto">
                 <div class="floating-element mb-8">
-                    <div class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <div
+                        class="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                         <i class="fas fa-map-marked-alt text-4xl text-yellow-300"></i>
                     </div>
                 </div>
@@ -199,7 +216,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <div class="flex items-center justify-center space-x-2 mb-6">
-                    <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-temple text-white text-sm"></i>
                     </div>
                     <span class="font-display font-bold text-2xl">Thailand Guide</span>
@@ -225,7 +243,7 @@
     <script src="js/culture.js"></script>
     <script src="js/guide.js"></script>
     <script src="js/main.js"></script>
-    
+
     <!-- Initialize Vanta Background -->
     <script>
         if (typeof VANTA !== 'undefined') {
