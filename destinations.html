@@ -24,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 </head>
 
 <body class="font-sans antialiased text-gray-800 bg-gray-50">
@@ -115,10 +116,30 @@
 
             <!-- Grid Container -->
             <div id="provinces-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Content will be injected by JS -->
-                <div class="col-span-full text-center py-20 text-gray-500">
-                    <i class="fas fa-spinner fa-spin text-3xl mb-4"></i>
-                    <p>Loading provinces...</p>
+                <!-- Skeleton Loaders -->
+                <div class="skeleton-card">
+                    <div class="skeleton-image"></div>
+                    <div class="p-6">
+                        <div class="skeleton-text skeleton-title"></div>
+                        <div class="skeleton-text skeleton-description"></div>
+                        <div class="skeleton-text skeleton-description"></div>
+                    </div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-image"></div>
+                    <div class="p-6">
+                        <div class="skeleton-text skeleton-title"></div>
+                        <div class="skeleton-text skeleton-description"></div>
+                        <div class="skeleton-text skeleton-description"></div>
+                    </div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-image"></div>
+                    <div class="p-6">
+                        <div class="skeleton-text skeleton-title"></div>
+                        <div class="skeleton-text skeleton-description"></div>
+                        <div class="skeleton-text skeleton-description"></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -95,6 +95,7 @@ function renderProvinces(provinces) {
     const grid = document.getElementById('provinces-grid');
     if (!grid) return;
 
+    // Clear all content including skeleton loaders
     grid.innerHTML = '';
 
     if (provinces.length === 0) {
