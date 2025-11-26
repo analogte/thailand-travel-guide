@@ -26,13 +26,19 @@ async function initPlaceDetailPage() {
         // Show loading state
         showLoading(document.body);
 
-        // Load places data
-        const response = await fetch('data/places.json');
-        if (!response.ok) {
-            throw new Error('Failed to load places data');
+        // Load places and provinces data
+        const [placesRes, provincesRes] = await Promise.all([
+            fetch('data/places.json'),
+            fetch('data/provinces.json')
+        ]);
+
+        if (!placesRes.ok || !provincesRes.ok) {
+            throw new Error('Failed to load data');
         }
 
-        const places = await response.json();
+        const places = await placesRes.json();
+        const provinces = await provincesRes.json();
+
         const place = places.find(p => p.id === placeId);
 
         if (!place) {
@@ -42,6 +48,8 @@ async function initPlaceDetailPage() {
             }, 1500);
             return;
         }
+
+        const province = provinces.find(p => p.id === place.provinceId);
 
         currentPlace = place;
         currentImageIndex = 0;
@@ -55,6 +63,7 @@ async function initPlaceDetailPage() {
 
         // Render Content
         renderPlaceContent(place);
+        renderBreadcrumbs(place, province);
 
         // Initialize image gallery
         initImageGallery(place);
@@ -70,6 +79,49 @@ async function initPlaceDetailPage() {
         showNotification('⚠️ Error loading place data. Please try again.', 'error');
         hideLoading(document.body);
     }
+}
+
+/**
+ * Render breadcrumbs
+ * @param {Object} place - Place data
+ * @param {Object} province - Province data
+ */
+function renderBreadcrumbs(place, province) {
+    const breadcrumbList = document.getElementById('breadcrumb-list');
+    if (!breadcrumbList) return;
+
+    const items = [
+        { name: 'Home', url: 'index.html' },
+        { name: 'Destinations', url: 'destinations.html' }
+    ];
+
+    if (province) {
+        items.push({ name: province.name, url: `province-detail.html?id=${province.id}` });
+    }
+
+    items.push({ name: place.name, url: null, active: true });
+
+    breadcrumbList.innerHTML = items.map((item, index) => {
+        if (item.active) {
+            return `
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        ${index > 0 ? '<i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>' : ''}
+                        <span class="text-sm font-medium text-gray-500">${item.name}</span>
+                    </div>
+                </li>
+            `;
+        } else {
+            return `
+                <li>
+                    <div class="flex items-center">
+                        ${index > 0 ? '<i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>' : ''}
+                        <a href="${item.url}" class="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors">${item.name}</a>
+                    </div>
+                </li>
+            `;
+        }
+    }).join('');
 }
 
 /**
