@@ -64,6 +64,7 @@ async function initPlaceDetailPage() {
         // Render Content
         renderPlaceContent(place);
         renderBreadcrumbs(place, province);
+        renderMap(place);
 
         // Initialize image gallery
         initImageGallery(place);
@@ -122,6 +123,28 @@ function renderBreadcrumbs(place, province) {
             `;
         }
     }).join('');
+}
+
+/**
+ * Render Google Maps
+ * @param {Object} place - Place data
+ */
+function renderMap(place) {
+    const mapContainer = document.getElementById('map-container');
+    if (!mapContainer) return;
+
+    if (place.location && place.location.lat && place.location.lng) {
+        // Embed Google Maps iframe
+        const iframe = document.createElement('iframe');
+        iframe.className = 'w-full h-full border-0';
+        iframe.loading = 'lazy';
+        iframe.referrerPolicy = 'no-referrer-when-downgrade';
+        iframe.src = `https://www.google.com/maps?q=${place.location.lat},${place.location.lng}&output=embed&z=15`;
+        iframe.title = `Map of ${place.name}`;
+        mapContainer.appendChild(iframe);
+    } else {
+        mapContainer.innerHTML = '<div class="flex items-center justify-center h-full bg-gray-100 text-gray-500"><p>Map not available for this location</p></div>';
+    }
 }
 
 /**
