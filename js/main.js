@@ -8,8 +8,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('🇹🇭 Thailand Travel Guide - Initializing...');
 
     try {
-        // Load data first
+        // Initialize theme first (before rendering)
+        initTheme();
+
+        // Load data
         await loadData();
+
+        // Initialize i18n and language switcher
+        initLanguageSwitcher();
+        updateTranslations();
 
         // Initialize common UI features
         initScrollReveal();
