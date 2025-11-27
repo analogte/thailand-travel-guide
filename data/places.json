@@ -349,10 +349,9 @@
         "name": "Raan Jay Fai",
         "thaiName": "ร้านเจ๊ไฝ",
         "description": "Legendary street food stall awarded a Michelin star, famous for its crab omelet and the chef's iconic goggles.",
-        "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800",
+        "image": "images/bkk_jay_fai_hero.webp",
         "images": [
-            "https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=800",
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800"
+            "images/bkk_jay_fai_hero.webp"
         ],
         "rating": 4.7,
         "reviews": 3400,
