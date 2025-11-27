@@ -5,29 +5,25 @@
         "category": "temple",
         "name": "Wat Arun",
         "thaiName": "วัดอรุณราชวราราม",
-        "description": "The Temple of Dawn is one of Bangkok's most iconic landmarks, known for its massive prang (tower) encrusted with colorful porcelain.",
-        "image": "images/bangkok.png",
-        "images": [
-            "images/bangkok.png",
-            "https://images.unsplash.com/photo-1582558486241-7667a422a04e?q=80&w=800",
-            "https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=800"
-        ],
+        "description": "The Temple of Dawn is one of Bangkok's most iconic landmarks, known for its massive prang (tower) encrusted with colorful porcelain. Recently renovated in 2025, revealing its pristine white beauty.",
+        "image": "",
+        "images": [],
         "rating": 4.8,
         "reviews": 12500,
         "address": "158 Thanon Wang Doem, Wat Arun, Bangkok Yai, Bangkok 10600",
         "openingHours": "08:00 - 18:00",
-        "entranceFee": "100 THB (Foreigners), Free (Thais)",
+        "entranceFee": "200 THB (Foreigners), Free (Thais)",
         "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
         "highlights": [
             "The central Prang (tower) climbing",
             "Colorful porcelain mosaics",
             "Sunset view from across the river",
-            "Ordination Hall"
+            "Thai Costume Rental photography"
         ],
         "tips": [
             "Best time to visit is late afternoon for sunset photos.",
             "Take the river ferry from Tha Tien pier for a scenic arrival.",
-            "Wear slip-on shoes as you'll need to take them off frequently."
+            "Renting a Thai costume for photos is a popular trend."
         ],
         "transportation": [
             {
@@ -46,6 +42,265 @@
         "location": {
             "lat": 13.7437,
             "lng": 100.4888
+        }
+    },
+    {
+        "id": "bkk_wat_phra_kaew",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "The Grand Palace & Wat Phra Kaew",
+        "thaiName": "พระบรมมหาราชวัง และวัดพระแก้ว",
+        "description": "The spiritual heart of Thailand, housing the Emerald Buddha. A masterpiece of Thai architecture and the former residence of the Kings.",
+        "image": "",
+        "images": [],
+        "rating": 4.9,
+        "reviews": 25000,
+        "address": "Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:30 - 15:30",
+        "entranceFee": "500 THB (Foreigners), Free (Thais)",
+        "dressCode": "Strictly enforced. No sleeveless, shorts, ripped jeans. Scarves cannot cover sleeveless tops.",
+        "highlights": [
+            "Emerald Buddha (Phra Kaew Morakot)",
+            "Ramakien Murals",
+            "Prasat Phra Thep Bidon"
+        ],
+        "tips": [
+            "Bring your passport.",
+            "Go early (08:30) to avoid crowds and heat.",
+            "Ticket includes Queen Sirikit Museum of Textiles and Khon performance."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "MRT Sanam Chai (Exit 1), walk 15 mins."
+            },
+            {
+                "type": "Boat",
+                "detail": "Chao Phraya Express Boat to Tha Chang Pier (N9)."
+            }
+        ],
+        "location": {
+            "lat": 13.7500,
+            "lng": 100.4913
+        }
+    },
+    {
+        "id": "bkk_wat_pho",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Pho",
+        "thaiName": "วัดโพธิ์ (วัดพระเชตุพน)",
+        "description": "Home to the magnificent 46-meter Reclining Buddha and the birthplace of traditional Thai massage. UNESCO Memory of the World site.",
+        "image": "",
+        "images": [],
+        "rating": 4.8,
+        "reviews": 18000,
+        "address": "2 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:00 - 19:30",
+        "entranceFee": "300 THB (Foreigners), Free (Thais)",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "Reclining Buddha",
+            "108 Auspicious Symbols on Buddha's feet",
+            "Traditional Thai Massage School",
+            "4 Royal Pagodas"
+        ],
+        "tips": [
+            "Book a massage immediately upon arrival as queues are long.",
+            "Visit in the evening (17:00-18:00) to hear monk chanting."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "MRT Sanam Chai (Exit 1), walk 5 mins."
+            },
+            {
+                "type": "Boat",
+                "detail": "Cross river ferry from Wat Arun pier (Tha Tien pier is under renovation)."
+            }
+        ],
+        "location": {
+            "lat": 13.7465,
+            "lng": 100.4933
+        }
+    },
+    {
+        "id": "bkk_wat_saket",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Saket (Golden Mount)",
+        "thaiName": "วัดสระเกศ (ภูเขาทอง)",
+        "description": "A temple on a man-made hill offering panoramic 360-degree views of Bangkok's old town.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 8000,
+        "address": "344 Chakkraphatdiphong Rd, Ban Bat, Pom Prap Sattru Phai, Bangkok 10100",
+        "openingHours": "07:00 - 19:00",
+        "entranceFee": "100 THB (Foreigners), Free (Thais)",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "344 steps to the top",
+            "Panoramic 360-degree view",
+            "Golden Chedi"
+        ],
+        "tips": [
+            "Best visited during sunset.",
+            "Famous temple fair during Loy Krathong (November)."
+        ],
+        "transportation": [
+            {
+                "type": "Boat",
+                "detail": "Saen Saep Canal Boat to Panfa Leelard Pier."
+            },
+            {
+                "type": "MRT",
+                "detail": "MRT Sam Yot, then taxi or walk (15-20 mins)."
+            }
+        ],
+        "location": {
+            "lat": 13.7538,
+            "lng": 100.5066
+        }
+    },
+    {
+        "id": "bkk_wat_suthat",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Suthat & Giant Swing",
+        "thaiName": "วัดสุทัศน์ และเสาชิงช้า",
+        "description": "One of Bangkok's oldest and most impressive temples, facing the iconic Giant Swing. Known for its exquisite murals and large bronze Buddha.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 5000,
+        "address": "146 Bamrung Mueang Rd, Wat Ratchabophit, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:30 - 17:00",
+        "entranceFee": "100 THB (Foreigners), Free (Thais)",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "Giant Swing (Sao Ching Cha)",
+            "Phra Sri Sakyamuni Buddha",
+            "Detailed wall murals"
+        ],
+        "tips": [
+            "Evening chanting (18:00-19:00) is very peaceful.",
+            "Great photo op with the Giant Swing in front."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "MRT Sam Yot (Exit 3), walk 10 mins."
+            }
+        ],
+        "location": {
+            "lat": 13.7510,
+            "lng": 100.5011
+        }
+    },
+    {
+        "id": "bkk_wat_benchamabophit",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Benchamabophit",
+        "thaiName": "วัดเบญจมบพิตร (วัดหินอ่อน)",
+        "description": "The Marble Temple, a stunning example of Thai architecture built with Italian Carrara marble. Features a courtyard with 52 Buddha images.",
+        "image": "",
+        "images": [],
+        "rating": 4.8,
+        "reviews": 7000,
+        "address": "69 Thanon Si Ayutthaya, Dusit, Bangkok 10300",
+        "openingHours": "08:00 - 17:30",
+        "entranceFee": "100 THB (Foreigners), Free (Thais)",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "White Carrara marble Ubosot",
+            "52 Buddha images in the cloister",
+            "Beautiful symmetry"
+        ],
+        "tips": [
+            "Best for photography due to perfect symmetry.",
+            "Visit early morning for alms giving."
+        ],
+        "transportation": [
+            {
+                "type": "Taxi/Grab",
+                "detail": "Easiest way to reach. Located in Dusit district."
+            }
+        ],
+        "location": {
+            "lat": 13.7666,
+            "lng": 100.5141
+        }
+    },
+    {
+        "id": "bkk_wat_ratchabophit",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Ratchabophit",
+        "thaiName": "วัดราชบพิธ",
+        "description": "A unique temple blending Thai exterior with European Gothic interior. The royal cemetery is located here.",
+        "image": "",
+        "images": [],
+        "rating": 4.8,
+        "reviews": 3000,
+        "address": "2 Fueang Nakhon Rd, Wat Ratchabophit, Phra Nakhon, Bangkok 10200",
+        "openingHours": "08:00 - 17:00",
+        "entranceFee": "Free",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "Gothic interior decoration",
+            "Royal Cemetery",
+            "Benjarong tiles"
+        ],
+        "tips": [
+            "Quiet and peaceful, less crowded than other temples.",
+            "Explore the Royal Cemetery garden."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "MRT Sam Yot, walk 10-15 mins."
+            }
+        ],
+        "location": {
+            "lat": 13.7492,
+            "lng": 100.4985
+        }
+    },
+    {
+        "id": "bkk_wat_paknam",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Paknam (Big Buddha)",
+        "thaiName": "วัดปากน้ำ ภาษีเจริญ",
+        "description": "Famous for the massive 69-meter golden Buddha and the emerald glass pagoda ceiling. A new global landmark.",
+        "image": "",
+        "images": [],
+        "rating": 4.8,
+        "reviews": 6000,
+        "address": "300 Ratchamongkhon Prasat Alley, Pak Khlong Phasi Charoen, Phasi Charoen, Bangkok 10160",
+        "openingHours": "08:00 - 18:00",
+        "entranceFee": "Free",
+        "dressCode": "Respectful attire required.",
+        "highlights": [
+            "Giant Golden Buddha (69m high)",
+            "Emerald Stupa ceiling",
+            "Museum"
+        ],
+        "tips": [
+            "Best photo spot is from Soi Lat Ya 8 or boat tour.",
+            "Respect the silence in the pagoda."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "MRT Bang Phai (Exit 1), walk 10-15 mins or take songthaew."
+            }
+        ],
+        "location": {
+            "lat": 13.7214,
+            "lng": 100.4703
         }
     },
     {

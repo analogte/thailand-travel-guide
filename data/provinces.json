@@ -43,5 +43,653 @@
     "description": "Historic city with archaeological ruins of the second capital of the Siamese Kingdom.",
     "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=800",
     "coverImage": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?q=80&w=1200"
+  },
+  {
+    "id": "chiangrai",
+    "name": "Chiang Rai",
+    "thaiName": "เชียงราย",
+    "region": "north",
+    "description": "The northernmost province, famous for the White Temple (Wat Rong Khun) and Golden Triangle.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "mae_hong_son",
+    "name": "Mae Hong Son",
+    "thaiName": "แม่ฮ่องสอน",
+    "region": "north",
+    "description": "Known as the 'City of Three Mists', offering stunning mountain scenery and Pai district.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "lampang",
+    "name": "Lampang",
+    "thaiName": "ลำปาง",
+    "region": "north",
+    "description": "Famous for its horse-drawn carriages and the mountaintop temple Wat Chalermprakiat.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "lamphun",
+    "name": "Lamphun",
+    "thaiName": "ลำพูน",
+    "region": "north",
+    "description": "One of the oldest cities in the north, known for its rich history and longan orchards.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phayao",
+    "name": "Phayao",
+    "thaiName": "พะเยา",
+    "region": "north",
+    "description": "Home to Kwan Phayao, the largest freshwater lake in the north.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nan",
+    "name": "Nan",
+    "thaiName": "น่าน",
+    "region": "north",
+    "description": "A quiet and charming province known for its national parks and traditional culture.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phrae",
+    "name": "Phrae",
+    "thaiName": "แพร่",
+    "region": "north",
+    "description": "Known for its teak forests and traditional indigo-dyed fabric (Mo Hom).",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "uttaradit",
+    "name": "Uttaradit",
+    "thaiName": "อุตรดิตถ์",
+    "region": "north",
+    "description": "Famous for Langsat fruit and the Sirikit Dam.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "khon_kaen",
+    "name": "Khon Kaen",
+    "thaiName": "ขอนแก่น",
+    "region": "northeast",
+    "description": "The commercial and educational center of the Northeast, known for its silk.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "udon_thani",
+    "name": "Udon Thani",
+    "thaiName": "อุดรธานี",
+    "region": "northeast",
+    "description": "Gateway to Laos and home to the Red Lotus Sea.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nakhon_ratchasima",
+    "name": "Nakhon Ratchasima",
+    "thaiName": "นครราชสีมา",
+    "region": "northeast",
+    "description": "Also known as Korat, the gateway to the Northeast and home to Khao Yai National Park.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "ubon_ratchathani",
+    "name": "Ubon Ratchathani",
+    "thaiName": "อุบลราชธานี",
+    "region": "northeast",
+    "description": "Known for its Candle Festival and the Mekong River scenery.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nong_khai",
+    "name": "Nong Khai",
+    "thaiName": "หนองคาย",
+    "region": "northeast",
+    "description": "Located on the Mekong River, famous for the Naga Fireballs phenomenon.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "loei",
+    "name": "Loei",
+    "thaiName": "เลย",
+    "region": "northeast",
+    "description": "Mountainous province known for its cool climate and Phi Ta Khon festival.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "surin",
+    "name": "Surin",
+    "thaiName": "สุรินทร์",
+    "region": "northeast",
+    "description": "Famous for its annual Elephant Round-up and Khmer ruins.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "sisaket",
+    "name": "Si Sa Ket",
+    "thaiName": "ศรีสะเกษ",
+    "region": "northeast",
+    "description": "Home to Preah Vihear Temple ruins and rich Khmer culture.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "buriram",
+    "name": "Buriram",
+    "thaiName": "บุรีรัมย์",
+    "region": "northeast",
+    "description": "Known for Phanom Rung Historical Park and its modern football stadium.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "chaiyaphum",
+    "name": "Chaiyaphum",
+    "thaiName": "ชัยภูมิ",
+    "region": "northeast",
+    "description": "Known for its Siam Tulip (Dok Krachiao) fields.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "sakon_nakhon",
+    "name": "Sakon Nakhon",
+    "thaiName": "สกลนคร",
+    "region": "northeast",
+    "description": "Famous for the Wax Castle Festival and indigo-dyed cloth.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nakhon_phanom",
+    "name": "Nakhon Phanom",
+    "thaiName": "นครพนม",
+    "region": "northeast",
+    "description": "Located on the Mekong River, known for Phra That Phanom.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "mukdahan",
+    "name": "Mukdahan",
+    "thaiName": "มุกดาหาร",
+    "region": "northeast",
+    "description": "A gateway to Laos via the Second Thai-Lao Friendship Bridge.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "yasothon",
+    "name": "Yasothon",
+    "thaiName": "ยโสธร",
+    "region": "northeast",
+    "description": "Famous for the Rocket Festival (Bun Bang Fai).",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "roi_et",
+    "name": "Roi Et",
+    "thaiName": "ร้อยเอ็ด",
+    "region": "northeast",
+    "description": "Home to the large standing Buddha at Wat Burapha Phiram.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "kalasin",
+    "name": "Kalasin",
+    "thaiName": "กาฬสินธุ์",
+    "region": "northeast",
+    "description": "Known for dinosaur fossils and Pong Lang music.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "maha_sarakham",
+    "name": "Maha Sarakham",
+    "thaiName": "มหาสารคาม",
+    "region": "northeast",
+    "description": "An educational center known as the 'Taxila of Isan'.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nong_bua_lamphu",
+    "name": "Nong Bua Lamphu",
+    "thaiName": "หนองบัวลำภู",
+    "region": "northeast",
+    "description": "Known for its natural beauty and archaeological sites.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "amnat_charoen",
+    "name": "Amnat Charoen",
+    "thaiName": "อำนาจเจริญ",
+    "region": "northeast",
+    "description": "A small, peaceful province with a strong Buddhist culture.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "bueng_kan",
+    "name": "Bueng Kan",
+    "thaiName": "บึงกาฬ",
+    "region": "northeast",
+    "description": "Thailand's newest province, famous for Wat Phu Tok and the Three Whale Rocks.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "kanchanaburi",
+    "name": "Kanchanaburi",
+    "thaiName": "กาญจนบุรี",
+    "region": "central",
+    "description": "Known for the Bridge over the River Kwai and Erawan Waterfalls.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phetchaburi",
+    "name": "Phetchaburi",
+    "thaiName": "เพชรบุรี",
+    "region": "central",
+    "description": "Known for its historical parks, temples, and desserts.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "prachuap_khiri_khan",
+    "name": "Prachuap Khiri Khan",
+    "thaiName": "ประจวบคีรีขันธ์",
+    "region": "central",
+    "description": "Home to Hua Hin, a popular royal beach resort.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "ratchaburi",
+    "name": "Ratchaburi",
+    "thaiName": "ราชบุรี",
+    "region": "central",
+    "description": "Famous for the Damnoen Saduak Floating Market.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "tak",
+    "name": "Tak",
+    "thaiName": "ตาก",
+    "region": "north",
+    "description": "A border province with Myanmar, known for Thi Lo Su Waterfall.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "chonburi",
+    "name": "Chonburi",
+    "thaiName": "ชลบุรี",
+    "region": "central",
+    "description": "Home to Pattaya and Bang Saen beaches.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "rayong",
+    "name": "Rayong",
+    "thaiName": "ระยอง",
+    "region": "central",
+    "description": "Known for its fruit orchards and the island of Koh Samet.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "chanthaburi",
+    "name": "Chanthaburi",
+    "thaiName": "จันทบุรี",
+    "region": "central",
+    "description": "Famous for gemstones and tropical fruits.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "trat",
+    "name": "Trat",
+    "thaiName": "ตราด",
+    "region": "central",
+    "description": "The easternmost province, gateway to Koh Chang.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "chachoengsao",
+    "name": "Chachoengsao",
+    "thaiName": "ฉะเชิงเทรา",
+    "region": "central",
+    "description": "Home to the revered Wat Sothon Wararam Worawihan.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "prachinburi",
+    "name": "Prachinburi",
+    "thaiName": "ปราจีนบุรี",
+    "region": "central",
+    "description": "Known for its national parks and white water rafting.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "sa_kaeo",
+    "name": "Sa Kaeo",
+    "thaiName": "สระแก้ว",
+    "region": "central",
+    "description": "A border province known for Rong Kluea Market.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nakhon_sawan",
+    "name": "Nakhon Sawan",
+    "thaiName": "นครสวรรค์",
+    "region": "central",
+    "description": "The origin of the Chao Phraya River.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "uthai_thani",
+    "name": "Uthai Thani",
+    "thaiName": "อุทัยธานี",
+    "region": "central",
+    "description": "A peaceful province with floating houses on the Sakae Krang River.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "kamphaeng_phet",
+    "name": "Kamphaeng Phet",
+    "thaiName": "กำแพงเพชร",
+    "region": "central",
+    "description": "Known for its historical park and banana products.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phichit",
+    "name": "Phichit",
+    "thaiName": "พิจิตร",
+    "region": "central",
+    "description": "The land of crocodiles and the legend of Chalawan.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phitsanulok",
+    "name": "Phitsanulok",
+    "thaiName": "พิษณุโลก",
+    "region": "central",
+    "description": "Home to Phra Buddha Chinnarat, one of Thailand's most beautiful Buddha images.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phetchabun",
+    "name": "Phetchabun",
+    "thaiName": "เพชรบูรณ์",
+    "region": "central",
+    "description": "Known for its mountains, mist, and Khao Kho.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "sukhothai",
+    "name": "Sukhothai",
+    "thaiName": "สุโขทัย",
+    "region": "central",
+    "description": "The first capital of Siam, a UNESCO World Heritage site.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "saraburi",
+    "name": "Saraburi",
+    "thaiName": "สระบุรี",
+    "region": "central",
+    "description": "Famous for the Buddha's Footprint Temple.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "lopburi",
+    "name": "Lopburi",
+    "thaiName": "ลพบุรี",
+    "region": "central",
+    "description": "Known for its Khmer ruins and resident monkeys.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "sing_buri",
+    "name": "Sing Buri",
+    "thaiName": "สิงห์บุรี",
+    "region": "central",
+    "description": "Known for the Bang Rachan Heroes monument.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "chai_nat",
+    "name": "Chai Nat",
+    "thaiName": "ชัยนาท",
+    "region": "central",
+    "description": "Known for its bird park and Chao Phraya Dam.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "ang_thong",
+    "name": "Ang Thong",
+    "thaiName": "อ่างทอง",
+    "region": "central",
+    "description": "Known for its temples and the largest Reclining Buddha.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nonthaburi",
+    "name": "Nonthaburi",
+    "thaiName": "นนทบุรี",
+    "region": "central",
+    "description": "Part of the Bangkok Metropolitan Region, known for Koh Kret.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "pathum_thani",
+    "name": "Pathum Thani",
+    "thaiName": "ปทุมธานี",
+    "region": "central",
+    "description": "An educational and industrial hub north of Bangkok.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "samut_prakan",
+    "name": "Samut Prakan",
+    "thaiName": "สมุทรปราการ",
+    "region": "central",
+    "description": "Home to Suvarnabhumi Airport and the Ancient City.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "samut_sakhon",
+    "name": "Samut Sakhon",
+    "thaiName": "สมุทรสาคร",
+    "region": "central",
+    "description": "A major fishing port known as Mahachai.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "samut_songkhram",
+    "name": "Samut Songkhram",
+    "thaiName": "สมุทรสงคราม",
+    "region": "central",
+    "description": "The smallest province, famous for Amphawa Floating Market.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nakhon_pathom",
+    "name": "Nakhon Pathom",
+    "thaiName": "นครปฐม",
+    "region": "central",
+    "description": "Home to Phra Pathom Chedi, the tallest stupa in the world.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "suphan_buri",
+    "name": "Suphan Buri",
+    "thaiName": "สุพรรณบุรี",
+    "region": "central",
+    "description": "Known for its Dragon Descendants Museum and country music.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nakhon_nayok",
+    "name": "Nakhon Nayok",
+    "thaiName": "นครนายก",
+    "region": "central",
+    "description": "Known for its waterfalls and fruit orchards.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "chumphon",
+    "name": "Chumphon",
+    "thaiName": "ชุมพร",
+    "region": "south",
+    "description": "Gateway to the South, known for its long coastline and islands.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "ranong",
+    "name": "Ranong",
+    "thaiName": "ระนอง",
+    "region": "south",
+    "description": "Known for its hot springs and rainy weather.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "surat_thani",
+    "name": "Surat Thani",
+    "thaiName": "สุราษฎร์ธานี",
+    "region": "south",
+    "description": "Gateway to Koh Samui, Koh Phangan, and Koh Tao.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phang_nga",
+    "name": "Phang Nga",
+    "thaiName": "พังงา",
+    "region": "south",
+    "description": "Famous for James Bond Island and Similan Islands.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "nakhon_si_thammarat",
+    "name": "Nakhon Si Thammarat",
+    "thaiName": "นครศรีธรรมราช",
+    "region": "south",
+    "description": "Historical center of the South, home to Wat Phra Mahathat.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "trang",
+    "name": "Trang",
+    "thaiName": "ตรัง",
+    "region": "south",
+    "description": "Known for its food and beautiful islands like Koh Muk.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "phatthalung",
+    "name": "Phatthalung",
+    "thaiName": "พัทลุง",
+    "region": "south",
+    "description": "Known for Thale Noi Waterbird Park.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "satun",
+    "name": "Satun",
+    "thaiName": "สตูล",
+    "region": "south",
+    "description": "Home to Tarutao National Marine Park and Koh Lipe.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "songkhla",
+    "name": "Songkhla",
+    "thaiName": "สงขลา",
+    "region": "south",
+    "description": "A major commercial hub, home to Hat Yai.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "pattani",
+    "name": "Pattani",
+    "thaiName": "ปัตตานี",
+    "region": "south",
+    "description": "Known for its multicultural heritage and Pattani Central Mosque.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "yala",
+    "name": "Yala",
+    "thaiName": "ยะลา",
+    "region": "south",
+    "description": "The southernmost province, known for its beautiful city planning.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
+  },
+  {
+    "id": "narathiwat",
+    "name": "Narathiwat",
+    "thaiName": "นราธิวาส",
+    "region": "south",
+    "description": "A border province with beautiful beaches and forests.",
+    "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+    "coverImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1200"
   }
 ]
