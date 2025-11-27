@@ -275,8 +275,10 @@
         "name": "Wat Ratchabophit",
         "thaiName": "วัดราชบพิธ",
         "description": "A unique temple blending Thai exterior with European Gothic interior. The royal cemetery is located here.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_wat_ratchabophit_hero.webp",
+        "images": [
+            "images/bkk_wat_ratchabophit_hero.webp"
+        ],
         "rating": 4.8,
         "reviews": 3000,
         "address": "2 Fueang Nakhon Rd, Wat Ratchabophit, Phra Nakhon, Bangkok 10200",
