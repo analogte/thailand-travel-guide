@@ -199,8 +199,11 @@
         "name": "Wat Suthat & Giant Swing",
         "thaiName": "วัดสุทัศน์ และเสาชิงช้า",
         "description": "One of Bangkok's oldest and most impressive temples, facing the iconic Giant Swing. Known for its exquisite murals and large bronze Buddha.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_wat_suthat_hero.webp",
+        "images": [
+            "images/bkk_wat_suthat_hero.webp",
+            "images/bkk_wat_suthat_01.webp"
+        ],
         "rating": 4.7,
         "reviews": 5000,
         "address": "146 Bamrung Mueang Rd, Wat Ratchabophit, Phra Nakhon, Bangkok 10200",
