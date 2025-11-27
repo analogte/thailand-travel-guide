@@ -69,6 +69,9 @@ async function initPlaceDetailPage() {
         // Initialize image gallery
         initImageGallery(place);
 
+        // Render image credits if available
+        renderImageCredits(place);
+
         // Initialize Get Directions button
         initGetDirectionsButton(place);
 
@@ -369,4 +372,26 @@ function initGetDirectionsButton(place) {
             showNotification('⚠️ Location not available for this place', 'warning');
         }
     });
+}
+
+/**
+ * Render image credits if available
+ * @param {Object} place - Place data
+ */
+function renderImageCredits(place) {
+    const creditsContainer = document.getElementById('image-credits-container');
+    const creditsText = document.getElementById('image-credits-text');
+
+    if (!creditsContainer || !creditsText) return;
+
+    // Check if place has image credits (support both English and Thai)
+    const credits = place.imageCreditsTh || place.imageCredits;
+
+    if (credits) {
+        creditsText.textContent = credits;
+        creditsContainer.style.display = 'block';
+        console.log('✓ Image credits displayed');
+    } else {
+        creditsContainer.style.display = 'none';
+    }
 }
