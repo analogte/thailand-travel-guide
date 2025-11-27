@@ -312,8 +312,10 @@
         "name": "Wat Paknam (Big Buddha)",
         "thaiName": "วัดปากน้ำ ภาษีเจริญ",
         "description": "Famous for the massive 69-meter golden Buddha and the emerald glass pagoda ceiling. A new global landmark.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_wat_paknam_hero.webp",
+        "images": [
+            "images/bkk_wat_paknam_hero.webp"
+        ],
         "rating": 4.8,
         "reviews": 6000,
         "address": "300 Ratchamongkhon Prasat Alley, Pak Khlong Phasi Charoen, Phasi Charoen, Bangkok 10160",
