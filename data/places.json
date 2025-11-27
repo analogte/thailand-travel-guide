@@ -237,8 +237,11 @@
         "name": "Wat Benchamabophit",
         "thaiName": "วัดเบญจมบพิตร (วัดหินอ่อน)",
         "description": "The Marble Temple, a stunning example of Thai architecture built with Italian Carrara marble. Features a courtyard with 52 Buddha images.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_wat_benchamabophit_hero.webp",
+        "images": [
+            "images/bkk_wat_benchamabophit_hero.webp",
+            "images/bkk_wat_benchamabophit_01.webp"
+        ],
         "rating": 4.8,
         "reviews": 7000,
         "address": "69 Thanon Si Ayutthaya, Dusit, Bangkok 10300",
