@@ -91,6 +91,9 @@
     <section class="py-20 bg-white min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+            <!-- Breadcrumb -->
+            <div id="breadcrumb-container" class="mb-8 pt-4"></div>
+
             <!-- Search & Filter -->
             <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
                 <div class="relative w-full md:w-96">
@@ -153,8 +156,15 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="js/config.js"></script>
     <script src="js/data-loader.js"></script>
     <script src="js/ui-utils.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- Monitoring -->
+    <script src="https://browser.sentry-cdn.com/7.114.0/bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/monitoring.js"></script>
+
     <script src="js/provinces.js"></script>
     <script>
         // Initialize provinces page

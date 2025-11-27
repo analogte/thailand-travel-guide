@@ -24,6 +24,10 @@ let currentPhraseIndex = 0;
 function initCulturePage() {
     if (!document.querySelector('.phrase-card')) return;
 
+    renderBreadcrumbs([
+        { label: 'Culture', url: 'culture.html' }
+    ]);
+
     initPhraseBook();
     console.log('✓ Culture page initialized');
 }
@@ -44,7 +48,7 @@ function initPhraseBook() {
     // Display current phrase
     function displayPhrase() {
         const phrase = thaiPhrases[currentPhraseIndex];
-        
+
         // Fade out
         thaiText.style.opacity = '0';
         romanText.style.opacity = '0';
@@ -114,12 +118,12 @@ function initPhraseBook() {
  */
 function initCulturalTips() {
     const accordionButtons = document.querySelectorAll('.accordion-button');
-    
+
     accordionButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const content = this.nextElementSibling;
             const icon = this.querySelector('.accordion-icon');
-            
+
             // Toggle content
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;

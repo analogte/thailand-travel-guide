@@ -31,8 +31,14 @@ async function initProvincesPage() {
         // Initialize search and filters
         initProvinceFilters();
 
-        // Initialize mobile menu
-        initMobileMenuToggle();
+        // Initialize UI
+        initMobileMenu();
+        initScrollReveal();
+
+        // Render Breadcrumbs
+        renderBreadcrumbs([
+            { label: 'Destinations', url: 'destinations.html' }
+        ]);
 
         // Navbar scroll effect
         initNavbarScroll();

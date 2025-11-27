@@ -60,6 +60,12 @@ async function initProvinceDetailPage() {
         document.getElementById('province-cover').src = province.coverImage || province.image;
         document.getElementById('province-cover').alt = `${province.name} - ${province.thaiName}`;
 
+        // Render Breadcrumbs
+        renderBreadcrumbs([
+            { label: 'Destinations', url: 'destinations.html' },
+            { label: province.name, url: null }
+        ]);
+
         // Render Places
         renderPlaces(provincePlaces);
 

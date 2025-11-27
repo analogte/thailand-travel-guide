@@ -91,11 +91,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Breadcrumb -->
-            <nav class="flex mb-8" aria-label="Breadcrumb">
-                <ol class="inline-flex items-center space-x-1 md:space-x-3" id="breadcrumb-list">
-                    <!-- Injected by JS -->
-                </ol>
-            </nav>
+            <div id="breadcrumb-container" class="mb-8"></div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
@@ -236,7 +232,14 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="js/config.js"></script>
     <script src="js/ui-utils.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- Monitoring -->
+    <script src="https://browser.sentry-cdn.com/7.114.0/bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/monitoring.js"></script>
+
     <script src="js/place-detail.js"></script>
     <script>
         // Initialize place detail page

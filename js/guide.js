@@ -9,10 +9,14 @@ function initGuidePage() {
         return;
     }
 
+    renderBreadcrumbs([
+        { label: 'Travel Guide', url: 'guide.html' }
+    ]);
+
     initCurrencyConverter();
     initWeatherWidget();
     initDestinationQuiz();
-    
+
     console.log('✓ Guide page initialized');
 }
 
@@ -72,33 +76,33 @@ function initWeatherWidget() {
 
     // Mock weather data (should be fetched from API)
     const weatherData = {
-        'bangkok': { 
-            temp: 32, 
-            condition: 'Partly Cloudy', 
+        'bangkok': {
+            temp: 32,
+            condition: 'Partly Cloudy',
             humidity: 75,
             icon: 'fa-cloud-sun'
         },
-        'chiangmai': { 
-            temp: 28, 
-            condition: 'Clear Sky', 
+        'chiangmai': {
+            temp: 28,
+            condition: 'Clear Sky',
             humidity: 60,
             icon: 'fa-sun'
         },
-        'phuket': { 
-            temp: 30, 
-            condition: 'Scattered Clouds', 
+        'phuket': {
+            temp: 30,
+            condition: 'Scattered Clouds',
             humidity: 80,
             icon: 'fa-cloud'
         },
-        'pattaya': { 
-            temp: 31, 
-            condition: 'Sunny', 
+        'pattaya': {
+            temp: 31,
+            condition: 'Sunny',
             humidity: 70,
             icon: 'fa-sun'
         },
-        'krabi': { 
-            temp: 29, 
-            condition: 'Partly Cloudy', 
+        'krabi': {
+            temp: 29,
+            condition: 'Partly Cloudy',
             humidity: 78,
             icon: 'fa-cloud-sun'
         }
@@ -124,7 +128,7 @@ function initWeatherWidget() {
             if (conditionDisplay) conditionDisplay.textContent = data.condition;
             if (humidityDisplay) humidityDisplay.textContent = `Humidity: ${data.humidity}%`;
             if (weatherIcon) weatherIcon.className = `fas ${data.icon} text-6xl text-yellow-500`;
-            
+
             display.style.opacity = '1';
         }, 500);
     });
@@ -225,9 +229,9 @@ function initDestinationQuiz() {
  */
 function initTravelTips() {
     const tipCards = document.querySelectorAll('.tip-card');
-    
+
     tipCards.forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             this.classList.toggle('expanded');
             const content = this.querySelector('.tip-content');
             if (content) {

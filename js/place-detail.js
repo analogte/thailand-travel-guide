@@ -63,7 +63,20 @@ async function initPlaceDetailPage() {
 
         // Render Content
         renderPlaceContent(place);
-        renderBreadcrumbs(place, province);
+
+        // Prepare breadcrumb items
+        const breadcrumbItems = [
+            { label: 'Destinations', url: 'destinations.html' }
+        ];
+
+        if (province) {
+            breadcrumbItems.push({ label: province.name, url: `province-detail.html?id=${province.id}` });
+        }
+
+        breadcrumbItems.push({ label: place.name, url: null }); // Current page
+
+        renderBreadcrumbs(breadcrumbItems);
+
         renderMap(place);
 
         // Initialize image gallery
@@ -80,49 +93,6 @@ async function initPlaceDetailPage() {
         showNotification('⚠️ Error loading place data. Please try again.', 'error');
         hideLoading(document.body);
     }
-}
-
-/**
- * Render breadcrumbs
- * @param {Object} place - Place data
- * @param {Object} province - Province data
- */
-function renderBreadcrumbs(place, province) {
-    const breadcrumbList = document.getElementById('breadcrumb-list');
-    if (!breadcrumbList) return;
-
-    const items = [
-        { name: 'Home', url: 'index.html' },
-        { name: 'Destinations', url: 'destinations.html' }
-    ];
-
-    if (province) {
-        items.push({ name: province.name, url: `province-detail.html?id=${province.id}` });
-    }
-
-    items.push({ name: place.name, url: null, active: true });
-
-    breadcrumbList.innerHTML = items.map((item, index) => {
-        if (item.active) {
-            return `
-                <li aria-current="page">
-                    <div class="flex items-center">
-                        ${index > 0 ? '<i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>' : ''}
-                        <span class="text-sm font-medium text-gray-500">${item.name}</span>
-                    </div>
-                </li>
-            `;
-        } else {
-            return `
-                <li>
-                    <div class="flex items-center">
-                        ${index > 0 ? '<i class="fas fa-chevron-right text-gray-400 text-xs mx-2"></i>' : ''}
-                        <a href="${item.url}" class="text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors">${item.name}</a>
-                    </div>
-                </li>
-            `;
-        }
-    }).join('');
 }
 
 /**

@@ -23,9 +23,9 @@ function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification-toast fixed top-20 right-4 ${colors[type]} text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-fade-in`;
     notification.textContent = message;
-    
+
     document.body.appendChild(notification);
-    
+
     setTimeout(() => {
         notification.style.opacity = '0';
         notification.style.transform = 'translateY(-20px)';
@@ -91,7 +91,7 @@ function initMobileMenu() {
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', function () {
             mobileMenu.classList.toggle('hidden');
-            
+
             // Toggle icon
             const icon = this.querySelector('i');
             if (icon) {
@@ -101,7 +101,7 @@ function initMobileMenu() {
         });
 
         // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
                 mobileMenu.classList.add('hidden');
                 const icon = mobileMenuButton.querySelector('i');
@@ -127,7 +127,7 @@ function scrollToElement(elementId, title = null) {
         }
 
         element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        
+
         // Add highlight effect
         element.classList.add('ring-4', 'ring-yellow-400');
         setTimeout(() => {
@@ -290,8 +290,10 @@ const NewsletterRateLimiter = {
  * @returns {Promise<boolean>} Success status
  */
 async function submitNewsletterSubscription(email) {
-    // TODO: Replace with actual API endpoint
-    const API_ENDPOINT = '/api/newsletter/subscribe';
+    // Use API endpoint from config
+    const API_ENDPOINT = (typeof CONFIG !== 'undefined')
+        ? CONFIG.API_BASE_URL + CONFIG.ENDPOINTS.NEWSLETTER
+        : '/api/newsletter/subscribe';
 
     try {
         // Simulate API call (replace with actual fetch when ready)
@@ -398,4 +400,47 @@ function initNewsletterForm() {
             }
         });
     });
+}
+
+/**
+ * Render Breadcrumb Navigation
+ * @param {Array<{label: string, url: string}>} items
+ * @param {string} containerId - ID of the container element
+ */
+function renderBreadcrumbs(items, containerId = 'breadcrumb-container') {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    let html = `
+        <nav class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-yellow-600">
+                        <i class="fas fa-home mr-2"></i>
+                        Home
+                    </a>
+                </li>
+    `;
+
+    items.forEach((item, index) => {
+        const isLast = index === items.length - 1;
+        html += `
+            <li>
+                <div class="flex items-center">
+                    <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+                    ${isLast
+                ? `<span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">${item.label}</span>`
+                : `<a href="${item.url}" class="ml-1 text-sm font-medium text-gray-700 hover:text-yellow-600 md:ml-2">${item.label}</a>`
+            }
+                </div>
+            </li>
+        `;
+    });
+
+    html += `
+            </ol>
+        </nav>
+    `;
+
+    container.innerHTML = html;
 }
