@@ -64,9 +64,9 @@
         "description": "The spiritual heart of Thailand, housing the Emerald Buddha. A masterpiece of Thai architecture and the former residence of the Kings.",
         "image": "images/bkk_wat_phra_kaew_hero.webp",
         "images": [
+            "images/bkk_wat_phra_kaew_02.webp",
             "images/bkk_wat_phra_kaew_hero.webp",
             "images/bkk_wat_phra_kaew_01.webp",
-            "images/bkk_wat_phra_kaew_02.webp",
             "images/bkk_wat_phra_kaew_03.webp",
             "images/bkk_wat_phra_kaew_04.webp",
             "images/bkk_wat_phra_kaew_05.webp",
@@ -110,8 +110,13 @@
         "name": "Wat Pho",
         "thaiName": "วัดโพธิ์ (วัดพระเชตุพน)",
         "description": "Home to the magnificent 46-meter Reclining Buddha and the birthplace of traditional Thai massage. UNESCO Memory of the World site.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_wat_pho_hero.webp",
+        "images": [
+            "images/bkk_wat_pho_hero.webp",
+            "images/bkk_wat_pho_01.webp",
+            "images/bkk_wat_pho_02.webp",
+            "images/bkk_wat_pho_03.webp"
+        ],
         "rating": 4.8,
         "reviews": 18000,
         "address": "2 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
