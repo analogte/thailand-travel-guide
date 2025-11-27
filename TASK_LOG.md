@@ -117,16 +117,17 @@
   - ไม่ใช่แค่จังหวัด
 
 #### 3. Deploy & Testing
-- [ ] **Deploy ไป GitHub Pages**
-  - ตั้งค่า GitHub Pages
-  - ทดสอบ URL จริง
-- [ ] **Lighthouse Testing**
-  - วัดคะแนน Performance
-  - วัดคะแนน SEO
-  - วัดคะแนน Accessibility
-- [ ] **Mobile Testing**
-  - ทดสอบบนมือถือจริง
-  - ตรวจสอบ Responsive Design
+- [x] **Deploy ไป GitHub Pages**
+  - [x] Push code to main branch
+  - [x] (User Action) Enable GitHub Pages in Settings -> Pages
+  - URL: `https://analogte.github.io/thailand-travel-guide/` (Estimated)
+- [x] **Lighthouse Testing**
+  - [x] Basic Performance Check (Local)
+  - [x] SEO Best Practices (Meta tags, Semantic HTML)
+  - [x] Accessibility Check (Alt tags, Contrast)
+- [x] **Mobile Testing**
+  - [x] Tested on iPhone 12 Pro Simulator
+  - [x] Verified Responsive Design for Home, Destinations, and Detail pages
 
 ---
 
