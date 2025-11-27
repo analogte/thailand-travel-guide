@@ -28,12 +28,8 @@ async function loadData() {
         destinationsData = await destinationsRes.json();
         dataLoaded = true;
 
-        console.log(`✓ Loaded ${provincesData.length} provinces`);
-        console.log(`✓ Loaded ${destinationsData.length} destinations`);
-
         return { provinces: provincesData, destinations: destinationsData };
     } catch (error) {
-        console.error('❌ Error loading data:', error);
         showNotification('⚠️ Error loading data. Please refresh the page.', 'error');
         return { provinces: [], destinations: [] };
     }
@@ -53,24 +49,6 @@ function getProvinces() {
  */
 function getDestinations() {
     return destinationsData;
-}
-
-/**
- * Get destinations by province
- * @param {string} provinceId
- * @returns {Array}
- */
-function getDestinationsByProvince(provinceId) {
-    return destinationsData.filter(d => d.provinceId === provinceId);
-}
-
-/**
- * Get destination by ID
- * @param {string} id
- * @returns {Object|null}
- */
-function getDestinationById(id) {
-    return destinationsData.find(d => d.id === id) || null;
 }
 
 /**

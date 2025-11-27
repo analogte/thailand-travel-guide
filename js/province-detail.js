@@ -65,10 +65,7 @@ async function initProvinceDetailPage() {
 
         // Tab Logic
         initCategoryTabs(provincePlaces);
-
-        console.log(`✓ Province detail page loaded: ${province.name}`);
     } catch (error) {
-        console.error('❌ Error loading province data:', error);
         showNotification('⚠️ Error loading province data. Please try again.', 'error');
     }
 }

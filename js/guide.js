@@ -12,8 +12,6 @@ function initGuidePage() {
     initCurrencyConverter();
     initWeatherWidget();
     initDestinationQuiz();
-    
-    console.log('✓ Guide page initialized');
 }
 
 /**
@@ -59,8 +57,6 @@ function initCurrencyConverter() {
 
     // Initial calculation
     updateConversion();
-
-    console.log('✓ Currency converter initialized');
 }
 
 /**
@@ -133,8 +129,6 @@ function initWeatherWidget() {
     if (citySelect.value) {
         citySelect.dispatchEvent(new Event('change'));
     }
-
-    console.log('✓ Weather widget initialized');
 }
 
 /**
@@ -216,23 +210,5 @@ function initDestinationQuiz() {
             }, 300);
         });
     });
-
-    console.log('✓ Destination quiz initialized');
 }
 
-/**
- * Initialize travel tips accordion
- */
-function initTravelTips() {
-    const tipCards = document.querySelectorAll('.tip-card');
-    
-    tipCards.forEach(card => {
-        card.addEventListener('click', function() {
-            this.classList.toggle('expanded');
-            const content = this.querySelector('.tip-content');
-            if (content) {
-                content.classList.toggle('hidden');
-            }
-        });
-    });
-}

@@ -20,11 +20,11 @@ const STATIC_ASSETS = [
     '/js/province-detail.js',
     '/js/place-detail.js',
     '/js/provinces.js',
-    '/js/destinations.js',
     '/js/culture.js',
     '/js/guide.js',
     '/data/provinces.json',
-    '/data/places.json'
+    '/data/places.json',
+    '/data/destinations.json'
 ];
 
 // Install event - cache static assets

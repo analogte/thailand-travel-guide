@@ -5,8 +5,6 @@
  * Initialize all features when DOM is ready
  */
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('🇹🇭 Thailand Travel Guide - Initializing...');
-
     try {
         // Load data first
         await loadData();
@@ -22,10 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await initDestinationsPage();
         initCulturePage();
         initGuidePage();
-
-        console.log('✅ Thailand Travel Guide loaded successfully!');
     } catch (error) {
-        console.error('❌ Error initializing application:', error);
         showNotification('⚠️ Some features may not work properly. Please refresh the page.', 'error');
     }
 });
@@ -37,7 +32,6 @@ let resizeTimeout;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
-        console.log('Window resized');
         // Add any resize handlers here
     }, 250);
 });
@@ -46,11 +40,7 @@ window.addEventListener('resize', () => {
  * Handle page visibility changes
  */
 document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-        console.log('Page hidden');
-    } else {
-        console.log('Page visible');
-    }
+    // Handle page visibility changes
 });
 
 /**
@@ -60,8 +50,6 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
             .then(registration => {
-                console.log('✅ Service Worker registered:', registration.scope);
-
                 // Check for updates
                 registration.addEventListener('updatefound', () => {
                     const newWorker = registration.installing;
@@ -73,8 +61,8 @@ if ('serviceWorker' in navigator) {
                     });
                 });
             })
-            .catch(err => {
-                console.warn('⚠️ Service Worker registration failed:', err);
+            .catch(() => {
+                // Service Worker registration failed
             });
     });
 }
@@ -82,13 +70,13 @@ if ('serviceWorker' in navigator) {
 /**
  * Global error handler
  */
-window.addEventListener('error', (event) => {
-    console.error('Global error:', event.error);
+window.addEventListener('error', () => {
+    // Handle global errors
 });
 
 /**
  * Global unhandled promise rejection handler
  */
-window.addEventListener('unhandledrejection', (event) => {
-    console.error('Unhandled promise rejection:', event.reason);
+window.addEventListener('unhandledrejection', () => {
+    // Handle unhandled promise rejections
 });

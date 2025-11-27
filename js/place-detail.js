@@ -76,10 +76,7 @@ async function initPlaceDetailPage() {
         initGetDirectionsButton(place);
 
         hideLoading(document.body);
-
-        console.log(`✓ Place detail page loaded: ${place.name}`);
     } catch (error) {
-        console.error('❌ Error loading place data:', error);
         showNotification('⚠️ Error loading place data. Please try again.', 'error');
         hideLoading(document.body);
     }
@@ -208,7 +205,6 @@ function renderPlaceContent(place) {
                 <i class="fas fa-lightbulb text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
                 <span class="text-gray-700">${item}</span>
             `;
-            tipsList.appendChild(li);
             tipsList.appendChild(li);
         });
     }
@@ -390,7 +386,6 @@ function renderImageCredits(place) {
     if (credits) {
         creditsText.textContent = credits;
         creditsContainer.style.display = 'block';
-        console.log('✓ Image credits displayed');
     } else {
         creditsContainer.style.display = 'none';
     }

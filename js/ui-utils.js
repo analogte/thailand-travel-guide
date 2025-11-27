@@ -296,23 +296,8 @@ async function submitNewsletterSubscription(email) {
     try {
         // Simulate API call (replace with actual fetch when ready)
         await new Promise(resolve => setTimeout(resolve, 1500));
-
-        // Uncomment when API is ready:
-        /*
-        const response = await fetch(API_ENDPOINT, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email }),
-        });
-
-        if (!response.ok) throw new Error('API request failed');
-        const data = await response.json();
-        return data.success;
-        */
-
         return true;
     } catch (error) {
-        console.error('API submission failed:', error);
         return true; // Fallback to localStorage
     }
 }
@@ -384,13 +369,10 @@ function initNewsletterForm() {
 
                     // Reset rate limiter for successful subscription
                     NewsletterRateLimiter.reset(email);
-
-                    console.log('✓ Newsletter subscription:', email);
                 } else {
                     throw new Error('Subscription failed');
                 }
             } catch (error) {
-                console.error('Newsletter subscription error:', error);
                 showNotification('⚠️ Subscription failed. Please try again later.', 'error');
             } finally {
                 submitBtn.disabled = false;

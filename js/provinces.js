@@ -38,10 +38,7 @@ async function initProvincesPage() {
         initNavbarScroll();
 
         hideLoading(document.getElementById('provinces-grid'));
-
-        console.log(`✓ Provinces page initialized with ${allProvinces.length} provinces`);
     } catch (error) {
-        console.error('❌ Error initializing provinces page:', error);
         const grid = document.getElementById('provinces-grid');
         if (grid) {
             grid.innerHTML = `
@@ -61,7 +58,6 @@ async function initProvincesPage() {
  */
 function initVantaBackground() {
     if (typeof VANTA === 'undefined') {
-        console.warn('Vanta.js not loaded');
         return;
     }
 
@@ -81,9 +77,8 @@ function initVantaBackground() {
             waveSpeed: 0.75,
             zoom: 0.65
         });
-        console.log('✓ Vanta.js background initialized');
     } catch (error) {
-        console.error('Vanta.js initialization failed:', error);
+        // Vanta.js initialization failed
     }
 }
 
@@ -142,8 +137,6 @@ function renderProvinces(provinces) {
 
         grid.appendChild(card);
     });
-
-    console.log(`✓ Rendered ${provinces.length} province cards`);
 }
 
 /**
@@ -154,7 +147,6 @@ function initProvinceFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
 
     if (!searchInput || !filterBtns.length) {
-        console.warn('Filter elements not found');
         return;
     }
 
@@ -187,8 +179,6 @@ function initProvinceFilters() {
             showNotification(`Showing ${regionName}`, 'info');
         });
     });
-
-    console.log('✓ Province filters initialized');
 }
 
 /**

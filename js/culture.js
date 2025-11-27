@@ -25,7 +25,6 @@ function initCulturePage() {
     if (!document.querySelector('.phrase-card')) return;
 
     initPhraseBook();
-    console.log('✓ Culture page initialized');
 }
 
 /**
@@ -107,27 +106,4 @@ function initPhraseBook() {
 
     // Initialize with first phrase
     displayPhrase();
-}
-
-/**
- * Initialize cultural tips accordion
- */
-function initCulturalTips() {
-    const accordionButtons = document.querySelectorAll('.accordion-button');
-    
-    accordionButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('.accordion-icon');
-            
-            // Toggle content
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                if (icon) icon.style.transform = 'rotate(0deg)';
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                if (icon) icon.style.transform = 'rotate(180deg)';
-            }
-        });
-    });
 }
