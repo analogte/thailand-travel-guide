@@ -19,9 +19,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         initNewsletterForm();
 
         // Initialize page-specific features
-        await initDestinationsPage();
-        initCulturePage();
-        initGuidePage();
+        if (typeof initDestinationsPage === 'function') {
+            await initDestinationsPage();
+        }
+        if (typeof initCulturePage === 'function') {
+            initCulturePage();
+        }
+        if (typeof initGuidePage === 'function') {
+            initGuidePage();
+        }
 
         console.log('✅ Thailand Travel Guide loaded successfully!');
     } catch (error) {
