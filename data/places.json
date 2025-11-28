@@ -444,8 +444,11 @@
         "name": "Loha Prasat (Metal Castle)",
         "thaiName": "ปราสาทโลหะ (วัดราชนัดดาราม)",
         "description": "A unique architectural marvel and one of only three metal castles in the world, Loha Prasat features 37 black metal spires representing the 37 virtues toward enlightenment in Buddhism. Built in 1846 during King Rama III's reign, this multi-tiered structure offers panoramic views of Bangkok's old town from its upper levels. The temple complex also houses Wat Ratchanatdaram, known for its peaceful atmosphere away from tourist crowds.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_loha_prasat_hero.webp",
+        "images": [
+            "images/bkk_loha_prasat_hero.webp",
+            "images/bkk_loha_prasat_01.webp"
+        ],
         "rating": 4.7,
         "reviews": 4200,
         "address": "2 Maha Chai Rd, Wat Ratchanatda Ram, Phra Nakhon, Bangkok 10200",
