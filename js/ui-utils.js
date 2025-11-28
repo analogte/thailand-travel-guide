@@ -26,12 +26,16 @@ function showNotification(message, type = 'info') {
 
     document.body.appendChild(notification);
 
+    const duration = (typeof CONFIG !== 'undefined' && CONFIG.UI)
+        ? CONFIG.UI.NOTIFICATION_DURATION
+        : 3000;
+
     setTimeout(() => {
         notification.style.opacity = '0';
         notification.style.transform = 'translateY(-20px)';
         notification.style.transition = 'all 0.3s ease';
         setTimeout(() => notification.remove(), 300);
-    }, 3000);
+    }, duration);
 }
 
 /**
@@ -137,6 +141,18 @@ function scrollToElement(elementId, title = null) {
 }
 
 /**
+ * Escape HTML to prevent XSS attacks
+ * @param {string} text
+ * @returns {string}
+ */
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+/**
  * Format currency in Thai Baht
  * @param {number} amount
  * @returns {string}
@@ -163,7 +179,13 @@ function truncateText(text, maxLength = 100) {
  * @param {number} wait
  * @returns {Function}
  */
-function debounce(func, wait = 300) {
+function debounce(func, wait) {
+    // Use config value if not provided
+    if (wait === undefined) {
+        wait = (typeof CONFIG !== 'undefined' && CONFIG.UI)
+            ? CONFIG.UI.DEBOUNCE_DELAY
+            : 300;
+    }
     let timeout;
     return function executedFunction(...args) {
         const later = () => {
@@ -195,17 +217,32 @@ function hideLoading(element) {
     }
 }
 
+// Store countdown interval ID globally for cleanup
+let countdownInterval = null;
+
 /**
  * Initialize countdown timer
  * @param {string} targetDate - Date string (e.g., '2026-04-13')
  */
-function initCountdown(targetDate = '2026-04-13T00:00:00') {
+function initCountdown(targetDate) {
+    // Use config value if not provided
+    if (!targetDate) {
+        targetDate = (typeof CONFIG !== 'undefined' && CONFIG.EVENTS)
+            ? CONFIG.EVENTS.SONGKRAN
+            : '2026-04-13T00:00:00';
+    }
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
     const minutesEl = document.getElementById('minutes');
     const secondsEl = document.getElementById('seconds');
 
     if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+    // Clear existing interval if any
+    if (countdownInterval) {
+        clearInterval(countdownInterval);
+        countdownInterval = null;
+    }
 
     const target = new Date(targetDate).getTime();
 
@@ -214,11 +251,16 @@ function initCountdown(targetDate = '2026-04-13T00:00:00') {
         const distance = target - now;
 
         if (distance < 0) {
-            // Event has passed
+            // Event has passed - clear interval
             daysEl.innerText = '00';
             hoursEl.innerText = '00';
             minutesEl.innerText = '00';
             secondsEl.innerText = '00';
+
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+                countdownInterval = null;
+            }
             return;
         }
 
@@ -237,8 +279,21 @@ function initCountdown(targetDate = '2026-04-13T00:00:00') {
     updateCountdown();
 
     // Update every second
-    setInterval(updateCountdown, 1000);
+    countdownInterval = setInterval(updateCountdown, 1000);
 }
+
+/**
+ * Cleanup countdown timer (call on page unload)
+ */
+function cleanupCountdown() {
+    if (countdownInterval) {
+        clearInterval(countdownInterval);
+        countdownInterval = null;
+    }
+}
+
+// Auto-cleanup on page unload
+window.addEventListener('beforeunload', cleanupCountdown);
 
 /**
  * Validate email address
@@ -255,8 +310,16 @@ function isValidEmail(email) {
  */
 const NewsletterRateLimiter = {
     attempts: new Map(),
-    maxAttempts: 3,
-    windowMs: 60000, // 1 minute
+    get maxAttempts() {
+        return (typeof CONFIG !== 'undefined' && CONFIG.RATE_LIMIT)
+            ? CONFIG.RATE_LIMIT.MAX_ATTEMPTS
+            : 3;
+    },
+    get windowMs() {
+        return (typeof CONFIG !== 'undefined' && CONFIG.RATE_LIMIT)
+            ? CONFIG.RATE_LIMIT.WINDOW_MS
+            : 60000;
+    },
 
     check(email) {
         const now = Date.now();

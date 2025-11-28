@@ -53,12 +53,19 @@ async function initProvinceDetailPage() {
             metaDesc.setAttribute('content', `Discover ${province.name} (${province.thaiName}) - ${province.description}`);
         }
 
-        // Render Header
-        document.getElementById('province-name').innerText = province.name;
-        document.getElementById('province-thai-name').innerText = province.thaiName;
-        document.getElementById('province-desc').innerText = province.description;
-        document.getElementById('province-cover').src = province.coverImage || province.image;
-        document.getElementById('province-cover').alt = `${province.name} - ${province.thaiName}`;
+        // Render Header with null checks
+        const provinceNameEl = document.getElementById('province-name');
+        const provinceThaiNameEl = document.getElementById('province-thai-name');
+        const provinceDescEl = document.getElementById('province-desc');
+        const provinceCoverEl = document.getElementById('province-cover');
+
+        if (provinceNameEl) provinceNameEl.textContent = province.name || 'Unknown';
+        if (provinceThaiNameEl) provinceThaiNameEl.textContent = province.thaiName || '';
+        if (provinceDescEl) provinceDescEl.textContent = province.description || '';
+        if (provinceCoverEl) {
+            provinceCoverEl.src = province.coverImage || province.image || '';
+            provinceCoverEl.alt = `${province.name} - ${province.thaiName}`;
+        }
 
         // Render Breadcrumbs
         renderBreadcrumbs([
@@ -101,30 +108,44 @@ function renderPlaces(data) {
     }
 
     data.forEach(place => {
+        // Validate place object
+        if (!place || !place.id) {
+            console.warn('Invalid place data:', place);
+            return;
+        }
+
         const card = document.createElement('div');
         card.className = 'bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group cursor-pointer';
 
-        // Add image error handling
-        const imageUrl = place.image || 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800';
+        // Add image error handling with escaping
+        const defaultImage = (typeof CONFIG !== 'undefined' && CONFIG.IMAGES)
+            ? CONFIG.IMAGES.DEFAULT_PLACE
+            : 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800';
+        const imageUrl = place.image || defaultImage;
+        const placeName = escapeHtml(place.name || 'Unknown');
+        const placeDescription = escapeHtml(place.description || 'No description available');
+        const placeCategory = escapeHtml(place.category || 'general');
+        const placeRating = place.rating ? escapeHtml(String(place.rating)) : 'N/A';
+        const placeId = encodeURIComponent(place.id);
 
         card.innerHTML = `
             <div class="h-48 overflow-hidden relative">
-                <img src="${imageUrl}"
-                     alt="${place.name}"
+                <img src="${escapeHtml(imageUrl)}"
+                     alt="${placeName}"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                      loading="lazy"
                      onerror="this.src='https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800'">
                 <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold text-gray-800 flex items-center shadow-sm">
-                    <i class="fas fa-star text-yellow-400 mr-1"></i> ${place.rating || 'N/A'}
+                    <i class="fas fa-star text-yellow-400 mr-1"></i> ${placeRating}
                 </div>
             </div>
             <div class="p-5">
                 <div class="text-xs font-bold text-teal-600 uppercase tracking-wide mb-1">
-                    <i class="fas ${getCategoryIcon(place.category)} mr-1"></i>${place.category}
+                    <i class="fas ${getCategoryIcon(place.category)} mr-1"></i>${placeCategory}
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">${place.name}</h3>
-                <p class="text-gray-600 text-sm mb-4 line-clamp-2">${place.description}</p>
-                <button onclick="window.location.href='place-detail.html?id=${place.id}'"
+                <h3 class="text-xl font-bold text-gray-800 mb-2">${placeName}</h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">${placeDescription}</p>
+                <button onclick="window.location.href='place-detail.html?id=${placeId}'"
                         class="w-full py-2 rounded-lg border border-teal-600 text-teal-600 font-semibold hover:bg-teal-600 hover:text-white transition-colors">
                     View Details
                 </button>
@@ -141,30 +162,77 @@ function renderPlaces(data) {
  */
 function initCategoryTabs(allPlaces) {
     const tabs = document.querySelectorAll('.tab-btn');
+    const placesGrid = document.getElementById('places-grid');
 
-    tabs.forEach(tab => {
+    tabs.forEach((tab, index) => {
+        // Click handler
         tab.addEventListener('click', () => {
-            // Update Active State
-            tabs.forEach(t => {
-                t.classList.remove('bg-teal-600', 'text-white', 'shadow-md');
-                t.classList.add('bg-white', 'text-gray-600', 'hover:bg-gray-100');
-            });
-            tab.classList.remove('bg-white', 'text-gray-600', 'hover:bg-gray-100');
-            tab.classList.add('bg-teal-600', 'text-white', 'shadow-md');
+            activateTab(tab, tabs, allPlaces, placesGrid);
+        });
 
-            // Filter
-            const category = tab.dataset.category;
-            const filtered = category === 'all'
-                ? allPlaces
-                : allPlaces.filter(p => p.category === category);
+        // Keyboard navigation
+        tab.addEventListener('keydown', (e) => {
+            let targetTab;
 
-            renderPlaces(filtered);
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                targetTab = tabs[(index + 1) % tabs.length];
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                targetTab = tabs[(index - 1 + tabs.length) % tabs.length];
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                targetTab = tabs[0];
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                targetTab = tabs[tabs.length - 1];
+            }
 
-            // Show notification
-            const categoryName = category === 'all' ? 'All Places' : category.charAt(0).toUpperCase() + category.slice(1);
-            showNotification(`Showing ${filtered.length} ${categoryName}`, 'info');
+            if (targetTab) {
+                targetTab.focus();
+                activateTab(targetTab, tabs, allPlaces, placesGrid);
+            }
         });
     });
+}
+
+/**
+ * Activate a tab and update ARIA attributes
+ * @param {HTMLElement} tab - Tab to activate
+ * @param {NodeList} allTabs - All tab elements
+ * @param {Array} allPlaces - All places data
+ * @param {HTMLElement} placesGrid - Places grid element
+ */
+function activateTab(tab, allTabs, allPlaces, placesGrid) {
+    // Update Active State
+    allTabs.forEach(t => {
+        t.classList.remove('bg-teal-600', 'text-white', 'shadow-md');
+        t.classList.add('bg-white', 'text-gray-600', 'hover:bg-gray-100');
+        t.setAttribute('aria-selected', 'false');
+        t.setAttribute('tabindex', '-1');
+    });
+
+    tab.classList.remove('bg-white', 'text-gray-600', 'hover:bg-gray-100');
+    tab.classList.add('bg-teal-600', 'text-white', 'shadow-md');
+    tab.setAttribute('aria-selected', 'true');
+    tab.setAttribute('tabindex', '0');
+
+    // Update aria-labelledby on places grid
+    if (placesGrid && tab.id) {
+        placesGrid.setAttribute('aria-labelledby', tab.id);
+    }
+
+    // Filter
+    const category = tab.dataset.category;
+    const filtered = category === 'all'
+        ? allPlaces
+        : allPlaces.filter(p => p.category === category);
+
+    renderPlaces(filtered);
+
+    // Show notification
+    const categoryName = category === 'all' ? 'All Places' : category.charAt(0).toUpperCase() + category.slice(1);
+    showNotification(`Showing ${filtered.length} ${categoryName}`, 'info');
 }
 
 /**

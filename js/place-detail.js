@@ -122,32 +122,54 @@ function renderMap(place) {
  * @param {Object} place - Place data
  */
 function renderPlaceContent(place) {
+    // Validate place object
+    if (!place) {
+        console.error('Invalid place data');
+        return;
+    }
+
     // Hero Section
     const mainImage = document.getElementById('main-image');
-    if (mainImage) {
+    if (mainImage && place.image) {
         mainImage.src = place.image;
-        mainImage.alt = place.name;
+        mainImage.alt = place.name || 'Place image';
         mainImage.onerror = function () {
-            this.src = 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800';
+            const defaultImage = (typeof CONFIG !== 'undefined' && CONFIG.IMAGES)
+                ? CONFIG.IMAGES.DEFAULT_PLACE
+                : 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800';
+            this.src = defaultImage;
         };
     }
 
-    // Header Info
-    document.getElementById('place-name').innerText = place.name;
-    document.getElementById('place-thai-name').innerText = place.thaiName;
-    document.getElementById('place-rating').innerText = place.rating || 'N/A';
-    document.getElementById('place-reviews').innerText = place.reviews
-        ? `(${place.reviews.toLocaleString()} reviews)`
-        : '';
+    // Header Info with null checks
+    const placeNameEl = document.getElementById('place-name');
+    const placeThaiNameEl = document.getElementById('place-thai-name');
+    const placeRatingEl = document.getElementById('place-rating');
+    const placeReviewsEl = document.getElementById('place-reviews');
+
+    if (placeNameEl) placeNameEl.textContent = place.name || 'Unknown';
+    if (placeThaiNameEl) placeThaiNameEl.textContent = place.thaiName || '';
+    if (placeRatingEl) placeRatingEl.textContent = place.rating || 'N/A';
+    if (placeReviewsEl) {
+        placeReviewsEl.textContent = place.reviews
+            ? `(${place.reviews.toLocaleString()} reviews)`
+            : '';
+    }
 
     // Main Content
-    document.getElementById('place-desc').innerText = place.description;
+    const placeDescEl = document.getElementById('place-desc');
+    if (placeDescEl) placeDescEl.textContent = place.description || 'No description available';
 
     // Sidebar Info
-    document.getElementById('place-hours').innerText = place.openingHours || 'Not specified';
-    document.getElementById('place-fee').innerText = place.entranceFee || 'Not specified';
-    document.getElementById('place-dress').innerText = place.dressCode || 'Casual';
-    document.getElementById('place-address').innerText = place.address || 'Address not available';
+    const placeHoursEl = document.getElementById('place-hours');
+    const placeFeeEl = document.getElementById('place-fee');
+    const placeDressEl = document.getElementById('place-dress');
+    const placeAddressEl = document.getElementById('place-address');
+
+    if (placeHoursEl) placeHoursEl.textContent = place.openingHours || 'Not specified';
+    if (placeFeeEl) placeFeeEl.textContent = place.entranceFee || 'Not specified';
+    if (placeDressEl) placeDressEl.textContent = place.dressCode || 'Casual';
+    if (placeAddressEl) placeAddressEl.textContent = place.address || 'Address not available';
 
     // Website Link (show only if available)
     const websiteSection = document.getElementById('website-section');
@@ -169,45 +191,58 @@ function renderPlaceContent(place) {
 
     // Highlights
     const highlightsList = document.getElementById('place-highlights');
-    if (highlightsList && place.highlights) {
+    if (highlightsList && place.highlights && Array.isArray(place.highlights)) {
         highlightsList.innerHTML = '';
         place.highlights.forEach(item => {
             const li = document.createElement('li');
             li.className = 'flex items-center bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:border-teal-200 transition-colors';
-            li.innerHTML = `
-                <i class="fas fa-check-circle text-teal-500 mr-3 text-lg"></i>
-                <span class="text-gray-700 font-medium">${item}</span>
-            `;
+
+            const icon = document.createElement('i');
+            icon.className = 'fas fa-check-circle text-teal-500 mr-3 text-lg';
+
+            const span = document.createElement('span');
+            span.className = 'text-gray-700 font-medium';
+            span.textContent = item || '';
+
+            li.appendChild(icon);
+            li.appendChild(span);
             highlightsList.appendChild(li);
         });
     }
 
     // Tips
     const tipsList = document.getElementById('place-tips');
-    if (tipsList && place.tips) {
+    if (tipsList && place.tips && Array.isArray(place.tips)) {
         tipsList.innerHTML = '';
         place.tips.forEach(item => {
             const li = document.createElement('li');
             li.className = 'flex items-start';
-            li.innerHTML = `
-                <i class="fas fa-lightbulb text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                <span class="text-gray-700">${item}</span>
-            `;
-            tipsList.appendChild(li);
+
+            const icon = document.createElement('i');
+            icon.className = 'fas fa-lightbulb text-yellow-500 mt-1 mr-3 flex-shrink-0';
+
+            const span = document.createElement('span');
+            span.className = 'text-gray-700';
+            span.textContent = item || '';
+
+            li.appendChild(icon);
+            li.appendChild(span);
             tipsList.appendChild(li);
         });
     }
 
     // Transportation
     const transportContainer = document.getElementById('place-transport');
-    if (transportContainer && place.transportation) {
+    if (transportContainer && place.transportation && Array.isArray(place.transportation)) {
         transportContainer.innerHTML = '';
         place.transportation.forEach(item => {
+            if (!item || !item.type) return;
+
             const div = document.createElement('div');
             div.className = 'flex items-start bg-white p-4 rounded-xl shadow-sm';
 
             let iconClass = 'fa-bus'; // Default icon
-            const type = item.type.toLowerCase();
+            const type = (item.type || '').toLowerCase();
 
             if (type.includes('boat') || type.includes('ferry') || type.includes('pier')) iconClass = 'fa-ship';
             else if (type.includes('train') || type.includes('mrt') || type.includes('bts') || type.includes('arl')) iconClass = 'fa-subway';
@@ -217,15 +252,29 @@ function renderPlaceContent(place) {
             else if (type.includes('walk') || type.includes('foot')) iconClass = 'fa-walking';
             else if (type.includes('plane') || type.includes('flight')) iconClass = 'fa-plane';
 
-            div.innerHTML = `
-                <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1 mr-4">
-                    <i class="fas ${iconClass}"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-gray-800 text-sm uppercase tracking-wide mb-1">${item.type}</h4>
-                    <p class="text-gray-600 text-sm">${item.detail}</p>
-                </div>
-            `;
+            // Create icon container
+            const iconContainer = document.createElement('div');
+            iconContainer.className = 'w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 flex-shrink-0 mt-1 mr-4';
+            const icon = document.createElement('i');
+            icon.className = `fas ${iconClass}`;
+            iconContainer.appendChild(icon);
+
+            // Create content container
+            const contentDiv = document.createElement('div');
+
+            const h4 = document.createElement('h4');
+            h4.className = 'font-bold text-gray-800 text-sm uppercase tracking-wide mb-1';
+            h4.textContent = item.type || '';
+
+            const p = document.createElement('p');
+            p.className = 'text-gray-600 text-sm';
+            p.textContent = item.detail || '';
+
+            contentDiv.appendChild(h4);
+            contentDiv.appendChild(p);
+
+            div.appendChild(iconContainer);
+            div.appendChild(contentDiv);
             transportContainer.appendChild(div);
         });
     } else if (transportContainer) {

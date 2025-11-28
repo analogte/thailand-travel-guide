@@ -71,46 +71,81 @@
             <div id="breadcrumb-container" class="mb-8"></div>
 
             <!-- Tabs -->
-            <div class="flex justify-center mb-12 space-x-2 md:space-x-4 overflow-x-auto pb-4">
+            <div role="tablist" aria-label="Place categories" class="flex justify-center mb-12 space-x-2 md:space-x-4 overflow-x-auto pb-4">
                 <button
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="places-grid"
+                    id="tab-all"
+                    tabindex="0"
                     class="tab-btn active px-4 md:px-6 py-2 rounded-full bg-teal-600 text-white font-semibold shadow-md transition-all whitespace-nowrap"
                     data-category="all">
-                    <i class="fas fa-th-large mr-1"></i> All
+                    <i class="fas fa-th-large mr-1" aria-hidden="true"></i> All
                 </button>
                 <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="places-grid"
+                    id="tab-temple"
+                    tabindex="-1"
                     class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
                     data-category="temple">
-                    <i class="fas fa-place-of-worship mr-1"></i> Temples
+                    <i class="fas fa-place-of-worship mr-1" aria-hidden="true"></i> Temples
                 </button>
                 <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="places-grid"
+                    id="tab-food"
+                    tabindex="-1"
                     class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
                     data-category="food">
-                    <i class="fas fa-utensils mr-1"></i> Food
+                    <i class="fas fa-utensils mr-1" aria-hidden="true"></i> Food
                 </button>
                 <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="places-grid"
+                    id="tab-cafe"
+                    tabindex="-1"
                     class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
                     data-category="cafe">
-                    <i class="fas fa-coffee mr-1"></i> Cafes
+                    <i class="fas fa-coffee mr-1" aria-hidden="true"></i> Cafes
                 </button>
                 <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="places-grid"
+                    id="tab-nature"
+                    tabindex="-1"
                     class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
                     data-category="nature">
-                    <i class="fas fa-tree mr-1"></i> Nature
+                    <i class="fas fa-tree mr-1" aria-hidden="true"></i> Nature
                 </button>
                 <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="places-grid"
+                    id="tab-culture"
+                    tabindex="-1"
                     class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
                     data-category="culture">
-                    <i class="fas fa-masks-theater mr-1"></i> Culture
+                    <i class="fas fa-masks-theater mr-1" aria-hidden="true"></i> Culture
                 </button>
                 <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="places-grid"
+                    id="tab-shopping"
+                    tabindex="-1"
                     class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
                     data-category="shopping">
-                    <i class="fas fa-shopping-bag mr-1"></i> Shopping
+                    <i class="fas fa-shopping-bag mr-1" aria-hidden="true"></i> Shopping
                 </button>
             </div>
 
             <!-- Places Grid -->
-            <div id="places-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="places-grid" role="tabpanel" aria-labelledby="tab-all" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Places will be injected here -->
             </div>
 
