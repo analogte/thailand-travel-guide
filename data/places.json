@@ -387,7 +387,7 @@
     {
         "id": "bkk_erawan_shrine",
         "provinceId": "bangkok",
-        "category": "shrine",
+        "category": "temple",
         "name": "Erawan Shrine",
         "thaiName": "ศาลพระพรหม (ท่าราชประสงค์)",
         "description": "One of Bangkok's most revered Hindu shrines, the Erawan Shrine (Thao Maha Phrom Shrine) is dedicated to Brahma, the Hindu god of creation. Built in 1956 to bring good fortune during the construction of the Erawan Hotel, it has become a spiritual landmark where locals and tourists alike come to make wishes, offer flowers, and commission traditional Thai dance performances as thanks for answered prayers.",
@@ -474,7 +474,7 @@
     {
         "id": "bkk_jim_thompson",
         "provinceId": "bangkok",
-        "category": "museum",
+        "category": "culture",
         "name": "Jim Thompson House",
         "thaiName": "บ้านจิม ทอมป์สัน",
         "description": "The former home of Jim Thompson, the American entrepreneur who revitalized the Thai silk industry in the 1950s-60s. This museum complex showcases traditional Thai architecture with six teak houses assembled from various parts of Thailand, filled with Thompson's impressive collection of Southeast Asian art and antiques. Thompson mysteriously disappeared in Malaysia in 1967, adding an air of intrigue to this cultural landmark.",
@@ -519,7 +519,7 @@
     {
         "id": "bkk_museum_siam",
         "provinceId": "bangkok",
-        "category": "museum",
+        "category": "culture",
         "name": "Museum Siam",
         "thaiName": "มิวเซียมสยาม",
         "description": "An innovative discovery museum that explores the question 'What is Thainess?' through interactive exhibits and multimedia presentations. Housed in a beautiful European-style building from 1927, Museum Siam takes visitors on a journey through Thai history, culture, and identity using modern museum technology. Perfect for families and anyone wanting to understand Thailand beyond temples and beaches.",
@@ -564,7 +564,7 @@
     {
         "id": "bkk_bacc",
         "provinceId": "bangkok",
-        "category": "museum",
+        "category": "culture",
         "name": "BACC (Bangkok Art and Culture Centre)",
         "thaiName": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
         "description": "Bangkok's premier contemporary art space, BACC is a 11-story spiraling gallery showcasing rotating exhibitions of Thai and international contemporary art, design, music, theater, and film. The building's unique architecture features a continuous spiral ramp connecting all floors, creating an immersive art experience. With free admission and a vibrant cafe culture, it's become a hub for Bangkok's creative community.",
@@ -609,7 +609,7 @@
     {
         "id": "bkk_moca",
         "provinceId": "bangkok",
-        "category": "museum",
+        "category": "culture",
         "name": "MOCA Bangkok",
         "thaiName": "พิพิธภัณฑ์ศิลปะร่วมสมัย (โมก้า)",
         "description": "Thailand's first and largest private museum dedicated to contemporary art, MOCA houses an impressive collection of over 800 works by Thai artists spanning from the 19th century to present day. The 5-story white building showcases paintings, sculptures, and mixed media installations, offering a comprehensive journey through Thailand's modern art evolution. Founded by telecommunications mogul Boonchai Bencharongkul, it's a must-visit for art enthusiasts.",
