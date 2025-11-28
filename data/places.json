@@ -389,6 +389,57 @@
         }
     },
     {
+        "id": "bkk_thip_samai",
+        "provinceId": "bangkok",
+        "category": "food",
+        "name": "Thip Samai (Pad Thai Pratu Phi)",
+        "thaiName": "ทิพย์สมัย (ผัดไทยประตูผี)",
+        "description": "A legendary Pad Thai institution since 1966, Thip Samai has been serving Bangkok's most iconic Pad Thai for nearly 60 years. Founded near the historic Pratu Phi (Ghost Gate), this family-run restaurant is renowned for its signature 'Pad Thai Hoi Tod' - wrapped in a delicate egg crepe and cooked over charcoal fire. Using premium ingredients and a secret family recipe passed down through three generations, Thip Samai has earned its reputation as the 'Best Pad Thai in Bangkok' among locals and international food critics alike.",
+        "image": "images/bkk_thip_samai_hero.webp",
+        "images": [
+            "images/bkk_thip_samai_hero.webp",
+            "images/bkk_thip_samai_01.webp",
+            "images/bkk_thip_samai_02.webp",
+            "images/bkk_thip_samai_03.webp",
+            "images/bkk_thip_samai_04.webp"
+        ],
+        "rating": 4.6,
+        "reviews": 8500,
+        "address": "313 Maha Chai Rd, Samran Rat, Phra Nakhon, Bangkok 10200",
+        "openingHours": "17:00 - 02:00 (Closed Tue)",
+        "entranceFee": "N/A (Pad Thai 50-400 THB)",
+        "dressCode": "Casual",
+        "website": "https://thipsamai.com",
+        "highlights": [
+            "Pad Thai Hoi Tod (Wrapped in egg crepe) - The signature dish",
+            "Pad Thai Goong Sod (Fresh jumbo shrimp)",
+            "Freshly squeezed orange juice",
+            "Open kitchen with traditional charcoal wok cooking",
+            "3 generations of family recipes since 1966"
+        ],
+        "tips": [
+            "Queue starts around 16:30. Arrive early to avoid 1-2 hour wait.",
+            "Try the signature 'Pad Thai Song Kreung' (double ingredients, wrapped in egg).",
+            "Cash only - no credit cards accepted.",
+            "The restaurant has 3 floors now to accommodate crowds.",
+            "Order the orange juice - it's legendary and pairs perfectly with Pad Thai."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Take MRT Blue Line to Sam Yot Station (Exit 1), walk 8 mins."
+            },
+            {
+                "type": "Grab/Bolt",
+                "detail": "Set destination to 'Thip Samai Pad Thai Pratu Phi'."
+            }
+        ],
+        "location": {
+            "lat": 13.7531,
+            "lng": 100.5042
+        }
+    },
+    {
         "id": "bkk_after_you",
         "provinceId": "bangkok",
         "category": "cafe",
