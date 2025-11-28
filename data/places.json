@@ -644,12 +644,20 @@
         "name": "MOCA Bangkok",
         "thaiName": "พิพิธภัณฑ์ศิลปะร่วมสมัย (โมก้า)",
         "description": "Thailand's first and largest private museum dedicated to contemporary art, MOCA houses an impressive collection of over 800 works by Thai artists spanning from the 19th century to present day. The 5-story white building showcases paintings, sculptures, and mixed media installations, offering a comprehensive journey through Thailand's modern art evolution. Founded by telecommunications mogul Boonchai Bencharongkul, it's a must-visit for art enthusiasts.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_moca_hero.webp",
+        "images": [
+            "images/bkk_moca_hero.webp",
+            "images/bkk_moca_01.webp",
+            "images/bkk_moca_02.webp",
+            "images/bkk_moca_03.webp",
+            "images/bkk_moca_04.webp",
+            "images/bkk_moca_05.webp",
+            "images/bkk_moca_06.webp"
+        ],
         "rating": 4.7,
         "reviews": 4100,
-        "address": "499 Kamphaeng Phet 6 Rd, Chatuchak, Bangkok 10900",
-        "openingHours": "10:00 - 18:00 (Closed Mon)",
+        "address": "499 Kamphaeng Phet 6 Rd, Ladyao, Chatuchak, Bangkok 10900",
+        "openingHours": "10:00 - 18:00 (Tue-Sun, Closed Mon)",
         "entranceFee": "250 THB (Adults), 100 THB (Students with ID)",
         "dressCode": "Smart casual",
         "website": "https://www.mocabangkok.com",
@@ -658,15 +666,18 @@
             "5-story purpose-built museum building",
             "Works by renowned Thai artists (Chalermchai Kositpipat, Thawan Duchanee)",
             "Sculpture garden",
-            "Rotating temporary exhibitions"
+            "Rotating temporary exhibitions",
+            "MOCA Cafe with Doi Tung Coffee",
+            "MOCA Store with art books and collectibles"
         ],
         "tips": [
             "Allow 2-3 hours to fully appreciate the collection.",
             "Audio guides available in English and Thai.",
             "Photography allowed but no flash.",
             "Combine with Chatuchak Weekend Market (10 mins taxi ride).",
-            "The museum cafe serves light meals and drinks.",
-            "Less crowded on weekdays."
+            "The museum cafe serves light meals and drinks with premium Doi Tung Coffee.",
+            "Less crowded on weekdays.",
+            "Wheelchair accessible with elevators and facilities for disabled visitors."
         ],
         "transportation": [
             {
