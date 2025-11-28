@@ -472,6 +472,187 @@
         }
     },
     {
+        "id": "bkk_jim_thompson",
+        "provinceId": "bangkok",
+        "category": "museum",
+        "name": "Jim Thompson House",
+        "thaiName": "บ้านจิม ทอมป์สัน",
+        "description": "The former home of Jim Thompson, the American entrepreneur who revitalized the Thai silk industry in the 1950s-60s. This museum complex showcases traditional Thai architecture with six teak houses assembled from various parts of Thailand, filled with Thompson's impressive collection of Southeast Asian art and antiques. Thompson mysteriously disappeared in Malaysia in 1967, adding an air of intrigue to this cultural landmark.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 8700,
+        "address": "6 Soi Kasemsan 2, Rama 1 Rd, Wang Mai, Pathum Wan, Bangkok 10330",
+        "openingHours": "09:00 - 18:00 (Last tour 17:00)",
+        "entranceFee": "200 THB (Adults), 100 THB (Students with ID)",
+        "dressCode": "Smart casual. No shoes allowed inside (provided shoe storage).",
+        "website": "https://www.jimthompsonhouse.com",
+        "highlights": [
+            "Traditional Thai teak houses over 200 years old",
+            "Impressive Southeast Asian art collection",
+            "Lush tropical garden with koi pond",
+            "Guided tours in multiple languages",
+            "Jim Thompson's mysterious disappearance story"
+        ],
+        "tips": [
+            "Guided tours are mandatory and included in ticket price (30-40 mins).",
+            "Tours available in English, French, Japanese, and Thai.",
+            "Visit the silk shop for authentic Jim Thompson silk products.",
+            "The on-site restaurant serves excellent Thai cuisine in a garden setting.",
+            "Photography is not allowed inside the houses."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "Take BTS to National Stadium Station (Exit 1), walk 5 mins through Soi Kasemsan 2."
+            },
+            {
+                "type": "Canal Boat",
+                "detail": "Saen Saep Canal Boat to Saphan Hua Chang Pier, walk 10 mins."
+            }
+        ],
+        "location": {
+            "lat": 13.7467,
+            "lng": 100.5307
+        }
+    },
+    {
+        "id": "bkk_museum_siam",
+        "provinceId": "bangkok",
+        "category": "museum",
+        "name": "Museum Siam",
+        "thaiName": "มิวเซียมสยาม",
+        "description": "An innovative discovery museum that explores the question 'What is Thainess?' through interactive exhibits and multimedia presentations. Housed in a beautiful European-style building from 1927, Museum Siam takes visitors on a journey through Thai history, culture, and identity using modern museum technology. Perfect for families and anyone wanting to understand Thailand beyond temples and beaches.",
+        "image": "",
+        "images": [],
+        "rating": 4.5,
+        "reviews": 3800,
+        "address": "4 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
+        "openingHours": "10:00 - 18:00 (Closed Mon)",
+        "entranceFee": "100 THB (Adults), Free (Children under 15)",
+        "dressCode": "Casual",
+        "website": "https://www.museumsiam.org",
+        "highlights": [
+            "Interactive exhibits exploring Thai identity",
+            "Beautiful European-style architecture from 1927",
+            "Multimedia presentations and hands-on activities",
+            "Temporary exhibitions on contemporary Thai culture",
+            "Family-friendly with activities for children"
+        ],
+        "tips": [
+            "Allow 2-3 hours to fully explore all exhibits.",
+            "Great for rainy days - fully air-conditioned.",
+            "Combine with nearby Wat Pho (5 mins walk).",
+            "Free admission on National Museum Day (usually in May).",
+            "English explanations available throughout."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Take MRT Blue Line to Sanam Chai Station (Exit 1), walk 3 mins."
+            },
+            {
+                "type": "Boat",
+                "detail": "Chao Phraya Express Boat to Tha Tien Pier (N8), walk 5 mins."
+            }
+        ],
+        "location": {
+            "lat": 13.7445,
+            "lng": 100.4925
+        }
+    },
+    {
+        "id": "bkk_bacc",
+        "provinceId": "bangkok",
+        "category": "museum",
+        "name": "BACC (Bangkok Art and Culture Centre)",
+        "thaiName": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
+        "description": "Bangkok's premier contemporary art space, BACC is a 11-story spiraling gallery showcasing rotating exhibitions of Thai and international contemporary art, design, music, theater, and film. The building's unique architecture features a continuous spiral ramp connecting all floors, creating an immersive art experience. With free admission and a vibrant cafe culture, it's become a hub for Bangkok's creative community.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 6500,
+        "address": "939 Rama 1 Rd, Wang Mai, Pathum Wan, Bangkok 10330",
+        "openingHours": "10:00 - 21:00 (Closed Mon)",
+        "entranceFee": "Free",
+        "dressCode": "Casual",
+        "website": "https://www.bacc.or.th",
+        "highlights": [
+            "Rotating contemporary art exhibitions (Thai and international)",
+            "Unique spiral architecture by Japanese architects",
+            "Free admission to all public galleries",
+            "Rooftop garden and cafe",
+            "Art bookshop and creative merchandise stores"
+        ],
+        "tips": [
+            "Check the website for current exhibitions - they change monthly.",
+            "The rooftop cafe offers great city views.",
+            "Free WiFi throughout the building.",
+            "Art Market on weekends features local artists and designers.",
+            "Combine with shopping at MBK Center across the street."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "Take BTS to National Stadium Station (Exit 3), directly connected via skywalk."
+            },
+            {
+                "type": "Walk",
+                "detail": "From Siam Paragon: 10 mins walk."
+            }
+        ],
+        "location": {
+            "lat": 13.7465,
+            "lng": 100.5295
+        }
+    },
+    {
+        "id": "bkk_moca",
+        "provinceId": "bangkok",
+        "category": "museum",
+        "name": "MOCA Bangkok",
+        "thaiName": "พิพิธภัณฑ์ศิลปะร่วมสมัย (โมก้า)",
+        "description": "Thailand's first and largest private museum dedicated to contemporary art, MOCA houses an impressive collection of over 800 works by Thai artists spanning from the 19th century to present day. The 5-story white building showcases paintings, sculptures, and mixed media installations, offering a comprehensive journey through Thailand's modern art evolution. Founded by telecommunications mogul Boonchai Bencharongkul, it's a must-visit for art enthusiasts.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 4100,
+        "address": "499 Kamphaeng Phet 6 Rd, Chatuchak, Bangkok 10900",
+        "openingHours": "10:00 - 18:00 (Closed Mon)",
+        "entranceFee": "250 THB (Adults), 100 THB (Students with ID)",
+        "dressCode": "Smart casual",
+        "website": "https://www.mocabangkok.com",
+        "highlights": [
+            "Over 800 contemporary Thai artworks",
+            "5-story purpose-built museum building",
+            "Works by renowned Thai artists (Chalermchai Kositpipat, Thawan Duchanee)",
+            "Sculpture garden",
+            "Rotating temporary exhibitions"
+        ],
+        "tips": [
+            "Allow 2-3 hours to fully appreciate the collection.",
+            "Audio guides available in English and Thai.",
+            "Photography allowed but no flash.",
+            "Combine with Chatuchak Weekend Market (10 mins taxi ride).",
+            "The museum cafe serves light meals and drinks.",
+            "Less crowded on weekdays."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Take MRT Purple Line to Phahon Yothin 24 Station, then taxi 10 mins."
+            },
+            {
+                "type": "Taxi/Grab",
+                "detail": "Most convenient option. Set destination to 'MOCA Bangkok' or 'Museum of Contemporary Art'."
+            }
+        ],
+        "location": {
+            "lat": 13.8365,
+            "lng": 100.5615
+        }
+    },
+    {
         "id": "bkk_jay_fai",
         "provinceId": "bangkok",
         "category": "food",
