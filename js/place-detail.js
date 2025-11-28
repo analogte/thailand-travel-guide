@@ -152,11 +152,19 @@ function renderPlaceContent(place) {
     // Website Link (show only if available)
     const websiteSection = document.getElementById('website-section');
     const websiteLink = document.getElementById('place-website');
+    console.log('Website check:', {
+        hasWebsite: !!place.website,
+        website: place.website,
+        hasSection: !!websiteSection,
+        hasLink: !!websiteLink
+    });
     if (place.website && websiteSection && websiteLink) {
         websiteLink.href = place.website;
         websiteSection.classList.remove('hidden');
+        console.log('✓ Website link displayed:', place.website);
     } else if (websiteSection) {
         websiteSection.classList.add('hidden');
+        console.log('✗ Website section hidden (no website data)');
     }
 
     // Highlights
