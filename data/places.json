@@ -343,6 +343,135 @@
         }
     },
     {
+        "id": "bkk_wat_traimit",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Wat Traimit (Golden Buddha)",
+        "thaiName": "วัดไตรมิตรวิทยาราม (พระพุทธมหาสุวรรณปฏิมากร)",
+        "description": "Home to the world's largest solid gold Buddha statue, weighing 5.5 tons and standing 3 meters tall. The statue was discovered in 1955 when a plaster-covered Buddha accidentally cracked during relocation, revealing the pure gold beneath. Dating back to the Sukhothai period (13th-14th century), this priceless treasure is valued at over $250 million USD.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 9200,
+        "address": "661 Charoen Krung Rd, Talat Noi, Samphanthawong, Bangkok 10100",
+        "openingHours": "08:00 - 17:00",
+        "entranceFee": "100 THB (Foreigners), 40 THB (Thais)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "World's largest solid gold Buddha statue (5.5 tons)",
+            "Sukhothai-style Buddha from 13th century",
+            "Chinatown Heritage Center on upper floors",
+            "Museum explaining the statue's discovery"
+        ],
+        "tips": [
+            "Visit early morning to avoid tour groups.",
+            "Combine with Chinatown (Yaowarat) exploration - just 10 mins walk.",
+            "The museum on upper floors tells the fascinating discovery story.",
+            "Photography is allowed but be respectful."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "Take MRT Blue Line to Hua Lamphong Station (Exit 1), walk 5 mins."
+            },
+            {
+                "type": "Grab/Taxi",
+                "detail": "Set destination to 'Wat Traimit' or 'Golden Buddha Temple'."
+            }
+        ],
+        "location": {
+            "lat": 13.7400,
+            "lng": 100.5155
+        }
+    },
+    {
+        "id": "bkk_erawan_shrine",
+        "provinceId": "bangkok",
+        "category": "shrine",
+        "name": "Erawan Shrine",
+        "thaiName": "ศาลพระพรหม (ท่าราชประสงค์)",
+        "description": "One of Bangkok's most revered Hindu shrines, the Erawan Shrine (Thao Maha Phrom Shrine) is dedicated to Brahma, the Hindu god of creation. Built in 1956 to bring good fortune during the construction of the Erawan Hotel, it has become a spiritual landmark where locals and tourists alike come to make wishes, offer flowers, and commission traditional Thai dance performances as thanks for answered prayers.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 15000,
+        "address": "494 Ratchadamri Rd, Lumphini, Pathum Wan, Bangkok 10330",
+        "openingHours": "06:00 - 23:00",
+        "entranceFee": "Free (Offerings optional)",
+        "dressCode": "Respectful attire recommended",
+        "highlights": [
+            "Four-faced Brahma statue covered in gold leaf",
+            "Traditional Thai dance performances (commissioned by worshippers)",
+            "Flower garlands and incense offerings",
+            "Witness of answered prayers and gratitude rituals"
+        ],
+        "tips": [
+            "Visit early morning (06:00-08:00) for a peaceful experience.",
+            "You can purchase flower garlands and incense from vendors nearby (20-100 THB).",
+            "If your wish is granted, tradition says you should return to commission a dance performance.",
+            "Located at busy Ratchaprasong intersection - watch for traffic when crossing.",
+            "Combine with shopping at Central World or Siam Paragon nearby."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "Take BTS to Chit Lom Station (Exit 6), walk 2 mins."
+            },
+            {
+                "type": "Walk",
+                "detail": "From Siam Paragon: 10 mins walk via skywalk."
+            }
+        ],
+        "location": {
+            "lat": 13.7440,
+            "lng": 100.5400
+        }
+    },
+    {
+        "id": "bkk_loha_prasat",
+        "provinceId": "bangkok",
+        "category": "temple",
+        "name": "Loha Prasat (Metal Castle)",
+        "thaiName": "ปราสาทโลหะ (วัดราชนัดดาราม)",
+        "description": "A unique architectural marvel and one of only three metal castles in the world, Loha Prasat features 37 black metal spires representing the 37 virtues toward enlightenment in Buddhism. Built in 1846 during King Rama III's reign, this multi-tiered structure offers panoramic views of Bangkok's old town from its upper levels. The temple complex also houses Wat Ratchanatdaram, known for its peaceful atmosphere away from tourist crowds.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 4200,
+        "address": "2 Maha Chai Rd, Wat Ratchanatda Ram, Phra Nakhon, Bangkok 10200",
+        "openingHours": "09:00 - 17:00",
+        "entranceFee": "Free (Donations appreciated)",
+        "dressCode": "Respectful attire required. Shoulders and knees must be covered.",
+        "highlights": [
+            "37 metal spires representing Buddhist virtues",
+            "One of only 3 metal castles in the world",
+            "Panoramic rooftop views of old Bangkok",
+            "Peaceful meditation rooms inside the structure",
+            "Amulet market at the base (Talat Phra Chan)"
+        ],
+        "tips": [
+            "Climb to the top for stunning 360-degree views - it's free!",
+            "Visit late afternoon for golden hour photography.",
+            "Explore the amulet market at the base - one of Bangkok's largest.",
+            "Combine with nearby Golden Mount (Wat Saket) - 15 mins walk.",
+            "Less crowded than major temples - perfect for peaceful exploration."
+        ],
+        "transportation": [
+            {
+                "type": "Boat",
+                "detail": "Take Saen Saep Canal Boat to Panfa Leelard Pier, walk 5 mins."
+            },
+            {
+                "type": "Taxi/Grab",
+                "detail": "Set destination to 'Loha Prasat' or 'Wat Ratchanatdaram'."
+            }
+        ],
+        "location": {
+            "lat": 13.7542,
+            "lng": 100.5050
+        }
+    },
+    {
         "id": "bkk_jay_fai",
         "provinceId": "bangkok",
         "category": "food",
