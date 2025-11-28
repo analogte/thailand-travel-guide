@@ -149,6 +149,16 @@ function renderPlaceContent(place) {
     document.getElementById('place-dress').innerText = place.dressCode || 'Casual';
     document.getElementById('place-address').innerText = place.address || 'Address not available';
 
+    // Website Link (show only if available)
+    const websiteSection = document.getElementById('website-section');
+    const websiteLink = document.getElementById('place-website');
+    if (place.website && websiteSection && websiteLink) {
+        websiteLink.href = place.website;
+        websiteSection.classList.remove('hidden');
+    } else if (websiteSection) {
+        websiteSection.classList.add('hidden');
+    }
+
     // Highlights
     const highlightsList = document.getElementById('place-highlights');
     if (highlightsList && place.highlights) {
