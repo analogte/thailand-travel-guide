@@ -1469,5 +1469,189 @@
             "lat": 13.7285,
             "lng": 100.5145
         }
+    },
+    {
+        "id": "cm_night_bazaar",
+        "provinceId": "chiangmai",
+        "category": "shopping",
+        "name": "Chiang Mai Night Bazaar",
+        "thaiName": "เชียงใหม่ไนท์บาซาร์",
+        "description": "One of Chiang Mai's most famous attractions, the Night Bazaar is a sprawling market that comes alive after sunset. Stretching along Chang Klan Road, it offers endless stalls selling handicrafts, clothing, souvenirs, and art. A great place to practice your bargaining skills and enjoy street food.",
+        "image": "",
+        "images": [],
+        "rating": 4.3,
+        "reviews": 25000,
+        "address": "Chang Klan Rd, Chang Moi, Mueang Chiang Mai, Chiang Mai 50100",
+        "openingHours": "17:00 - 24:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "",
+        "highlights": [
+            "Endless stalls of handicrafts and souvenirs",
+            "Kalare Night Bazaar food court",
+            "Live music and cultural performances",
+            "Portrait artists and art galleries",
+            "Muay Thai boxing stadium nearby",
+            "Great atmosphere for evening stroll"
+        ],
+        "tips": [
+            "Bargaining is essential - start at 50% of asking price.",
+            "Visit Kalare Night Bazaar for great food and live music.",
+            "Best time to visit is around 19:00-20:00.",
+            "Check out the art galleries for unique local paintings.",
+            "Watch out for counterfeit goods."
+        ],
+        "transportation": [
+            {
+                "type": "Red Truck (Songthaew)",
+                "detail": "Standard fare 30 THB from anywhere in the city."
+            },
+            {
+                "type": "Tuk-tuk",
+                "detail": "Negotiate fare beforehand (approx. 100-150 THB)."
+            }
+        ],
+        "location": {
+            "lat": 18.7853,
+            "lng": 99.0003
+        }
+    },
+    {
+        "id": "cm_sunday_walking_street",
+        "provinceId": "chiangmai",
+        "category": "shopping",
+        "name": "Sunday Walking Street",
+        "thaiName": "ถนนคนเดินท่าแพ",
+        "description": "The most popular market in Chiang Mai, held every Sunday evening. The main street of the Old City is closed to traffic and filled with stalls selling high-quality local crafts, art, clothing, and delicious street food. The atmosphere is vibrant with street performers and musicians.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 18000,
+        "address": "Rachadamnoen Rd, Si Phum, Mueang Chiang Mai, Chiang Mai 50200",
+        "openingHours": "16:00 - 22:30 (Sundays only)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "",
+        "highlights": [
+            "Largest walking street in Chiang Mai",
+            "High-quality local handicrafts and art",
+            "Traditional Northern Thai food stalls",
+            "Street performers and musicians",
+            "Massage stations on the street",
+            "Located inside the historic Old City"
+        ],
+        "tips": [
+            "Arrive early (around 17:00) to avoid the biggest crowds.",
+            "Try the local snacks like Sai Oua (Northern sausage).",
+            "Respect the temples located along the street.",
+            "Wear comfortable shoes - it's a long walk.",
+            "Bring cash in small denominations."
+        ],
+        "transportation": [
+            {
+                "type": "Walk",
+                "detail": "Start at Tha Phae Gate and walk west."
+            },
+            {
+                "type": "Red Truck",
+                "detail": "Get dropped off at Tha Phae Gate."
+            }
+        ],
+        "location": {
+            "lat": 18.7878,
+            "lng": 98.9932
+        }
+    },
+    {
+        "id": "hkt_central_phuket",
+        "provinceId": "phuket",
+        "category": "shopping",
+        "name": "Central Phuket",
+        "thaiName": "เซ็นทรัล ภูเก็ต",
+        "description": "Phuket's premier luxury lifestyle destination, consisting of two wings: Festival and Floresta. Features world-class shopping, dining, and entertainment, including Aquaria Phuket (Thailand's largest aquarium) and Tribhum (3D adventure park). The architecture blends modern design with Thai mythology.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 15000,
+        "address": "199 Wichit Songkhram Rd, Wichit, Mueang Phuket, Phuket 83000",
+        "openingHours": "10:30 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "https://www.centralphuket.com",
+        "highlights": [
+            "Aquaria Phuket - largest aquarium in Thailand",
+            "Tribhum - 3D walkthrough adventure theme park",
+            "Luxury brands and international fashion",
+            "Tales of Thailand - floating market zone",
+            "Public House - food hub",
+            "Stunning architectural design"
+        ],
+        "tips": [
+            "Visit Aquaria Phuket in the Floresta wing.",
+            "Great place to escape the heat or rain.",
+            "Free shuttle bus from major beaches (check schedule).",
+            "Tales of Thailand zone offers great photo ops.",
+            "Tourist Card available for discounts."
+        ],
+        "transportation": [
+            {
+                "type": "Shuttle Bus",
+                "detail": "Free shuttle from Patong and other beaches."
+            },
+            {
+                "type": "Taxi/Grab",
+                "detail": "Located in Phuket Town area."
+            }
+        ],
+        "location": {
+            "lat": 7.8918,
+            "lng": 98.3681
+        }
+    },
+    {
+        "id": "hkt_jungceylon",
+        "provinceId": "phuket",
+        "category": "shopping",
+        "name": "Jungceylon",
+        "thaiName": "จังซีลอน",
+        "description": "The largest shopping mall in Patong, Jungceylon is a city within a city. It offers a massive selection of shopping, dining, and entertainment options, including a cinema, bowling alley, and supermarket. A convenient one-stop destination for tourists staying in Patong Beach.",
+        "image": "",
+        "images": [],
+        "rating": 4.4,
+        "reviews": 22000,
+        "address": "181 Rat-u-thit 200 Pee Road, Patong, Kathu, Phuket 83150",
+        "openingHours": "11:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "https://www.jungceylon.com",
+        "highlights": [
+            "Located in the heart of Patong Beach",
+            "Daily water fountain show",
+            "SF Cinema City and Bowling",
+            "Big C Extra supermarket",
+            "Robinson Department Store",
+            "Hundreds of restaurants and cafes"
+        ],
+        "tips": [
+            "Perfect for buying souvenirs and groceries.",
+            "Watch the water fountain show at 19:00 and 21:00.",
+            "Connected to Bangla Road nightlife area.",
+            "Great place to park if visiting Bangla Road.",
+            "Many massage shops inside for relaxation."
+        ],
+        "transportation": [
+            {
+                "type": "Walk",
+                "detail": "Walking distance from anywhere in Patong."
+            },
+            {
+                "type": "Tuk-tuk",
+                "detail": "Famous landmark, every driver knows it."
+            }
+        ],
+        "location": {
+            "lat": 7.8922,
+            "lng": 98.2986
+        }
     }
 ]
