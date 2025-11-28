@@ -546,8 +546,10 @@
         "name": "Museum Siam",
         "thaiName": "มิวเซียมสยาม",
         "description": "An innovative discovery museum that explores the question 'What is Thainess?' through interactive exhibits and multimedia presentations. Housed in a beautiful European-style building from 1927, Museum Siam takes visitors on a journey through Thai history, culture, and identity using modern museum technology. Perfect for families and anyone wanting to understand Thailand beyond temples and beaches.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_museum_siam_hero.webp",
+        "images": [
+            "images/bkk_museum_siam_hero.webp"
+        ],
         "rating": 4.5,
         "reviews": 3800,
         "address": "4 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200",
@@ -580,8 +582,8 @@
             }
         ],
         "location": {
-            "lat": 13.7445,
-            "lng": 100.4925
+            "lat": 13.7446,
+            "lng": 100.4926
         }
     },
     {
