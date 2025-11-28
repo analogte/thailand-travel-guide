@@ -397,8 +397,12 @@
         "name": "Erawan Shrine",
         "thaiName": "ศาลพระพรหม (ท่าราชประสงค์)",
         "description": "One of Bangkok's most revered Hindu shrines, the Erawan Shrine (Thao Maha Phrom Shrine) is dedicated to Brahma, the Hindu god of creation. Built in 1956 to bring good fortune during the construction of the Erawan Hotel, it has become a spiritual landmark where locals and tourists alike come to make wishes, offer flowers, and commission traditional Thai dance performances as thanks for answered prayers.",
-        "image": "",
-        "images": [],
+        "image": "images/bkk_erawan_shrine_hero.webp",
+        "images": [
+            "images/bkk_erawan_shrine_hero.webp",
+            "images/bkk_erawan_shrine_01.webp",
+            "images/bkk_erawan_shrine_02.webp"
+        ],
         "rating": 4.6,
         "reviews": 15000,
         "address": "494 Ratchadamri Rd, Lumphini, Pathum Wan, Bangkok 10330",
