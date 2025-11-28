@@ -1024,5 +1024,450 @@
             "lat": 7.8856,
             "lng": 98.3907
         }
+    },
+    {
+        "id": "bkk_iconsiam",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "ICONSIAM",
+        "thaiName": "ไอคอนสยาม",
+        "description": "Thailand's most luxurious riverside shopping destination, ICONSIAM combines world-class shopping, dining, and cultural experiences. Featuring over 500 stores including luxury brands, SookSiam (a Thai heritage zone), and stunning Chao Phraya River views. The mall is a landmark destination showcasing the best of Thailand and the world.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 45000,
+        "address": "299 Charoen Nakhon Rd, Khlong Ton Sai, Khlong San, Bangkok 10600",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "https://www.iconsiam.com",
+        "highlights": [
+            "SookSiam - Thai heritage and culture zone",
+            "Over 500 international and local brands",
+            "Stunning Chao Phraya River views",
+            "Apple Store Thailand flagship",
+            "Takashimaya Department Store",
+            "Indoor floating market",
+            "Free shuttle boat from BTS Saphan Taksin"
+        ],
+        "tips": [
+            "Take the free shuttle boat from BTS Saphan Taksin - runs every 15 mins.",
+            "Visit SookSiam on the 4th-5th floor for authentic Thai products.",
+            "The riverside promenade offers stunning sunset views.",
+            "Parking can be challenging on weekends - arrive early or use public transport.",
+            "Check out the multimedia water fountain show in the evening."
+        ],
+        "transportation": [
+            {
+                "type": "Boat",
+                "detail": "Free shuttle boat from Sathorn Pier (BTS Saphan Taksin) every 15 mins."
+            },
+            {
+                "type": "BTS + Shuttle",
+                "detail": "BTS to Krung Thon Buri, then free shuttle bus."
+            }
+        ],
+        "location": {
+            "lat": 13.7268,
+            "lng": 100.5101
+        }
+    },
+    {
+        "id": "bkk_siam_paragon",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "Siam Paragon",
+        "thaiName": "สยามพารากอน",
+        "description": "Bangkok's premier luxury shopping mall and entertainment complex in the heart of the city. Home to high-end brands, Southeast Asia's largest aquarium (SEA LIFE Bangkok Ocean World), luxury car showrooms, and world-class dining. The iconic landmark of Siam Square area.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 38000,
+        "address": "991 Rama 1 Rd, Pathum Wan, Bangkok 10330",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry (SEA LIFE requires ticket)",
+        "dressCode": "Smart casual",
+        "website": "https://www.siamparagon.co.th",
+        "highlights": [
+            "Luxury brands: Hermès, Chanel, Louis Vuitton, Gucci",
+            "SEA LIFE Bangkok Ocean World (basement)",
+            "Paragon Cineplex with IMAX theater",
+            "Gourmet Market - premium supermarket",
+            "Exotic car showrooms (Lamborghini, Ferrari, Maserati)",
+            "Kinokuniya bookstore"
+        ],
+        "tips": [
+            "Directly connected to BTS Siam Station - very convenient.",
+            "Gourmet Market in basement has great food court and imported products.",
+            "Visit SEA LIFE Ocean World - one of the best aquariums in Asia.",
+            "Free WiFi throughout the mall.",
+            "Parking validated with purchase - keep your receipts."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Siam Station (Exit 5), directly connected."
+            },
+            {
+                "type": "Walk",
+                "detail": "Connected to Siam Center, Siam Discovery via skywalk."
+            }
+        ],
+        "location": {
+            "lat": 13.7467,
+            "lng": 100.5347
+        }
+    },
+    {
+        "id": "bkk_central_world",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "CentralWorld",
+        "thaiName": "เซ็นทรัลเวิลด์",
+        "description": "One of the largest shopping complexes in Southeast Asia, CentralWorld offers 550,000 square meters of retail space with over 500 stores. From affordable fashion to luxury brands, entertainment, and dining. The iconic Erawan Shrine is located right in front of the mall.",
+        "image": "",
+        "images": [],
+        "rating": 4.5,
+        "reviews": 42000,
+        "address": "999/9 Rama 1 Rd, Pathum Wan, Bangkok 10330",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "https://www.centralworld.co.th",
+        "highlights": [
+            "One of the largest malls in Southeast Asia",
+            "ZEN Department Store - Japanese lifestyle products",
+            "SF Cinema City with premium theaters",
+            "Ice skating rink on 7th floor",
+            "Erawan Shrine at the front entrance",
+            "Central Food Hall - massive food court"
+        ],
+        "tips": [
+            "Visit Erawan Shrine before or after shopping - it's right at the entrance.",
+            "The food court on 6th floor offers great value Thai food.",
+            "Ice skating rink is a fun activity to cool down.",
+            "Connected to Gaysorn Village and Big C Supercenter via skywalk.",
+            "Major sales during New Year and mid-year periods."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Chit Lom Station (Exit 9), walk 5 mins or use skywalk."
+            },
+            {
+                "type": "BTS",
+                "detail": "BTS Siam Station (Exit 1), walk 10 mins via skywalk."
+            }
+        ],
+        "location": {
+            "lat": 13.7470,
+            "lng": 100.5397
+        }
+    },
+    {
+        "id": "bkk_mbk",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "MBK Center",
+        "thaiName": "เอ็มบีเค เซ็นเตอร์",
+        "description": "Bangkok's most famous budget-friendly shopping mall, MBK is an 8-story shopping paradise known for affordable fashion, electronics, mobile phones, and souvenirs. A must-visit for bargain hunters and those looking for authentic Bangkok shopping experience with over 2,000 shops.",
+        "image": "",
+        "images": [],
+        "rating": 4.4,
+        "reviews": 35000,
+        "address": "444 Phayathai Rd, Wang Mai, Pathum Wan, Bangkok 10330",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "https://www.mbk-center.co.th",
+        "highlights": [
+            "Over 2,000 shops selling everything imaginable",
+            "Mobile phone and electronics hub (4th floor)",
+            "Affordable fashion and accessories",
+            "Souvenir shopping paradise",
+            "Food court with Thai and international cuisine",
+            "Bargaining is expected and part of the fun"
+        ],
+        "tips": [
+            "Bargaining is expected - start at 50-60% of asking price.",
+            "4th floor is the best for mobile phones and electronics.",
+            "6th floor food court offers great value meals.",
+            "Watch out for pickpockets in crowded areas.",
+            "Connected to Siam Discovery and Siam Paragon via skywalk."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS National Stadium Station (Exit 4), directly connected."
+            }
+        ],
+        "location": {
+            "lat": 13.7447,
+            "lng": 100.5300
+        }
+    },
+    {
+        "id": "bkk_terminal21",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "Terminal 21 Asok",
+        "thaiName": "เทอร์มินอล 21 อโศก",
+        "description": "A unique themed shopping mall where each floor represents a different world city (Tokyo, London, Istanbul, San Francisco, Paris, Caribbean). Offers mid-range fashion, dining, and entertainment with creative airport terminal-inspired design. Famous for its affordable yet trendy shopping and excellent food court.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 32000,
+        "address": "88 Soi Sukhumvit 19, Khlong Toei Nuea, Watthana, Bangkok 10110",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "https://www.terminal21.co.th",
+        "highlights": [
+            "Unique city-themed floors (Tokyo, London, Paris, etc.)",
+            "Pier 21 Food Court - one of Bangkok's best",
+            "Affordable fashion and accessories",
+            "Instagram-worthy themed decorations",
+            "SF Cinema City movie theater",
+            "Directly connected to BTS and MRT"
+        ],
+        "tips": [
+            "Don't miss Pier 21 Food Court on 5th floor - excellent value and variety.",
+            "Each floor has unique photo opportunities with city themes.",
+            "Directly connected to BTS Asok and MRT Sukhumvit.",
+            "Great for mid-range shopping - more affordable than Siam Paragon.",
+            "Restrooms are themed too - worth checking out!"
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Asok Station (Exit 1), directly connected."
+            },
+            {
+                "type": "MRT",
+                "detail": "MRT Sukhumvit Station (Exit 3), directly connected."
+            }
+        ],
+        "location": {
+            "lat": 13.7373,
+            "lng": 100.5601
+        }
+    },
+    {
+        "id": "bkk_emsphere",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "Emsphere",
+        "thaiName": "เอ็มสเฟียร์",
+        "description": "Bangkok's newest lifestyle destination (opened 2023), Emsphere is a futuristic spherical mall featuring cutting-edge design, premium brands, innovative dining concepts, and immersive experiences. Part of the EM District complex, it represents the future of Bangkok shopping.",
+        "image": "",
+        "images": [],
+        "rating": 4.7,
+        "reviews": 8500,
+        "address": "622 Sukhumvit Rd, Khlong Tan, Khlong Toei, Bangkok 10110",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Smart casual",
+        "website": "https://www.emsphere.com",
+        "highlights": [
+            "Futuristic spherical architecture",
+            "Premium and lifestyle brands",
+            "Innovative dining experiences",
+            "Art installations and exhibitions",
+            "Connected to EmQuartier and EmDistrict",
+            "Rooftop garden and event spaces"
+        ],
+        "tips": [
+            "Newest mall in Bangkok - opened in 2023.",
+            "Great for Instagram photos - unique architecture.",
+            "Connected to EmQuartier via skywalk.",
+            "Visit in the evening for beautiful lighting.",
+            "Explore all three EM District malls in one visit."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Phrom Phong Station (Exit 5), walk 5 mins or use skywalk."
+            }
+        ],
+        "location": {
+            "lat": 13.7308,
+            "lng": 100.5698
+        }
+    },
+    {
+        "id": "bkk_emquartier",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "EmQuartier",
+        "thaiName": "เอ็มควอเทียร์",
+        "description": "A premium lifestyle mall in the heart of Sukhumvit, EmQuartier features high-end fashion, gourmet dining, and a stunning rooftop garden. Known for its modern architecture, waterfall feature, and curated selection of international and local brands. Part of the EM District complex.",
+        "image": "",
+        "images": [],
+        "rating": 4.6,
+        "reviews": 28000,
+        "address": "693 Sukhumvit Rd, Khlong Tan Nuea, Watthana, Bangkok 10110",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Smart casual",
+        "website": "https://www.emquartier.co.th",
+        "highlights": [
+            "Helix Quartier - spiral walkway with waterfall",
+            "Glass Quartier - luxury fashion brands",
+            "Gourmet Market - premium supermarket",
+            "Rooftop garden with city views",
+            "Quartier CineArt - boutique cinema",
+            "Connected to Emporium and Emsphere"
+        ],
+        "tips": [
+            "Visit the Helix Quartier for the iconic spiral walkway and waterfall.",
+            "Rooftop garden on 9th floor offers great views and relaxation.",
+            "Gourmet Market has excellent imported products and food court.",
+            "Connected to Emporium (older mall) via skywalk.",
+            "Great for luxury shopping and fine dining."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Phrom Phong Station (Exit 4), directly connected."
+            }
+        ],
+        "location": {
+            "lat": 13.7308,
+            "lng": 100.5698
+        }
+    },
+    {
+        "id": "bkk_the_commons",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "The Commons Thonglor",
+        "thaiName": "เดอะ คอมมอนส์ ทองหล่อ",
+        "description": "A trendy community mall in the hipster Thonglor neighborhood, The Commons is known for its open-air design, artisanal cafes, craft beer bars, and indie boutiques. A favorite among Bangkok's creative crowd and expats, offering a more intimate and curated shopping experience.",
+        "image": "",
+        "images": [],
+        "rating": 4.5,
+        "reviews": 12000,
+        "address": "335 Thong Lo 17 Alley, Khlong Tan Nuea, Watthana, Bangkok 10110",
+        "openingHours": "10:00 - 22:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual chic",
+        "website": "https://www.thecommonsbkk.com",
+        "highlights": [
+            "Open-air community mall design",
+            "Artisanal cafes and specialty coffee shops",
+            "Craft beer bars and restaurants",
+            "Indie boutiques and lifestyle stores",
+            "Rooftop bar with Thonglor views",
+            "Dog-friendly spaces"
+        ],
+        "tips": [
+            "Great for brunch and coffee - many specialty cafes.",
+            "Visit in the evening for the best atmosphere.",
+            "Rooftop bar offers great sunset views.",
+            "Dog-friendly - you'll see many pets here.",
+            "Parking is limited - arrive early or use Grab."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Thong Lo Station (Exit 3), walk 10 mins or take taxi."
+            },
+            {
+                "type": "Taxi/Grab",
+                "detail": "Most convenient option. Set destination to 'The Commons Thonglor'."
+            }
+        ],
+        "location": {
+            "lat": 13.7324,
+            "lng": 100.5835
+        }
+    },
+    {
+        "id": "bkk_gumps_ari",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "Gump's Ari",
+        "thaiName": "กั๊ม อารีย์",
+        "description": "A charming vintage-style community mall in the trendy Ari neighborhood, Gump's features independent boutiques, vintage shops, specialty cafes, and local designer stores. Known for its retro aesthetic and laid-back vibe, it's a favorite among locals seeking unique finds.",
+        "image": "",
+        "images": [],
+        "rating": 4.4,
+        "reviews": 6500,
+        "address": "88 Phahonyothin Rd, Samsen Nai, Phaya Thai, Bangkok 10400",
+        "openingHours": "11:00 - 21:00 (Daily)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual",
+        "website": "",
+        "highlights": [
+            "Vintage and retro aesthetic",
+            "Independent boutiques and vintage shops",
+            "Specialty coffee shops",
+            "Local designer clothing and accessories",
+            "Relaxed Ari neighborhood vibe",
+            "Great for unique souvenirs"
+        ],
+        "tips": [
+            "Perfect for vintage clothing and unique finds.",
+            "Explore the surrounding Ari neighborhood - many cafes and restaurants.",
+            "Less crowded than major malls - more intimate shopping.",
+            "Great for photography with retro decor.",
+            "Combine with visit to nearby Chatuchak Park."
+        ],
+        "transportation": [
+            {
+                "type": "BTS",
+                "detail": "BTS Ari Station (Exit 3), walk 5 mins."
+            }
+        ],
+        "location": {
+            "lat": 13.7794,
+            "lng": 100.5416
+        }
+    },
+    {
+        "id": "bkk_warehouse30",
+        "provinceId": "bangkok",
+        "category": "shopping",
+        "name": "Warehouse 30",
+        "thaiName": "แวร์เฮ้าส์ 30",
+        "description": "A creative hub housed in a renovated 1950s warehouse in Charoenkrung, Warehouse 30 blends art, design, food, and retail. Featuring contemporary art galleries, designer boutiques, craft workshops, and innovative dining concepts. A must-visit for art and design enthusiasts.",
+        "image": "",
+        "images": [],
+        "rating": 4.5,
+        "reviews": 5800,
+        "address": "48 Charoenkrung 30 Rd, Bang Rak, Bangkok 10500",
+        "openingHours": "11:00 - 21:00 (Tue-Sun, Closed Mon)",
+        "entranceFee": "Free entry",
+        "dressCode": "Casual chic",
+        "website": "https://www.warehouse30.com",
+        "highlights": [
+            "Renovated 1950s warehouse with industrial charm",
+            "Contemporary art galleries and exhibitions",
+            "Designer boutiques and craft shops",
+            "Innovative dining and cafe concepts",
+            "Creative workshops and events",
+            "Instagram-worthy industrial aesthetic"
+        ],
+        "tips": [
+            "Check the website for current exhibitions and events.",
+            "Great for unique souvenirs and local designer products.",
+            "Combine with exploring the historic Charoenkrung area.",
+            "Visit nearby Lhong 1919 and Tha Maharaj.",
+            "Closed on Mondays - plan accordingly."
+        ],
+        "transportation": [
+            {
+                "type": "MRT",
+                "detail": "MRT Sanam Chai Station, walk 15 mins or take taxi."
+            },
+            {
+                "type": "Taxi/Grab",
+                "detail": "Most convenient option. Set destination to 'Warehouse 30 Charoenkrung'."
+            }
+        ],
+        "location": {
+            "lat": 13.7285,
+            "lng": 100.5145
+        }
     }
 ]
