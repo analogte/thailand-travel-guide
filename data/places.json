@@ -445,36 +445,41 @@
         "category": "cafe",
         "name": "After You Dessert Cafe",
         "thaiName": "อาฟเตอร์ ยู",
-        "description": "Thailand's most famous dessert cafe chain, beloved for its Shibuya Honey Toast and Kakigori (shaved ice).",
-        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800",
+        "description": "Thailand's most beloved dessert cafe chain since 2007, After You has become a cultural phenomenon with its signature Shibuya Honey Toast and innovative Kakigori (Japanese shaved ice). With the motto 'There's Always Room for Dessert,' After You combines premium ingredients with creative presentations, offering everything from classic honey toast to seasonal specialties like Bua Loy Kakigori and their famous After You Tea. Now with over 60 branches across Thailand and expanding internationally, it remains a must-visit destination for dessert lovers.",
+        "image": "images/bkk_after_you_hero.webp",
         "images": [
-            "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800",
-            "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800"
+            "images/bkk_after_you_hero.webp",
+            "images/bkk_after_you_01.webp"
         ],
         "rating": 4.5,
         "reviews": 5600,
-        "address": "Various locations (Siam Paragon, Central World, etc.)",
-        "openingHours": "10:00 - 22:00",
-        "entranceFee": "N/A",
+        "address": "Multiple locations (Siam Paragon, Central World, EmQuartier, ICONSIAM, etc.)",
+        "openingHours": "10:00 - 22:00 (varies by branch)",
+        "entranceFee": "N/A (Desserts 150-350 THB)",
         "dressCode": "Casual",
+        "website": "https://www.afteryoudessertcafe.com/en",
         "highlights": [
-            "Shibuya Honey Toast",
-            "Thai Tea Kakigori",
-            "Two-Tone Kakigori"
+            "Shibuya Honey Toast - The signature dish that started it all",
+            "Kakigori (Japanese shaved ice) - Multiple flavors including Thai Tea, Matcha, and seasonal specials",
+            "Bua Loy Kakigori - Seasonal favorite with black sesame, soy milk, or matcha",
+            "After You Tea - Now available in bottles at 7-Eleven",
+            "Seasonal menus featuring Durian, Mango, and Strawberry"
         ],
         "tips": [
-            "Siam Paragon branch usually has the longest queue.",
-            "Try the seasonal menus (Durian, Mango, Strawberry).",
-            "Free tea is provided."
+            "Siam Paragon branch is the flagship but expect 30-60 min wait during peak hours.",
+            "Try seasonal menus - they change throughout the year and sell out quickly.",
+            "Free After You Tea is provided while you wait.",
+            "Download the After You app for queue management and exclusive promotions.",
+            "EmQuartier and ICONSIAM branches tend to be less crowded."
         ],
         "transportation": [
             {
                 "type": "BTS",
-                "detail": "Take BTS to Siam Station (Exit 3 for Siam Paragon)."
+                "detail": "Siam Paragon: BTS Siam (Exit 3). Central World: BTS Chit Lom (Exit 9). EmQuartier: BTS Phrom Phong (Exit 3)."
             },
             {
-                "type": "BTS",
-                "detail": "Take BTS to Chit Lom Station (for Central World)."
+                "type": "Boat",
+                "detail": "ICONSIAM branch: Take free shuttle boat from Sathorn Pier (BTS Saphan Taksin)."
             }
         ],
         "location": {
