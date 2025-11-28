@@ -592,29 +592,35 @@
         "category": "culture",
         "name": "BACC (Bangkok Art and Culture Centre)",
         "thaiName": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
-        "description": "Bangkok's premier contemporary art space, BACC is a 11-story spiraling gallery showcasing rotating exhibitions of Thai and international contemporary art, design, music, theater, and film. The building's unique architecture features a continuous spiral ramp connecting all floors, creating an immersive art experience. With free admission and a vibrant cafe culture, it's become a hub for Bangkok's creative community.",
-        "image": "",
-        "images": [],
+        "description": "Bangkok's premier contemporary art space, BACC is a 9-story spiraling gallery showcasing rotating exhibitions of Thai and international contemporary art, design, music, theater, and film. The building's unique architecture features a continuous spiral ramp connecting all floors, creating an immersive art experience. With free admission and a vibrant cafe culture, it's become a hub for Bangkok's creative community.",
+        "image": "images/bkk_bacc_hero.webp",
+        "images": [
+            "images/bkk_bacc_hero.webp",
+            "images/bkk_bacc_01.webp",
+            "images/bkk_bacc_02.webp"
+        ],
         "rating": 4.6,
         "reviews": 6500,
         "address": "939 Rama 1 Rd, Wang Mai, Pathum Wan, Bangkok 10330",
-        "openingHours": "10:00 - 21:00 (Closed Mon)",
-        "entranceFee": "Free",
+        "openingHours": "10:00 - 20:00 (Closed Mon, New Year, Songkran)",
+        "entranceFee": "Free (Special events may charge)",
         "dressCode": "Casual",
         "website": "https://www.bacc.or.th",
         "highlights": [
             "Rotating contemporary art exhibitions (Thai and international)",
-            "Unique spiral architecture by Japanese architects",
+            "Unique spiral architecture - 9 floors connected by ramps",
             "Free admission to all public galleries",
-            "Rooftop garden and cafe",
-            "Art bookshop and creative merchandise stores"
+            "Rooftop garden and cafe with city views",
+            "Art bookshop and creative merchandise stores",
+            "Accessible facilities for disabled visitors"
         ],
         "tips": [
             "Check the website for current exhibitions - they change monthly.",
             "The rooftop cafe offers great city views.",
             "Free WiFi throughout the building.",
             "Art Market on weekends features local artists and designers.",
-            "Combine with shopping at MBK Center across the street."
+            "Combine with shopping at MBK Center across the street.",
+            "Elevator service available on all floors."
         ],
         "transportation": [
             {
@@ -622,8 +628,8 @@
                 "detail": "Take BTS to National Stadium Station (Exit 3), directly connected via skywalk."
             },
             {
-                "type": "Walk",
-                "detail": "From Siam Paragon: 10 mins walk."
+                "type": "Canal Boat",
+                "detail": "Saen Saep Canal Boat to Saphan Hua Chang Pier."
             }
         ],
         "location": {
