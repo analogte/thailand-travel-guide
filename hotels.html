@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Find the best hotel deals in Thailand. Compare prices from top booking platforms including Agoda and Booking.com. Book your perfect accommodation today!">
+    <meta name="keywords" content="Thailand hotels, book hotels, Agoda, Booking.com, accommodation Thailand, hotel deals">
+    <meta property="og:title" content="Hotels in Thailand - Best Deals & Prices">
+    <meta property="og:description" content="Find and compare the best hotel deals across Thailand">
+    <meta property="og:type" content="website">
+    <title>Hotels in Thailand - Best Deals & Booking | Thailand Travel Guide</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css?v=2.1">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://em-content.zobj.net/thumbs/120/apple/354/flag-thailand_1f1f9-1f1ed.png">
+</head>
+
+<body class="font-body">
+    <!-- Navigation -->
+    <nav class="bg-primary-teal text-white py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-display font-bold flex items-center space-x-2">
+                <span>🇹🇭</span>
+                <span>Thailand Guide</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link hover:text-warm-gold transition">Home</a>
+                <a href="destinations.html" class="nav-link hover:text-warm-gold transition">Destinations</a>
+                <a href="hotels.html" class="nav-link text-warm-gold font-semibold">Hotels</a>
+                <a href="culture.html" class="nav-link hover:text-warm-gold transition">Culture</a>
+                <a href="guide.html" class="nav-link hover:text-warm-gold transition">Travel Guide</a>
+            </div>
+
+            <button class="mobile-menu-button md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-teal-700 px-6 py-4">
+            <a href="index.html" class="block py-2 hover:text-warm-gold">Home</a>
+            <a href="destinations.html" class="block py-2 hover:text-warm-gold">Destinations</a>
+            <a href="hotels.html" class="block py-2 text-warm-gold font-semibold">Hotels</a>
+            <a href="culture.html" class="block py-2 hover:text-warm-gold">Culture</a>
+            <a href="guide.html" class="block py-2 hover:text-warm-gold">Travel Guide</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <section class="hero-section small relative overflow-hidden">
+        <div class="hero-bg absolute inset-0 opacity-20"></div>
+
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="text-center text-white mb-12">
+                <h1 class="text-5xl md:text-6xl font-display font-bold mb-4">
+                    Find Your Perfect Stay
+                </h1>
+                <p class="text-xl md:text-2xl mb-2">
+                    Compare prices from top booking platforms
+                </p>
+                <div class="flex justify-center gap-4 items-center text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Best Price Guarantee</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-blue-400"></i>
+                        <span>Secure Booking</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-headset text-yellow-400"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Widget Container -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-2xl p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                        <i class="fas fa-search text-teal-600 mr-2"></i>
+                        Search Hotels in Thailand
+                    </h2>
+
+                    <!-- Search Form -->
+                    <form id="hotel-search-form" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Destination -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-map-marker-alt text-teal-600 mr-1"></i>
+                                    Destination
+                                </label>
+                                <select id="destination" name="destination"
+                                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-teal-600 focus:outline-none">
+                                    <option value="">Select destination...</option>
+                                    <option value="bangkok">Bangkok</option>
+                                    <option value="chiang-mai">Chiang Mai</option>
+                                    <option value="phuket">Phuket</option>
+                                    <option value="pattaya">Pattaya</option>
+                                    <option value="krabi">Krabi</option>
+                                    <option value="ayutthaya">Ayutthaya</option>
+                                </select>
+                            </div>
+
+                            <!-- Hotel Type -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-hotel text-teal-600 mr-1"></i>
+                                    Hotel Type
+                                </label>
+                                <select id="hotel-type" name="hotelType"
+                                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-teal-600 focus:outline-none">
+                                    <option value="">All Types</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="resort">Resort</option>
+                                    <option value="hostel">Hostel</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="villa">Villa</option>
+                                </select>
+                            </div>
+
+                            <!-- Check-in Date -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-calendar-check text-teal-600 mr-1"></i>
+                                    Check-in
+                                </label>
+                                <input type="date" id="checkin" name="checkin"
+                                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-teal-600 focus:outline-none">
+                            </div>
+
+                            <!-- Check-out Date -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-calendar-times text-teal-600 mr-1"></i>
+                                    Check-out
+                                </label>
+                                <input type="date" id="checkout" name="checkout"
+                                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-teal-600 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <!-- Search Buttons -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                            <button type="button" onclick="searchAgoda()"
+                                class="w-full py-4 bg-gradient-to-r from-pink-600 to-red-600 text-white font-bold rounded-lg hover:from-pink-700 hover:to-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <i class="fas fa-search mr-2"></i>
+                                Search on Agoda
+                                <span class="text-xs block mt-1 opacity-90">Best prices in Asia</span>
+                            </button>
+
+                            <button type="button" onclick="searchBookingCom()"
+                                class="w-full py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <i class="fas fa-search mr-2"></i>
+                                Search on Booking.com
+                                <span class="text-xs block mt-1 opacity-90">Worldwide hotels</span>
+                            </button>
+                        </div>
+
+                        <p class="text-center text-sm text-gray-500 mt-4">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            Compare prices on both platforms to find the best deal
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-800 mb-4">
+                    Popular Destinations
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Find hotels in Thailand's most visited cities
+                </p>
+            </div>
+
+            <div id="popular-destinations-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Book With Us -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-800 mb-4">
+                    Why Book Hotels Through Us?
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Get the best value for your stay in Thailand
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tags text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Best Price Guarantee</h3>
+                    <p class="text-gray-600">We compare prices from multiple platforms to ensure you get the best deal</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-check text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Secure Booking</h3>
+                    <p class="text-gray-600">Book with confidence through trusted partners like Agoda and Booking.com</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Instant Confirmation</h3>
+                    <p class="text-gray-600">Get immediate booking confirmation and e-vouchers via email</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-yellow-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Expert Reviews</h3>
+                    <p class="text-gray-600">Read verified guest reviews and our expert recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Categories -->
+    <section class="py-20 bg-gradient-to-br from-teal-50 to-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-800 mb-4">
+                    Browse by Category
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Find the perfect accommodation for your travel style
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Budget Hotels -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-wallet text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Budget Hotels</h3>
+                        <p class="text-gray-600 mb-4">Great value accommodations starting from ฿300/night</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Clean & Comfortable</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Free WiFi</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Perfect for Backpackers</li>
+                        </ul>
+                        <button onclick="searchCategory('budget')" class="w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold">
+                            Browse Budget Hotels
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mid-Range Hotels -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-hotel text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Mid-Range Hotels</h3>
+                        <p class="text-gray-600 mb-4">Comfortable stays from ฿1,000-2,500/night</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i>Swimming Pool</li>
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i>Restaurant & Bar</li>
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i>Fitness Center</li>
+                        </ul>
+                        <button onclick="searchCategory('midrange')" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                            Browse Mid-Range Hotels
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Luxury Hotels -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-crown text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Luxury Hotels</h3>
+                        <p class="text-gray-600 mb-4">5-star experiences from ฿3,000+/night</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li><i class="fas fa-check text-purple-500 mr-2"></i>Premium Service</li>
+                            <li><i class="fas fa-check text-purple-500 mr-2"></i>Spa & Wellness</li>
+                            <li><i class="fas fa-check text-purple-500 mr-2"></i>Fine Dining</li>
+                        </ul>
+                        <button onclick="searchCategory('luxury')" class="w-full py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+                            Browse Luxury Hotels
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-display font-bold mb-4">🇹🇭 Thailand Guide</h3>
+                    <p class="text-gray-400">Your ultimate companion for exploring the Land of Smiles</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-warm-gold">Home</a></li>
+                        <li><a href="destinations.html" class="hover:text-warm-gold">Destinations</a></li>
+                        <li><a href="hotels.html" class="hover:text-warm-gold">Hotels</a></li>
+                        <li><a href="culture.html" class="hover:text-warm-gold">Culture</a></li>
+                        <li><a href="guide.html" class="hover:text-warm-gold">Travel Guide</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Booking Partners</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-check-circle text-green-400 mr-2"></i>Agoda</li>
+                        <li><i class="fas fa-check-circle text-blue-400 mr-2"></i>Booking.com</li>
+                        <li><i class="fas fa-shield-alt text-yellow-400 mr-2"></i>Secure Payment</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-warm-gold transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-warm-gold transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-warm-gold transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-warm-gold transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Thailand Travel Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js?v=2.1"></script>
+    <script src="js/error-handler.js?v=2.1"></script>
+    <script src="js/ui-utils.js?v=2.1"></script>
+    <script src="js/data-loader.js?v=2.1"></script>
+    <script src="js/hotels.js?v=2.1"></script>
+    <script src="js/main.js?v=2.1"></script>
+</body>
+
+</html>
