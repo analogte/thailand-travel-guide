@@ -85,6 +85,9 @@ async function initPlaceDetailPage() {
         // Initialize Get Directions button
         initGetDirectionsButton(place);
 
+        // Render Hotels Nearby widget
+        renderHotelsNearby(place);
+
         hideLoading(document.body);
 
         console.log(`✓ Place detail page loaded: ${place.name}`);
@@ -406,4 +409,70 @@ function initGetDirectionsButton(place) {
             showNotification('⚠️ Location not available for this place', 'warning');
         }
     });
+}
+
+/**
+ * Render Hotels Nearby widget
+ * @param {Object} place - Place data
+ */
+function renderHotelsNearby(place) {
+    const container = document.getElementById('hotels-nearby-container');
+    if (!container) return;
+
+    // Get place name and location
+    const placeName = place.name || 'this attraction';
+    const placeId = place.id || 'place';
+
+    // Determine destination based on place address or province
+    // Try to extract city name from address
+    let destination = 'Thailand';
+    if (place.address) {
+        // Simple extraction - look for common Thai city names
+        const address = place.address.toLowerCase();
+        if (address.includes('bangkok')) destination = 'Bangkok';
+        else if (address.includes('chiang mai')) destination = 'Chiang Mai';
+        else if (address.includes('phuket')) destination = 'Phuket';
+        else if (address.includes('pattaya')) destination = 'Pattaya';
+        else if (address.includes('krabi')) destination = 'Krabi';
+        else if (address.includes('ayutthaya')) destination = 'Ayutthaya';
+    }
+
+    // Use the getHotelWidgetHTML function from hotels.js if available
+    if (typeof getHotelWidgetHTML === 'function') {
+        container.innerHTML = getHotelWidgetHTML(destination, placeId);
+    } else {
+        // Fallback HTML
+        container.innerHTML = `
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <div class="text-center mb-8">
+                    <i class="fas fa-hotel text-5xl text-teal-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Stay Close to ${escapeHtml(placeName)}</h3>
+                    <p class="text-gray-600">Find convenient hotels near this attraction</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="hotels.html" target="_blank"
+                       class="block py-4 px-6 bg-gradient-to-r from-pink-600 to-red-600 text-white font-bold rounded-lg hover:from-pink-700 hover:to-red-700 transition-all shadow-lg hover:shadow-xl text-center">
+                        <i class="fas fa-search mr-2"></i>
+                        Search on Agoda
+                        <span class="block text-xs mt-1 opacity-90">Best prices in Asia</span>
+                    </a>
+
+                    <a href="hotels.html" target="_blank"
+                       class="block py-4 px-6 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all shadow-lg hover:shadow-xl text-center">
+                        <i class="fas fa-search mr-2"></i>
+                        Search on Booking.com
+                        <span class="block text-xs mt-1 opacity-90">Worldwide hotels</span>
+                    </a>
+                </div>
+
+                <p class="text-center text-sm text-gray-500 mt-6">
+                    <i class="fas fa-info-circle mr-1"></i>
+                    Compare prices to find the best deal for your stay
+                </p>
+            </div>
+        `;
+    }
+
+    console.log(`✓ Hotels nearby widget rendered for: ${placeName}`);
 }

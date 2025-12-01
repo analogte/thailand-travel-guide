@@ -142,11 +142,26 @@
                     data-category="shopping">
                     <i class="fas fa-shopping-bag mr-1" aria-hidden="true"></i> Shopping
                 </button>
+                <button
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="hotels-container"
+                    id="tab-hotels"
+                    tabindex="-1"
+                    class="tab-btn px-4 md:px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 font-medium transition-all whitespace-nowrap"
+                    data-category="hotels">
+                    <i class="fas fa-hotel mr-1" aria-hidden="true"></i> Hotels
+                </button>
             </div>
 
             <!-- Places Grid -->
             <div id="places-grid" role="tabpanel" aria-labelledby="tab-all" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Places will be injected here -->
+            </div>
+
+            <!-- Hotels Container (Hidden by default) -->
+            <div id="hotels-container" role="tabpanel" aria-labelledby="tab-hotels" class="hidden">
+                <!-- Hotels widget will be injected here -->
             </div>
 
             <div class="mt-12 text-center">
@@ -175,7 +190,8 @@
     <script src="https://browser.sentry-cdn.com/7.114.0/bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/monitoring.js?v=2.0"></script>
 
-    <script src="js/province-detail.js?v=2.0"></script>
+    <script src="js/hotels.js?v=2.1"></script>
+    <script src="js/province-detail.js?v=2.1"></script>
     <script>
         // Initialize province detail page
         document.addEventListener('DOMContentLoaded', initProvinceDetailPage);

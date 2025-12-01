@@ -239,6 +239,26 @@
         </div>
     </section>
 
+    <!-- Hotels Nearby Section -->
+    <section class="py-16 bg-gradient-to-br from-teal-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-800 mb-4">
+                    <i class="fas fa-hotel text-teal-600 mr-3"></i>
+                    Hotels Nearby
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Find the perfect accommodation close to this attraction
+                </p>
+            </div>
+
+            <!-- Hotels Widget Container -->
+            <div id="hotels-nearby-container">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -255,7 +275,8 @@
     <script src="https://browser.sentry-cdn.com/7.114.0/bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/monitoring.js"></script>
 
-    <script src="js/place-detail.js?v=1.2"></script>
+    <script src="js/hotels.js?v=2.1"></script>
+    <script src="js/place-detail.js?v=2.1"></script>
     <script>
         // Initialize place detail page
         document.addEventListener('DOMContentLoaded', initPlaceDetailPage);

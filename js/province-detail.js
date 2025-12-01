@@ -217,22 +217,91 @@ function activateTab(tab, allTabs, allPlaces, placesGrid) {
     tab.setAttribute('aria-selected', 'true');
     tab.setAttribute('tabindex', '0');
 
-    // Update aria-labelledby on places grid
-    if (placesGrid && tab.id) {
-        placesGrid.setAttribute('aria-labelledby', tab.id);
-    }
-
-    // Filter
     const category = tab.dataset.category;
-    const filtered = category === 'all'
-        ? allPlaces
-        : allPlaces.filter(p => p.category === category);
 
-    renderPlaces(filtered);
+    // Handle Hotels tab specially
+    if (category === 'hotels') {
+        // Hide places grid, show hotels container
+        if (placesGrid) placesGrid.classList.add('hidden');
 
-    // Show notification
-    const categoryName = category === 'all' ? 'All Places' : category.charAt(0).toUpperCase() + category.slice(1);
-    showNotification(`Showing ${filtered.length} ${categoryName}`, 'info');
+        const hotelsContainer = document.getElementById('hotels-container');
+        if (hotelsContainer) {
+            hotelsContainer.classList.remove('hidden');
+            hotelsContainer.setAttribute('aria-labelledby', tab.id);
+
+            // Render hotels widget if not already rendered
+            if (!hotelsContainer.hasAttribute('data-initialized')) {
+                renderHotelsWidget(hotelsContainer);
+                hotelsContainer.setAttribute('data-initialized', 'true');
+            }
+        }
+
+        // Show notification
+        if (typeof showNotification === 'function') {
+            showNotification('🏨 Find hotels in this province', 'info');
+        }
+    } else {
+        // Show places grid, hide hotels container
+        if (placesGrid) {
+            placesGrid.classList.remove('hidden');
+            placesGrid.setAttribute('aria-labelledby', tab.id);
+        }
+
+        const hotelsContainer = document.getElementById('hotels-container');
+        if (hotelsContainer) {
+            hotelsContainer.classList.add('hidden');
+        }
+
+        // Filter and render places
+        const filtered = category === 'all'
+            ? allPlaces
+            : allPlaces.filter(p => p.category === category);
+
+        renderPlaces(filtered);
+
+        // Show notification
+        const categoryName = category === 'all' ? 'All Places' : category.charAt(0).toUpperCase() + category.slice(1);
+        if (typeof showNotification === 'function') {
+            showNotification(`Showing ${filtered.length} ${categoryName}`, 'info');
+        }
+    }
+}
+
+/**
+ * Render hotels widget for the current province
+ * @param {HTMLElement} container - Hotels container element
+ */
+function renderHotelsWidget(container) {
+    if (!container) return;
+
+    // Get current province info from page
+    const provinceNameEl = document.getElementById('province-name');
+    const provinceName = provinceNameEl ? provinceNameEl.textContent : 'Thailand';
+
+    // Get province ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const provinceId = urlParams.get('id') || 'bangkok';
+
+    // Use the getHotelWidgetHTML function from hotels.js
+    if (typeof getHotelWidgetHTML === 'function') {
+        container.innerHTML = getHotelWidgetHTML(provinceName, provinceId);
+    } else {
+        // Fallback if hotels.js is not loaded
+        container.innerHTML = `
+            <div class="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 shadow-lg text-center">
+                <i class="fas fa-hotel text-6xl text-teal-600 mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Find Hotels in ${escapeHtml(provinceName)}</h3>
+                <p class="text-gray-600 mb-6">Search for the best hotel deals in this province</p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="hotels.html" target="_blank"
+                       class="px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-semibold">
+                        <i class="fas fa-search mr-2"></i>
+                        Search Hotels
+                    </a>
+                </div>
+            </div>
+        `;
+    }
 }
 
 /**
